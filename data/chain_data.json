@@ -1,629 +1,611 @@
 {
   "meta": {
-    "date": "20261009",
+    "date": "20261013",
     "version": 2
   },
   "stocks": {
-    "002058": {
-      "boards": 4,
-      "name": "紫竹高科",
-      "sector": "电池",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
+    "000668": {
+      "boards": 1,
+      "name": "荣丰控股",
+      "sector": "房地产开",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
       "open_times": 0,
       "first_zt_time": "92500"
-    },
-    "600241": {
-      "boards": 5,
-      "name": "时代万恒",
-      "sector": "电池",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "92500"
-    },
-    "600825": {
-      "boards": 9,
-      "name": "新华传媒",
-      "sector": "出版",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "92500"
-    },
-    "001300": {
-      "boards": 2,
-      "name": "三柏硕",
-      "sector": "文娱用品",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "93018"
-    },
-    "002242": {
-      "boards": 5,
-      "name": "九阳股份",
-      "sector": "小家电",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 6,
-      "first_zt_time": "93027"
-    },
-    "600812": {
-      "boards": 2,
-      "name": "华北制药",
-      "sector": "化学制药",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "93058"
-    },
-    "002733": {
-      "boards": 2,
-      "name": "雄韬股份",
-      "sector": "电池",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "93103"
-    },
-    "002692": {
-      "boards": 1,
-      "name": "远程股份",
-      "sector": "电网设备",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "93148"
-    },
-    "601811": {
-      "boards": 1,
-      "name": "新华文轩",
-      "sector": "出版",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 3,
-      "first_zt_time": "93159"
-    },
-    "605136": {
-      "boards": 1,
-      "name": "丽人丽妆",
-      "sector": "互联网电",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "93316"
-    },
-    "600207": {
-      "boards": 1,
-      "name": "安彩高科",
-      "sector": "光伏设备",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "93500"
-    },
-    "605399": {
-      "boards": 1,
-      "name": "晨光新材",
-      "sector": "化学制品",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "93522"
-    },
-    "002805": {
-      "boards": 2,
-      "name": "丰元股份",
-      "sector": "电池",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "93621"
-    },
-    "001336": {
-      "boards": 2,
-      "name": "楚环科技",
-      "sector": "环保设备",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "93730"
-    },
-    "600478": {
-      "boards": 1,
-      "name": "科力远",
-      "sector": "电池",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "93749"
-    },
-    "300821": {
-      "boards": 1,
-      "name": "东岳硅材",
-      "sector": "化学制品",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "93839"
-    },
-    "603155": {
-      "boards": 1,
-      "name": "新亚强",
-      "sector": "化学制品",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 2,
-      "first_zt_time": "94018"
-    },
-    "600843": {
-      "boards": 1,
-      "name": "上工申贝",
-      "sector": "专用设备",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "94159"
-    },
-    "600127": {
-      "boards": 1,
-      "name": "金健米业",
-      "sector": "农产品加",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 2,
-      "first_zt_time": "95039"
-    },
-    "300530": {
-      "boards": 2,
-      "name": "领湃科技",
-      "sector": "电池",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 3,
-      "first_zt_time": "95427"
-    },
-    "600629": {
-      "boards": 1,
-      "name": "华建集团",
-      "sector": "工程咨询",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "101122"
-    },
-    "601086": {
-      "boards": 1,
-      "name": "国芳集团",
-      "sector": "一般零售",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "101607"
-    },
-    "600371": {
-      "boards": 1,
-      "name": "万向德农",
-      "sector": "种植业",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "102045"
-    },
-    "603101": {
-      "boards": 1,
-      "name": "汇嘉时代",
-      "sector": "一般零售",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 2,
-      "first_zt_time": "103634"
-    },
-    "002675": {
-      "boards": 1,
-      "name": "东诚药业",
-      "sector": "化学制药",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 2,
-      "first_zt_time": "103645"
-    },
-    "600408": {
-      "boards": 2,
-      "name": "安泰集团",
-      "sector": "焦炭Ⅱ",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "104317"
-    },
-    "300981": {
-      "boards": 1,
-      "name": "中红医疗",
-      "sector": "医疗器械",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "104700"
-    },
-    "000546": {
-      "boards": 1,
-      "name": "金圆股份",
-      "sector": "环境治理",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "105048"
-    },
-    "002480": {
-      "boards": 1,
-      "name": "新筑股份",
-      "sector": "电力",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 5,
-      "first_zt_time": "111745"
-    },
-    "300369": {
-      "boards": 1,
-      "name": "绿盟科技",
-      "sector": "软件开发",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "130509"
-    },
-    "600865": {
-      "boards": 1,
-      "name": "百大集团",
-      "sector": "一般零售",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "130527"
-    },
-    "600882": {
-      "boards": 1,
-      "name": "妙可蓝多",
-      "sector": "饮料乳品",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "130603"
-    },
-    "002212": {
-      "boards": 1,
-      "name": "天融信",
-      "sector": "软件开发",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "130806"
-    },
-    "605188": {
-      "boards": 1,
-      "name": "国光连锁",
-      "sector": "一般零售",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "131016"
-    },
-    "603067": {
-      "boards": 1,
-      "name": "振华股份",
-      "sector": "化学原料",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "131112"
-    },
-    "601069": {
-      "boards": 1,
-      "name": "西部黄金",
-      "sector": "贵金属",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "131414"
-    },
-    "600354": {
-      "boards": 1,
-      "name": "敦煌种业",
-      "sector": "种植业",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "131537"
-    },
-    "000420": {
-      "boards": 1,
-      "name": "吉林化纤",
-      "sector": "化学纤维",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "131539"
-    },
-    "600621": {
-      "boards": 1,
-      "name": "华鑫股份",
-      "sector": "证券Ⅱ",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "131602"
-    },
-    "601519": {
-      "boards": 1,
-      "name": "大智慧",
-      "sector": "软件开发",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "132015"
-    },
-    "002912": {
-      "boards": 1,
-      "name": "中新赛克",
-      "sector": "计算机设",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "132548"
-    },
-    "605177": {
-      "boards": 1,
-      "name": "东亚药业",
-      "sector": "化学制药",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "133032"
-    },
-    "002811": {
-      "boards": 1,
-      "name": "郑中设计",
-      "sector": "装修装饰",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 3,
-      "first_zt_time": "133806"
-    },
-    "601566": {
-      "boards": 1,
-      "name": "九牧王",
-      "sector": "服装家纺",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "133813"
-    },
-    "605287": {
-      "boards": 1,
-      "name": "德才股份",
-      "sector": "装修装饰",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "133925"
-    },
-    "605577": {
-      "boards": 1,
-      "name": "龙版传媒",
-      "sector": "出版",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "134440"
-    },
-    "601595": {
-      "boards": 1,
-      "name": "上海电影",
-      "sector": "影视院线",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "135226"
-    },
-    "601929": {
-      "boards": 1,
-      "name": "吉视传媒",
-      "sector": "电视广播",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "135625"
-    },
-    "603096": {
-      "boards": 1,
-      "name": "新经典",
-      "sector": "出版",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "140035"
-    },
-    "000710": {
-      "boards": 1,
-      "name": "贝瑞基因",
-      "sector": "医疗服务",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "140212"
-    },
-    "000892": {
-      "boards": 1,
-      "name": "欢瑞世纪",
-      "sector": "影视院线",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "140318"
-    },
-    "603232": {
-      "boards": 1,
-      "name": "格尔软件",
-      "sector": "软件开发",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "140456"
-    },
-    "002317": {
-      "boards": 1,
-      "name": "众生药业",
-      "sector": "中药Ⅱ",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "140815"
-    },
-    "300364": {
-      "boards": 1,
-      "name": "中文在线",
-      "sector": "数字媒体",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "140851"
-    },
-    "603533": {
-      "boards": 1,
-      "name": "掌阅科技",
-      "sector": "数字媒体",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "140903"
-    },
-    "002181": {
-      "boards": 1,
-      "name": "粤 传 媒",
-      "sector": "出版",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 5,
-      "first_zt_time": "141103"
-    },
-    "688152": {
-      "boards": 1,
-      "name": "麒麟信安",
-      "sector": "软件开发",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "141550"
-    },
-    "001330": {
-      "boards": 1,
-      "name": "博纳影业",
-      "sector": "影视院线",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "141615"
-    },
-    "300413": {
-      "boards": 1,
-      "name": "芒果超媒",
-      "sector": "数字媒体",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 1,
-      "first_zt_time": "141733"
     },
     "002343": {
-      "boards": 1,
+      "boards": 3,
       "name": "慈文传媒",
       "sector": "影视院线",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "92500"
+    },
+    "002917": {
+      "boards": 1,
+      "name": "金奥博",
+      "sector": "化学制品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
       "open_times": 1,
-      "first_zt_time": "141754"
+      "first_zt_time": "92500"
+    },
+    "603096": {
+      "boards": 3,
+      "name": "新经典",
+      "sector": "出版",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "92500"
+    },
+    "600693": {
+      "boards": 2,
+      "name": "东百集团",
+      "sector": "一般零售",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 4,
+      "first_zt_time": "92501"
+    },
+    "002322": {
+      "boards": 1,
+      "name": "理工能科",
+      "sector": "软件开发",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "93000"
+    },
+    "605577": {
+      "boards": 3,
+      "name": "龙版传媒",
+      "sector": "出版",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 3,
+      "first_zt_time": "93022"
+    },
+    "001231": {
+      "boards": 2,
+      "name": "农心科技",
+      "sector": "农化制品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "93027"
+    },
+    "605136": {
+      "boards": 3,
+      "name": "丽人丽妆",
+      "sector": "互联网电",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "93046"
+    },
+    "000995": {
+      "boards": 1,
+      "name": "皇台酒业",
+      "sector": "白酒Ⅱ",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "93121"
+    },
+    "000823": {
+      "boards": 1,
+      "name": "超声电子",
+      "sector": "元件",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "93154"
+    },
+    "002184": {
+      "boards": 1,
+      "name": "海得控制",
+      "sector": "自动化设",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "93212"
+    },
+    "603188": {
+      "boards": 1,
+      "name": "亚邦股份",
+      "sector": "化学制品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "93257"
+    },
+    "600802": {
+      "boards": 1,
+      "name": "福建水泥",
+      "sector": "水泥",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 3,
+      "first_zt_time": "93354"
     },
     "002696": {
-      "boards": 1,
+      "boards": 3,
       "name": "百洋股份",
       "sector": "饲料",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
       "open_times": 0,
-      "first_zt_time": "142212"
+      "first_zt_time": "93409"
     },
-    "002979": {
+    "000833": {
       "boards": 1,
-      "name": "雷赛智能",
-      "sector": "自动化设",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
+      "name": "粤桂股份",
+      "sector": "综合Ⅱ",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
       "open_times": 0,
-      "first_zt_time": "142645"
+      "first_zt_time": "93412"
     },
-    "605168": {
+    "600847": {
       "boards": 1,
-      "name": "三人行",
-      "sector": "广告营销",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 6,
-      "first_zt_time": "142701"
-    },
-    "603216": {
-      "boards": 1,
-      "name": "梦天家居",
-      "sector": "家居用品",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
+      "name": "万里股份",
+      "sector": "电池",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
       "open_times": 0,
-      "first_zt_time": "142722"
+      "first_zt_time": "93434"
     },
-    "600715": {
+    "603767": {
       "boards": 1,
-      "name": "文投控股",
-      "sector": "游戏Ⅱ",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
+      "name": "中马传动",
+      "sector": "汽车零部",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "93434"
+    },
+    "003037": {
+      "boards": 1,
+      "name": "三和管桩",
+      "sector": "水泥",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "93509"
+    },
+    "603968": {
+      "boards": 2,
+      "name": "醋化股份",
+      "sector": "化学制品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 2,
+      "first_zt_time": "93633"
+    },
+    "600831": {
+      "boards": 2,
+      "name": "广电网络",
+      "sector": "电视广播",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "93906"
+    },
+    "600199": {
+      "boards": 1,
+      "name": "金种子酒",
+      "sector": "白酒Ⅱ",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
       "open_times": 3,
-      "first_zt_time": "142940"
+      "first_zt_time": "94549"
     },
-    "000736": {
+    "600851": {
+      "boards": 2,
+      "name": "海欣股份",
+      "sector": "化学制药",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 3,
+      "first_zt_time": "94913"
+    },
+    "002549": {
       "boards": 1,
-      "name": "中交发展",
-      "sector": "房地产服",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
+      "name": "凯美特气",
+      "sector": "化学制品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "95406"
+    },
+    "002693": {
+      "boards": 1,
+      "name": "双成药业",
+      "sector": "化学制药",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
       "open_times": 0,
-      "first_zt_time": "143242"
+      "first_zt_time": "95803"
+    },
+    "300107": {
+      "boards": 1,
+      "name": "建新股份",
+      "sector": "化学制品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "95957"
+    },
+    "000530": {
+      "boards": 1,
+      "name": "冰山冷热",
+      "sector": "通用设备",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "100906"
+    },
+    "002640": {
+      "boards": 1,
+      "name": "跨境通",
+      "sector": "互联网电",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 2,
+      "first_zt_time": "101324"
+    },
+    "002748": {
+      "boards": 1,
+      "name": "世龙实业",
+      "sector": "化学原料",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "101406"
     },
     "605058": {
       "boards": 1,
       "name": "澳弘电子",
       "sector": "元件",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "143833"
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 2,
+      "first_zt_time": "102007"
     },
-    "600400": {
-      "boards": 2,
-      "name": "红豆股份",
-      "sector": "服装家纺",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
-      "open_times": 0,
-      "first_zt_time": "144612"
-    },
-    "601118": {
+    "600202": {
       "boards": 1,
-      "name": "海南橡胶",
-      "sector": "种植业",
-      "start_date": "20261009",
-      "last_zt_date": "20261009",
+      "name": "哈空调",
+      "sector": "通用设备",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
       "open_times": 0,
-      "first_zt_time": "145236"
+      "first_zt_time": "103530"
+    },
+    "605258": {
+      "boards": 1,
+      "name": "协和电子",
+      "sector": "元件",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "103918"
+    },
+    "601188": {
+      "boards": 1,
+      "name": "龙江交通",
+      "sector": "铁路公路",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "104837"
+    },
+    "000715": {
+      "boards": 1,
+      "name": "中兴商业",
+      "sector": "一般零售",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "105224"
+    },
+    "301010": {
+      "boards": 1,
+      "name": "晶雪节能",
+      "sector": "装修建材",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "105521"
+    },
+    "600593": {
+      "boards": 1,
+      "name": "大连圣亚",
+      "sector": "旅游及景",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "105614"
+    },
+    "603328": {
+      "boards": 1,
+      "name": "依顿电子",
+      "sector": "元件",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "110004"
+    },
+    "600853": {
+      "boards": 1,
+      "name": "龙建股份",
+      "sector": "基础建设",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 2,
+      "first_zt_time": "110751"
+    },
+    "603386": {
+      "boards": 1,
+      "name": "骏亚科技",
+      "sector": "元件",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "111014"
+    },
+    "002639": {
+      "boards": 1,
+      "name": "雪人集团",
+      "sector": "通用设备",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "111806"
+    },
+    "001229": {
+      "boards": 1,
+      "name": "魅视科技",
+      "sector": "计算机设",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "111818"
+    },
+    "603956": {
+      "boards": 1,
+      "name": "威派格",
+      "sector": "专用设备",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 4,
+      "first_zt_time": "112406"
+    },
+    "301041": {
+      "boards": 1,
+      "name": "金百泽",
+      "sector": "元件",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "112715"
+    },
+    "002579": {
+      "boards": 1,
+      "name": "中京电子",
+      "sector": "元件",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "112736"
+    },
+    "002949": {
+      "boards": 1,
+      "name": "华阳国际",
+      "sector": "工程咨询",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "112848"
+    },
+    "688655": {
+      "boards": 1,
+      "name": "迅捷兴",
+      "sector": "元件",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 3,
+      "first_zt_time": "112931"
+    },
+    "603353": {
+      "boards": 1,
+      "name": "和顺石油",
+      "sector": "炼化及贸",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "130010"
+    },
+    "600237": {
+      "boards": 1,
+      "name": "铜峰电子",
+      "sector": "元件",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "130042"
+    },
+    "600228": {
+      "boards": 1,
+      "name": "返利科技",
+      "sector": "数字媒体",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "130136"
+    },
+    "603466": {
+      "boards": 1,
+      "name": "风语筑",
+      "sector": "数字媒体",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "130153"
+    },
+    "002862": {
+      "boards": 1,
+      "name": "实丰文化",
+      "sector": "文娱用品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "130215"
+    },
+    "603001": {
+      "boards": 1,
+      "name": "奥康国际",
+      "sector": "服装家纺",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "130323"
+    },
+    "603099": {
+      "boards": 1,
+      "name": "长白山",
+      "sector": "旅游及景",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "130445"
+    },
+    "603980": {
+      "boards": 1,
+      "name": "吉华集团",
+      "sector": "化学制品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "130557"
+    },
+    "002980": {
+      "boards": 1,
+      "name": "华盛昌",
+      "sector": "电网设备",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "130615"
+    },
+    "002878": {
+      "boards": 1,
+      "name": "元隆雅图",
+      "sector": "广告营销",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "130639"
+    },
+    "001318": {
+      "boards": 1,
+      "name": "阳光乳业",
+      "sector": "饮料乳品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "130903"
+    },
+    "600391": {
+      "boards": 1,
+      "name": "航发科技",
+      "sector": "航空装备",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 2,
+      "first_zt_time": "130906"
+    },
+    "002587": {
+      "boards": 1,
+      "name": "奥拓电子",
+      "sector": "光学光电",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 4,
+      "first_zt_time": "131239"
+    },
+    "603042": {
+      "boards": 1,
+      "name": "华脉科技",
+      "sector": "通信设备",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "132209"
+    },
+    "000558": {
+      "boards": 1,
+      "name": "天府文旅",
+      "sector": "旅游及景",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "132330"
+    },
+    "600712": {
+      "boards": 1,
+      "name": "南宁百货",
+      "sector": "一般零售",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "132805"
+    },
+    "600281": {
+      "boards": 1,
+      "name": "华阳新材",
+      "sector": "小金属",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "133937"
+    },
+    "002430": {
+      "boards": 1,
+      "name": "杭氧股份",
+      "sector": "化学制品",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 1,
+      "first_zt_time": "134512"
+    },
+    "002172": {
+      "boards": 1,
+      "name": "澳洋健康",
+      "sector": "医疗服务",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "134727"
+    },
+    "002811": {
+      "boards": 1,
+      "name": "郑中设计",
+      "sector": "装修装饰",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "135251"
+    },
+    "002623": {
+      "boards": 1,
+      "name": "亚玛顿",
+      "sector": "光伏设备",
+      "start_date": "20261013",
+      "last_zt_date": "20261013",
+      "open_times": 0,
+      "first_zt_time": "142845"
     }
   }
 }
