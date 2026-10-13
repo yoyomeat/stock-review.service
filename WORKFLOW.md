@@ -102,7 +102,12 @@ git commit -m "fix(scope): ..."
 
 - **remote 使用 SSH**，格式 `git@github.com:yoyomeat/stock-review.service.git`。
 - **禁止在 remote URL 里嵌 PAT/token**（2026-10-13 前曾明文存过一个 GitHub PAT，已失效并清除）。
-- SSH 私钥位于服务器 `~/.ssh/id_ed25519`，**永不入库、永不外传**；公钥注册在 GitHub 仓库的 Deploy keys。
+- 服务器私钥：`~/.ssh/id_ed25519_github`（权限 600），公钥指纹 `SHA256:e4dQ//uF7R+Q4o+vZmeHM7O/qvTtUIT+Pq5+0MBhSNg`，注册在账号 SSH keys；`~/.ssh/config` 已固定 `IdentityFile` + `IdentitiesOnly yes`。
+- **私钥严禁放进仓库目录**。2026-10-13 曾被传到项目根目录，已移出并为 `.gitignore` 增加 `id_ed25519*` / `id_rsa*` / `*.pem` / `*.ppk` 四条锁。
+- **`/root/.gitconfig` 只允许保留一条重写规则**：`url.https://gitclone.com/github.com/.insteadOf`（https 克隆走镜像加速）。**绝不可添加 "SSH→HTTPS" 的 insteadOf 规则**——它会把 `git@github.com:` 静默改写成 https，SSH 密钥形同虚设，且推送会被送去镜像导致认证失败。改动前先自检：
+  ```bash
+  git config --global --get-regexp '^url\.'
+  ```
 - 环境里的 `GH_TOKEN` 属临时集成令牌，可读可推但**不可作为长期方案**，不得写进任何文件。
 
 ---
@@ -127,7 +132,10 @@ git diff --cached | grep -nEi 'ghp_[A-Za-z0-9]{20,}|github_pat_|sk-[A-Za-z0-9]{2
 # ④ 测试通过
 python -m pytest tests/ -q
 
-# ⑤ 同步
+# ⑤ 认证通道未被改写（SSH 必须是原生的）
+git config --global --get-regexp '^url\.' 
+
+# ⑥ 同步
 git fetch origin && git status
 ```
 
