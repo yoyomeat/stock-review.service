@@ -1,0 +1,109 @@
+{
+  "year": 2026,
+  "month": 5,
+  "period": "2026年05月",
+  "total": 5,
+  "by_date": {
+    "20260515": [
+      {
+        "date": "20260515",
+        "time": "",
+        "event": "Google I/O开发者大会",
+        "sector": "AI/科技",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "20260520": [
+      {
+        "date": "20260520",
+        "time": "",
+        "event": "中国国际机器人展览会",
+        "sector": "机器人",
+        "importance": 3,
+        "source": "日历"
+      },
+      {
+        "date": "20260520",
+        "time": "",
+        "event": "618预售开启",
+        "sector": "电商/消费",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "20260525": [
+      {
+        "date": "20260525",
+        "time": "",
+        "event": "世界无人机大会",
+        "sector": "低空经济",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "20260531": [
+      {
+        "date": "20260531",
+        "time": "",
+        "event": "ASCO美国临床肿瘤学会年会",
+        "sector": "创新药",
+        "importance": 4,
+        "source": "日历"
+      }
+    ]
+  },
+  "by_sector": {
+    "AI/科技": [
+      {
+        "date": "20260515",
+        "time": "",
+        "event": "Google I/O开发者大会",
+        "sector": "AI/科技",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "机器人": [
+      {
+        "date": "20260520",
+        "time": "",
+        "event": "中国国际机器人展览会",
+        "sector": "机器人",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "电商/消费": [
+      {
+        "date": "20260520",
+        "time": "",
+        "event": "618预售开启",
+        "sector": "电商/消费",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "低空经济": [
+      {
+        "date": "20260525",
+        "time": "",
+        "event": "世界无人机大会",
+        "sector": "低空经济",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "创新药": [
+      {
+        "date": "20260531",
+        "time": "",
+        "event": "ASCO美国临床肿瘤学会年会",
+        "sector": "创新药",
+        "importance": 4,
+        "source": "日历"
+      }
+    ]
+  },
+  "generated_at": "2026-04-25 20:00:11"
+}

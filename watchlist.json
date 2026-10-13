@@ -1,0 +1,70 @@
+{
+  "holding": [
+    {
+      "code": "688059",
+      "name": "华锐精密",
+      "cost": 141.03,
+      "shares": 0,
+      "allocation": 27.0,
+      "held_days": 1,
+      "max_days": 3,
+      "unreal_pct": 0.86,
+      "stop_loss_price": 138.91,
+      "take_profit_price": 152.31,
+      "source": "auto_review",
+      "bt_date": "20260430"
+    }
+  ],
+  "candidate": [
+    {
+      "code": "301246",
+      "name": "宏源药业",
+      "trigger": "主升·无主线·强更强 买点27.02",
+      "source": "auto_review",
+      "review_date": "20260430",
+      "buy_price": 27.02,
+      "buy_range": [
+        27.02,
+        29.37
+      ],
+      "stop_loss_price": 26.47,
+      "take_profit_price": 29.18,
+      "hold_days": "3天",
+      "allocation": 37,
+      "role": "首选"
+    },
+    {
+      "code": "688449",
+      "name": "联芸科技",
+      "trigger": "主升·无主线·强更强 买点50.09",
+      "source": "auto_review",
+      "review_date": "20260430",
+      "buy_price": 50.09,
+      "buy_range": [
+        50.09,
+        53.95
+      ],
+      "stop_loss_price": 49.61,
+      "take_profit_price": 54.1,
+      "hold_days": "3天",
+      "allocation": 26,
+      "role": "备选1"
+    }
+  ],
+  "leader": [
+    {
+      "code": "600379",
+      "name": "宝光股份",
+      "watch": [
+        "炸板"
+      ]
+    },
+    {
+      "code": "000066",
+      "name": "中国长城",
+      "watch": [
+        "炸板"
+      ]
+    }
+  ]
+}

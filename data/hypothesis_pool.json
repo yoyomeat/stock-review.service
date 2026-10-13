@@ -1,0 +1,82 @@
+[
+  {
+    "id": "HYP-001",
+    "created": "2026-04-28",
+    "source": "EXP-003",
+    "statement": "zb_ratio > 80% 时仓位上限应为30%",
+    "backtest_config": {
+      "modify": "position.py",
+      "rule": "if zb_ratio > 0.8: max_pos = 0.3",
+      "period": "2024-01-01 ~ 2026-04-28"
+    },
+    "status": "pending_backtest",
+    "backtest_result": null,
+    "backtest_date": null,
+    "related_decisions": ["DL-002"],
+    "notes": "来自318天全量分析，65个冰点日中16天炸板率>80%"
+  },
+  {
+    "id": "HYP-002",
+    "created": "2026-04-28",
+    "source": "PAT-002",
+    "statement": "情绪<20时仓位上限15%",
+    "backtest_config": {
+      "modify": "position.py",
+      "rule": "if core_sent < 20: max_pos = 0.15",
+      "period": "2024-01-01 ~ 2026-04-28"
+    },
+    "status": "pending_backtest",
+    "backtest_result": null,
+    "backtest_date": null,
+    "related_decisions": [],
+    "notes": "情绪极低日系统仍给较高仓位(均值38-47%)，需限制"
+  },
+  {
+    "id": "HYP-003",
+    "created": "2026-04-28",
+    "source": "PAT-001",
+    "statement": "连续2天zb_ratio>50%应提前降仓",
+    "backtest_config": {
+      "modify": "position.py",
+      "rule": "if consecutive_zb_ratio_gt_50 >= 2: reduce_pos",
+      "period": "2024-01-01 ~ 2026-04-28"
+    },
+    "status": "pending_backtest",
+    "backtest_result": null,
+    "backtest_date": null,
+    "related_decisions": [],
+    "notes": "冰点前3天zb_ratio往往升高，验证提前量是否稳定"
+  },
+  {
+    "id": "HYP-004",
+    "created": "2026-04-28",
+    "source": "EXP-004",
+    "statement": "情绪从80+骤降到<30(单日跌>50点)可作为提前降仓信号",
+    "backtest_config": {
+      "modify": "position.py",
+      "rule": "if prev_sent > 80 and cur_sent < 30: reduce_pos",
+      "period": "2024-01-01 ~ 2026-04-28"
+    },
+    "status": "pending_backtest",
+    "backtest_result": null,
+    "backtest_date": null,
+    "related_decisions": [],
+    "notes": "44次中38次触发冰点(86%)，提前量约1天"
+  },
+  {
+    "id": "HYP-005",
+    "created": "2026-04-29",
+    "source": "data_validator",
+    "statement": "data_quality score<60时应自动carry_prev而非仅标记",
+    "backtest_config": {
+      "modify": "review_new.py",
+      "rule": "if data_quality.score < 60: force carry_prev",
+      "period": "2024-01-01 ~ 2026-04-28"
+    },
+    "status": "pending_backtest",
+    "backtest_result": null,
+    "backtest_date": null,
+    "related_decisions": ["DL-005"],
+    "notes": "当前critical才carry_prev，warning仅flag，看是否需要降低阈值"
+  }
+]

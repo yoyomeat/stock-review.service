@@ -1,0 +1,507 @@
+{
+  "year": 2026,
+  "month": 4,
+  "period": "2026年04月",
+  "total": 25,
+  "by_date": {
+    "20260401": [
+      {
+        "date": "20260401",
+        "time": "",
+        "event": "2025年报披露（84家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 84
+      }
+    ],
+    "20260402": [
+      {
+        "date": "20260402",
+        "time": "",
+        "event": "2025年报披露（56家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 56
+      }
+    ],
+    "20260403": [
+      {
+        "date": "20260403",
+        "time": "",
+        "event": "2025年报披露高峰（146家）",
+        "sector": "全市场",
+        "importance": 3,
+        "source": "财报排期",
+        "count": 146
+      }
+    ],
+    "20260408": [
+      {
+        "date": "20260408",
+        "time": "",
+        "event": "2025年报披露（57家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 57
+      }
+    ],
+    "20260409": [
+      {
+        "date": "20260409",
+        "time": "",
+        "event": "2025年报披露（66家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 66
+      }
+    ],
+    "20260410": [
+      {
+        "date": "20260410",
+        "time": "",
+        "event": "2025年报密集披露日（241家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 241
+      }
+    ],
+    "20260411": [
+      {
+        "date": "20260411",
+        "time": "",
+        "event": "2025年报披露高峰（197家）",
+        "sector": "全市场",
+        "importance": 3,
+        "source": "财报排期",
+        "count": 197
+      }
+    ],
+    "20260414": [
+      {
+        "date": "20260414",
+        "time": "",
+        "event": "2025年报披露（84家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 84
+      }
+    ],
+    "20260415": [
+      {
+        "date": "20260415",
+        "time": "",
+        "event": "上海/北京国际车展",
+        "sector": "汽车",
+        "importance": 4,
+        "source": "日历"
+      },
+      {
+        "date": "20260415",
+        "time": "",
+        "event": "AACR美国癌症研究协会年会",
+        "sector": "创新药",
+        "importance": 4,
+        "source": "日历"
+      },
+      {
+        "date": "20260415",
+        "time": "",
+        "event": "2025年报密集披露日（246家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 246
+      },
+      {
+        "date": "20260415",
+        "time": "",
+        "event": "博鳌亚洲论坛",
+        "sector": "政策",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "20260416": [
+      {
+        "date": "20260416",
+        "time": "",
+        "event": "2025年报披露高峰（167家）",
+        "sector": "全市场",
+        "importance": 3,
+        "source": "财报排期",
+        "count": 167
+      }
+    ],
+    "20260417": [
+      {
+        "date": "20260417",
+        "time": "",
+        "event": "2025年报密集披露日（250家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 250
+      }
+    ],
+    "20260418": [
+      {
+        "date": "20260418",
+        "time": "",
+        "event": "2025年报密集披露日（217家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 217
+      }
+    ],
+    "20260420": [
+      {
+        "date": "20260420",
+        "time": "",
+        "event": "2025年报披露（52家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 52
+      }
+    ],
+    "20260421": [
+      {
+        "date": "20260421",
+        "time": "",
+        "event": "2025年报密集披露日（249家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 249
+      }
+    ],
+    "20260422": [
+      {
+        "date": "20260422",
+        "time": "",
+        "event": "2025年报密集披露日（249家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 249
+      }
+    ],
+    "20260423": [
+      {
+        "date": "20260423",
+        "time": "",
+        "event": "2025年报密集披露日（449家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 449
+      }
+    ],
+    "20260424": [
+      {
+        "date": "20260424",
+        "time": "",
+        "event": "2025年报密集披露日（513家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 513
+      }
+    ],
+    "20260425": [
+      {
+        "date": "20260425",
+        "time": "",
+        "event": "2025年报密集披露日（413家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 413
+      }
+    ],
+    "20260427": [
+      {
+        "date": "20260427",
+        "time": "",
+        "event": "2025年报密集披露日（256家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 256
+      }
+    ],
+    "20260428": [
+      {
+        "date": "20260428",
+        "time": "",
+        "event": "2025年报密集披露日（653家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 653
+      }
+    ],
+    "20260429": [
+      {
+        "date": "20260429",
+        "time": "",
+        "event": "2025年报密集披露日（707家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 707
+      }
+    ],
+    "20260430": [
+      {
+        "date": "20260430",
+        "time": "",
+        "event": "2025年报密集披露日（222家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 222
+      }
+    ]
+  },
+  "by_sector": {
+    "全市场": [
+      {
+        "date": "20260401",
+        "time": "",
+        "event": "2025年报披露（84家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 84
+      },
+      {
+        "date": "20260402",
+        "time": "",
+        "event": "2025年报披露（56家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 56
+      },
+      {
+        "date": "20260403",
+        "time": "",
+        "event": "2025年报披露高峰（146家）",
+        "sector": "全市场",
+        "importance": 3,
+        "source": "财报排期",
+        "count": 146
+      },
+      {
+        "date": "20260408",
+        "time": "",
+        "event": "2025年报披露（57家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 57
+      },
+      {
+        "date": "20260409",
+        "time": "",
+        "event": "2025年报披露（66家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 66
+      },
+      {
+        "date": "20260410",
+        "time": "",
+        "event": "2025年报密集披露日（241家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 241
+      },
+      {
+        "date": "20260411",
+        "time": "",
+        "event": "2025年报披露高峰（197家）",
+        "sector": "全市场",
+        "importance": 3,
+        "source": "财报排期",
+        "count": 197
+      },
+      {
+        "date": "20260414",
+        "time": "",
+        "event": "2025年报披露（84家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 84
+      },
+      {
+        "date": "20260415",
+        "time": "",
+        "event": "2025年报密集披露日（246家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 246
+      },
+      {
+        "date": "20260416",
+        "time": "",
+        "event": "2025年报披露高峰（167家）",
+        "sector": "全市场",
+        "importance": 3,
+        "source": "财报排期",
+        "count": 167
+      },
+      {
+        "date": "20260417",
+        "time": "",
+        "event": "2025年报密集披露日（250家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 250
+      },
+      {
+        "date": "20260418",
+        "time": "",
+        "event": "2025年报密集披露日（217家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 217
+      },
+      {
+        "date": "20260420",
+        "time": "",
+        "event": "2025年报披露（52家）",
+        "sector": "全市场",
+        "importance": 2,
+        "source": "财报排期",
+        "count": 52
+      },
+      {
+        "date": "20260421",
+        "time": "",
+        "event": "2025年报密集披露日（249家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 249
+      },
+      {
+        "date": "20260422",
+        "time": "",
+        "event": "2025年报密集披露日（249家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 249
+      },
+      {
+        "date": "20260423",
+        "time": "",
+        "event": "2025年报密集披露日（449家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 449
+      },
+      {
+        "date": "20260424",
+        "time": "",
+        "event": "2025年报密集披露日（513家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 513
+      },
+      {
+        "date": "20260425",
+        "time": "",
+        "event": "2025年报密集披露日（413家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 413
+      },
+      {
+        "date": "20260427",
+        "time": "",
+        "event": "2025年报密集披露日（256家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 256
+      },
+      {
+        "date": "20260428",
+        "time": "",
+        "event": "2025年报密集披露日（653家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 653
+      },
+      {
+        "date": "20260429",
+        "time": "",
+        "event": "2025年报密集披露日（707家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 707
+      },
+      {
+        "date": "20260430",
+        "time": "",
+        "event": "2025年报密集披露日（222家）",
+        "sector": "全市场",
+        "importance": 4,
+        "source": "财报排期",
+        "count": 222
+      }
+    ],
+    "汽车": [
+      {
+        "date": "20260415",
+        "time": "",
+        "event": "上海/北京国际车展",
+        "sector": "汽车",
+        "importance": 4,
+        "source": "日历"
+      }
+    ],
+    "创新药": [
+      {
+        "date": "20260415",
+        "time": "",
+        "event": "AACR美国癌症研究协会年会",
+        "sector": "创新药",
+        "importance": 4,
+        "source": "日历"
+      }
+    ],
+    "政策": [
+      {
+        "date": "20260415",
+        "time": "",
+        "event": "博鳌亚洲论坛",
+        "sector": "政策",
+        "importance": 3,
+        "source": "日历"
+      }
+    ]
+  },
+  "generated_at": "2026-04-17 11:45:02"
+}

@@ -1,0 +1,161 @@
+/* ═══════════════════════════════════════════════════
+   行业日历 — 样式
+   ═══════════════════════════════════════════════════ */
+
+.ev-pill {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.ev-total { background: rgba(99,102,241,0.12); color: #6366f1; }
+.ev-time { background: rgba(107,114,128,0.1); color: var(--t3); font-weight: 400; }
+
+/* ── 月份导航 ── */
+.ev-month-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+.ev-month-btn {
+  font-size: 12px;
+  padding: 4px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--t3);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+.ev-month-btn:hover { border-color: var(--t3); color: var(--t2); }
+.ev-month-btn.active {
+  background: #6366f1;
+  color: #fff;
+  border-color: #6366f1;
+}
+
+/* ── 板块分组 ── */
+.ev-sector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+.ev-sector-header:hover { background: var(--bg-hover); }
+.ev-sector-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ev-sector-tag {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 12px;
+  border-radius: 8px;
+  background: rgba(99,102,241,0.1);
+  color: #6366f1;
+}
+.ev-sector-tag[data-sector="AI"] { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+.ev-sector-tag[data-sector="AI/算力"] { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+.ev-sector-tag[data-sector="AI/科技"] { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+.ev-sector-tag[data-sector="AI/机器人"] { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+.ev-sector-tag[data-sector="半导体"] { background: rgba(59,130,246,0.12); color: #3b82f6; }
+.ev-sector-tag[data-sector="半导体/AI"] { background: rgba(59,130,246,0.12); color: #3b82f6; }
+.ev-sector-tag[data-sector="芯片/AI"] { background: rgba(59,130,246,0.12); color: #3b82f6; }
+.ev-sector-tag[data-sector="新能源"] { background: rgba(16,185,129,0.12); color: #10b981; }
+.ev-sector-tag[data-sector="电池"] { background: rgba(16,185,129,0.12); color: #10b981; }
+.ev-sector-tag[data-sector="汽车"] { background: rgba(6,182,212,0.12); color: #06b6d4; }
+.ev-sector-tag[data-sector="汽车/新能源"] { background: rgba(6,182,212,0.12); color: #06b6d4; }
+.ev-sector-tag[data-sector="机器人"] { background: rgba(249,115,22,0.12); color: #f97316; }
+.ev-sector-tag[data-sector="机器人/AI"] { background: rgba(249,115,22,0.12); color: #f97316; }
+.ev-sector-tag[data-sector="机器人/制造"] { background: rgba(249,115,22,0.12); color: #f97316; }
+.ev-sector-tag[data-sector="医药"] { background: rgba(236,72,153,0.12); color: #ec4899; }
+.ev-sector-tag[data-sector="创新药"] { background: rgba(236,72,153,0.12); color: #ec4899; }
+.ev-sector-tag[data-sector="军工"] { background: rgba(107,114,128,0.12); color: #6b7280; }
+.ev-sector-tag[data-sector="军工/航天"] { background: rgba(107,114,128,0.12); color: #6b7280; }
+.ev-sector-tag[data-sector="航天"] { background: rgba(107,114,128,0.12); color: #6b7280; }
+.ev-sector-tag[data-sector="消费电子"] { background: rgba(239,68,68,0.12); color: #ef4444; }
+.ev-sector-tag[data-sector="低空经济"] { background: rgba(20,184,166,0.12); color: #14b8a6; }
+.ev-sector-tag[data-sector="电商/消费"] { background: rgba(245,158,11,0.12); color: #f59e0b; }
+.ev-sector-tag[data-sector="消费"] { background: rgba(245,158,11,0.12); color: #f59e0b; }
+.ev-sector-tag[data-sector="政策"] { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+.ev-sector-tag[data-sector="金融"] { background: rgba(239,68,68,0.12); color: #ef4444; }
+.ev-sector-tag[data-sector="信创"] { background: rgba(59,130,246,0.12); color: #3b82f6; }
+.ev-sector-tag[data-sector="信创/安全"] { background: rgba(59,130,246,0.12); color: #3b82f6; }
+.ev-sector-tag[data-sector="数据要素"] { background: rgba(99,102,241,0.12); color: #6366f1; }
+.ev-sector-tag[data-sector="通信/AI"] { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+.ev-sector-tag[data-sector="全市场"] { background: rgba(107,114,128,0.12); color: #6b7280; }
+.ev-sector-tag[data-sector="市场"] { background: rgba(107,114,128,0.1); color: var(--t3); }
+.ev-sector-tag[data-sector="贸易/消费"] { background: rgba(245,158,11,0.12); color: #f59e0b; }
+.ev-sector-tag[data-sector="能源"] { background: rgba(234,179,8,0.12); color: #eab308; }
+.ev-sector-tag[data-sector="电力/能源"] { background: rgba(234,179,8,0.12); color: #eab308; }
+.ev-sector-tag[data-sector="资源/钢铁"] { background: rgba(107,114,128,0.12); color: #6b7280; }
+.ev-sector-tag[data-sector="碳中和/新能源"] { background: rgba(16,185,129,0.12); color: #10b981; }
+.ev-sector-tag[data-sector="云计算/AI"] { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+
+.ev-sector-count {
+  font-size: 12px;
+  color: var(--t3);
+}
+.ev-sector-toggle {
+  font-size: 14px;
+  color: var(--t3);
+  transition: transform 0.2s;
+}
+.ev-sector-collapsed .ev-sector-body { display: none; }
+.ev-sector-collapsed .ev-sector-toggle { transform: rotate(-90deg); }
+
+/* ── 事件行 ── */
+.ev-sector-body {
+  padding: 0 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ev-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+.ev-row:hover { background: var(--bg-hover); }
+.ev-row-date {
+  font-size: 12px;
+  color: var(--t3);
+  min-width: 38px;
+  font-variant-numeric: tabular-nums;
+  padding-top: 1px;
+}
+.ev-row-star {
+  font-size: 11px;
+  min-width: 16px;
+}
+.ev-row-text {
+  font-size: 13px;
+  color: var(--t1);
+  line-height: 1.5;
+  flex: 1;
+}
+.ev-row-src {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: rgba(107,114,128,0.08);
+  color: var(--t3);
+  white-space: nowrap;
+}
+
+/* ── 空状态 ── */
+.ev-empty {
+  text-align: center;
+  padding: 48px 16px;
+}
+.ev-empty-icon { font-size: 48px; margin-bottom: 16px; }
+.ev-empty-text { font-size: 16px; color: var(--t2); margin-bottom: 8px; }
+.ev-empty-hint { font-size: 13px; color: var(--t3); }

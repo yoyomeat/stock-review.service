@@ -1,0 +1,72 @@
+[
+  {
+    "id": "DL-001",
+    "date": "2026-04-28",
+    "type": "architecture",
+    "tags": ["openclaw", "workflow"],
+    "trigger": "自动化反思容易变成仪式，LLM模式发现不可靠",
+    "root_cause": "记忆≠理解，自动化反思产出质量不可控",
+    "action": "改为对抗性协作模式：用户提判断，系统用数据挑战",
+    "result": null,
+    "impact": "high",
+    "status": "active",
+    "verified_date": null,
+    "superseded_by": null
+  },
+  {
+    "id": "DL-002",
+    "date": "2026-04-28",
+    "type": "bug_fix",
+    "tags": ["cycle", "position", "ice_point"],
+    "trigger": "三冰计数BUG导致仓位虚高75%",
+    "root_cause": "cycle_history连续性判断elif跳过下降期，不应算连续冰点",
+    "action": "position.py改为else:break，任何非冰点打断计数",
+    "result": "318天重跑，今日从75%修正为15%",
+    "impact": "critical",
+    "status": "verified",
+    "verified_date": "2026-04-28",
+    "superseded_by": null
+  },
+  {
+    "id": "DL-003",
+    "date": "2026-04-28",
+    "type": "architecture",
+    "tags": ["api", "performance", "flutter"],
+    "trigger": "Flutter App频繁网络连接错误",
+    "root_cause": "/api/dashboard响应740KB(sector_v5占377KB)，移动网络超时",
+    "action": "剥离sector_v5等大字段，Flutter客户端加重试逻辑",
+    "result": "740KB→94KB，gzip后175KB→21KB，响应3.6s→0.06s",
+    "impact": "high",
+    "status": "verified",
+    "verified_date": "2026-04-28",
+    "superseded_by": null
+  },
+  {
+    "id": "DL-004",
+    "date": "2026-04-28",
+    "type": "architecture",
+    "tags": ["cleanup", "jinja2", "flutter"],
+    "trigger": "Jinja2模板页面零访问，与Flutter SPA架构冲突",
+    "root_cause": "项目同时存在Jinja2模板和Flutter Web SPA",
+    "action": "移除所有Jinja2页面路由和模板，保留纯API架构",
+    "result": "routes/web.py 156→16行，17个API端点全部200",
+    "impact": "medium",
+    "status": "verified",
+    "verified_date": "2026-04-28",
+    "superseded_by": null
+  },
+  {
+    "id": "DL-005",
+    "date": "2026-04-29",
+    "type": "bug_fix",
+    "tags": ["data_quality", "validation"],
+    "trigger": "20260401数据异常(zt=0但系统给了60%仓位)，原_data_missing检测覆盖面太窄",
+    "root_cause": "原逻辑仅判断zt==0且up+down==0，漏检zt=0有涨跌的场景",
+    "action": "新增data_validator.py，9种异常检测，critical时carry_prev",
+    "result": "正常日期score100，异常场景全部正确拦截",
+    "impact": "high",
+    "status": "verified",
+    "verified_date": "2026-04-29",
+    "superseded_by": null
+  }
+]

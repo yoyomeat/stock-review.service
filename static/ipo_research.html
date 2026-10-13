@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新股研究 - 预测与5日跟踪</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<style>
+:root {
+  --bg: #0f1115; --card: #1a1d24; --border: #2a2d35;
+  --text: #e4e6eb; --gray: #8b8fa3; --gray2: #5c6070;
+  --primary: #4f8cff; --success: #22c55e; --danger: #ef4444;
+  --warning: #f59e0b; --purple: #a855f7;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; font-size:14px; }
+.header { padding:16px 24px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; background:var(--card); }
+.header h1 { font-size:18px; font-weight:600; }
+.header .actions { display:flex; gap:8px; }
+.btn { padding:6px 14px; border:1px solid var(--border); border-radius:6px; background:var(--card); color:var(--text); cursor:pointer; font-size:13px; transition:all .2s; }
+.btn:hover { border-color:var(--primary); color:var(--primary); }
+.btn-primary { background:var(--primary); border-color:var(--primary); color:#fff; }
+.btn-primary:hover { opacity:.9; color:#fff; }
+.container { max-width:1400px; margin:0 auto; padding:20px 24px; }
+.tabs { display:flex; gap:4px; margin-bottom:20px; border-bottom:1px solid var(--border); }
+.tab { padding:10px 20px; cursor:pointer; color:var(--gray); border-bottom:2px solid transparent; font-size:14px; transition:all .2s; }
+.tab.active { color:var(--primary); border-bottom-color:var(--primary); }
+.tab:hover { color:var(--text); }
+.tab-content { display:none; }
+.tab-content.active { display:block; }
+
+/* 预测列表 */
+.filters { display:flex; gap:12px; margin-bottom:16px; flex-wrap:wrap; align-items:center; }
+.filters select, .filters input { padding:6px 10px; background:var(--card); border:1px solid var(--border); border-radius:6px; color:var(--text); font-size:13px; }
+.pred-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px; }
+.pred-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; cursor:pointer; transition:all .2s; }
+.pred-card:hover { border-color:var(--primary); transform:translateY(-2px); }
+.pred-card .top { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px; }
+.pred-card .name { font-size:16px; font-weight:600; }
+.pred-card .code { color:var(--gray); font-size:12px; }
+.pred-card .board-tag { font-size:11px; padding:2px 8px; border-radius:4px; background:rgba(79,140,255,.15); color:var(--primary); }
+.pred-card .board-tag.bj { background:rgba(168,85,247,.15); color:var(--purple); }
+.pred-card .board-tag.star { background:rgba(34,197,94,.15); color:var(--success); }
+.pred-card .indices { display:flex; gap:16px; margin:10px 0; }
+.pred-card .idx { text-align:center; }
+.pred-card .idx-val { font-size:22px; font-weight:700; }
+.pred-card .idx-label { font-size:11px; color:var(--gray); }
+.quality { color:var(--success); }
+.hype { color:var(--warning); }
+.pred-card .prices { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px; padding-top:10px; border-top:1px solid var(--border); }
+.pred-card .price-item { font-size:12px; }
+.pred-card .price-item .label { color:var(--gray); }
+.pred-card .price-item .val { font-weight:600; font-size:14px; }
+.pred-card .actual { margin-top:8px; padding-top:8px; border-top:1px dashed var(--border); font-size:12px; color:var(--gray); }
+.pred-card .actual .hit { color:var(--success); }
+.pred-card .actual .miss { color:var(--danger); }
+.pred-card .themes { margin-top:8px; display:flex; flex-wrap:wrap; gap:4px; }
+.pred-card .theme-tag { font-size:11px; padding:1px 6px; border-radius:3px; background:rgba(245,158,11,.1); color:var(--warning); }
+
+/* 详情页 */
+.detail-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+.detail-header h2 { font-size:22px; }
+.detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.detail-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:20px; }
+.detail-card h3 { font-size:15px; margin-bottom:14px; color:var(--primary); border-bottom:1px solid var(--border); padding-bottom:8px; }
+.data-table { width:100%; border-collapse:collapse; }
+.data-table td { padding:6px 8px; border-bottom:1px solid var(--border); font-size:13px; }
+.data-table td:first-child { color:var(--gray); width:40%; }
+.data-table td:last-child { font-weight:500; text-align:right; }
+.risk-zones { display:flex; flex-direction:column; gap:6px; margin-top:10px; }
+.zone { display:flex; justify-content:space-between; padding:8px 12px; border-radius:6px; font-size:13px; }
+.zone.low { background:rgba(34,197,94,.12); color:var(--success); }
+.zone.game { background:rgba(79,140,255,.12); color:var(--primary); }
+.zone.high { background:rgba(239,68,68,.12); color:var(--danger); }
+.zone.midlong { background:rgba(168,85,247,.12); color:var(--purple); }
+#kline-chart { width:100%; height:400px; }
+.perf-table { width:100%; border-collapse:collapse; margin-top:10px; }
+.perf-table th, .perf-table td { padding:8px 10px; text-align:center; border-bottom:1px solid var(--border); font-size:12px; }
+.perf-table th { color:var(--gray); font-weight:500; background:rgba(255,255,255,.02); }
+.perf-table .up { color:var(--danger); }
+.perf-table .down { color:var(--success); }
+.trend-tag { padding:2px 8px; border-radius:4px; font-size:11px; }
+.trend-glider { background:rgba(239,68,68,.15); color:var(--danger); }
+.trend-high-open-high { background:rgba(34,197,94,.15); color:var(--success); }
+.trend-other { background:rgba(139,143,163,.15); color:var(--gray); }
+
+/* 回测 */
+.backtest-filters { display:flex; gap:12px; margin-bottom:16px; flex-wrap:wrap; align-items:center; }
+.backtest-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:20px; }
+.stat-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:14px; text-align:center; }
+.stat-card .val { font-size:24px; font-weight:700; }
+.stat-card .label { font-size:12px; color:var(--gray); margin-top:4px; }
+.backtest-table { width:100%; border-collapse:collapse; }
+.backtest-table th, .backtest-table td { padding:8px 10px; text-align:center; border-bottom:1px solid var(--border); font-size:12px; }
+.backtest-table th { color:var(--gray); font-weight:500; background:rgba(255,255,255,.02); position:sticky; top:0; }
+.backtest-table tr:hover { background:rgba(79,140,255,.05); }
+.empty { text-align:center; padding:60px 20px; color:var(--gray); }
+.loading { text-align:center; padding:40px; color:var(--gray); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>新股研究系统 <span style="font-size:12px;color:var(--gray);font-weight:400">预测 · 5日跟踪 · 回测</span></h1>
+  <div class="actions">
+    <button class="btn" onclick="refreshPredictions()">刷新预测</button>
+    <button class="btn" onclick="runTracking()">运行跟踪</button>
+    <button class="btn btn-primary" onclick="loadAll()">重新加载</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('predictions')">预测列表</div>
+    <div class="tab" onclick="switchTab('detail')">预测详情</div>
+    <div class="tab" onclick="switchTab('backtest')">回测筛选</div>
+  </div>
+
+  <!-- 预测列表 -->
+  <div id="tab-predictions" class="tab-content active">
+    <div class="filters">
+      <select id="filter-board" onchange="loadPredictions()">
+        <option value="">全部板块</option>
+        <option value="gem">创业板</option>
+        <option value="star">科创板</option>
+        <option value="bj">北交所</option>
+        <option value="main">主板</option>
+      </select>
+      <select id="filter-quality" onchange="loadPredictions()">
+        <option value="0">优质指数≥0</option>
+        <option value="3">优质指数≥3</option>
+        <option value="3.5">优质指数≥3.5</option>
+        <option value="4">优质指数≥4</option>
+      </select>
+      <select id="filter-hype" onchange="loadPredictions()">
+        <option value="0">炒作指数≥0</option>
+        <option value="3">炒作指数≥3</option>
+        <option value="3.5">炒作指数≥3.5</option>
+        <option value="4">炒作指数≥4</option>
+      </select>
+      <span style="color:var(--gray);font-size:12px" id="pred-count"></span>
+    </div>
+    <div id="pred-list" class="pred-grid"></div>
+  </div>
+
+  <!-- 预测详情 -->
+  <div id="tab-detail" class="tab-content">
+    <div id="detail-content">
+      <div class="empty">请从预测列表点击一只新股查看详情</div>
+    </div>
+  </div>
+
+  <!-- 回测筛选 -->
+  <div id="tab-backtest" class="tab-content">
+    <div class="backtest-filters">
+      <select id="bt-quality" onchange="loadBacktest()">
+        <option value="0">优质≥0</option>
+        <option value="3">优质≥3</option>
+        <option value="3.5">优质≥3.5</option>
+        <option value="4">优质≥4</option>
+      </select>
+      <select id="bt-hype" onchange="loadBacktest()">
+        <option value="0">炒作≥0</option>
+        <option value="3">炒作≥3</option>
+        <option value="3.5">炒作≥3.5</option>
+        <option value="4">炒作≥4</option>
+      </select>
+      <select id="bt-board" onchange="loadBacktest()">
+        <option value="">全部板块</option>
+        <option value="gem">创业板</option>
+        <option value="star">科创板</option>
+        <option value="bj">北交所</option>
+        <option value="main">主板</option>
+      </select>
+      <label style="color:var(--gray);font-size:12px">竞价换手
+        <input type="number" id="bt-ot-min" value="0" min="0" max="100" style="width:60px" onchange="loadBacktest()"> -
+        <input type="number" id="bt-ot-max" value="100" min="0" max="100" style="width:60px" onchange="loadBacktest()"> %
+      </label>
+    </div>
+    <div id="bt-stats" class="backtest-stats"></div>
+    <div style="overflow-x:auto">
+      <table class="backtest-table" id="bt-table">
+        <thead><tr>
+          <th>代码</th><th>名称</th><th>板块</th><th>上市日</th>
+          <th>优质</th><th>炒作</th><th>预测开盘</th><th>实际开盘</th>
+          <th>开盘误差</th><th>竞价换手</th><th>全天换手</th>
+          <th>首日涨跌</th><th>首日收盘</th><th>命中区间</th><th>走势</th>
+        </tr></thead>
+        <tbody id="bt-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '';
+let currentCode = null;
+let klineChart = null;
+
+async function apiGet(url) {
+  const r = await fetch(API + url);
+  return r.json();
+}
+async function apiPost(url) {
+  const r = await fetch(API + url, {method:'POST'});
+  return r.json();
+}
+
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
+  if (name === 'backtest') loadBacktest();
+}
+
+function boardTag(board) {
+  const map = {gem:'创业板', star:'科创板', bj:'北交所', main:'主板'};
+  return `<span class="board-tag ${board||''}">${map[board]||board||''}</span>`;
+}
+
+async function loadPredictions() {
+  const board = document.getElementById('filter-board').value;
+  const minQ = document.getElementById('filter-quality').value;
+  const minH = document.getElementById('filter-hype').value;
+  let url = '/api/ipo_research/predictions?limit=100';
+  if (board) url += '&board=' + board;
+  if (minQ > 0) url += '&min_quality=' + minQ;
+  if (minH > 0) url += '&min_hype=' + minH;
+
+  document.getElementById('pred-list').innerHTML = '<div class="loading">加载中...</div>';
+  const data = await apiGet(url);
+  const preds = data.predictions || [];
+  document.getElementById('pred-count').textContent = `共 ${preds.length} 只`;
+
+  if (preds.length === 0) {
+    document.getElementById('pred-list').innerHTML = '<div class="empty">暂无预测数据</div>';
+    return;
+  }
+
+  document.getElementById('pred-list').innerHTML = preds.map(p => {
+    const themes = (p.theme_concept||'').split(/[,，、]/).filter(t=>t.trim()).slice(0,4)
+      .map(t => `<span class="theme-tag">${t.trim()}</span>`).join('');
+    let actualHtml = '';
+    if (p.day0_open) {
+      const diff = ((p.day0_open - p.pred_open_price) / p.pred_open_price * 100).toFixed(1);
+      const cls = Math.abs(diff) < 15 ? 'hit' : 'miss';
+      actualHtml = `<div class="actual">首日: 开<span class="${cls}">${p.day0_open}</span> ` +
+        `(预测${p.pred_open_price}, 误差${diff}%) · 收${p.day0_close} ` +
+        `<span class="${p.day0_change_pct>=0?'up':'down'}">${p.day0_change_pct>=0?'+':''}${p.day0_change_pct}%</span> ` +
+        `· 竞价换手${p.day0_open_turnover||'-'}% · ${p.day0_trend||''}</div>`;
+    }
+    return `<div class="pred-card" onclick="showDetail('${p.code}','${p.list_date}')">
+      <div class="top">
+        <div><div class="name">${p.name}</div><div class="code">${p.code}</div></div>
+        ${boardTag(p.board)}
+      </div>
+      <div class="indices">
+        <div class="idx"><div class="idx-val quality">${p.quality_index}</div><div class="idx-label">优质指数</div></div>
+        <div class="idx"><div class="idx-val hype">${p.hype_index}</div><div class="idx-label">炒作指数</div></div>
+        <div class="idx"><div class="idx-val" style="color:var(--primary)">${p.pred_open_price}</div><div class="idx-label">预测开盘</div></div>
+      </div>
+      <div class="prices">
+        <div class="price-item"><div class="label">发行价</div><div class="val">${p.issue_price}</div></div>
+        <div class="price-item"><div class="label">发行PE</div><div class="val">${p.issue_pe}</div></div>
+        <div class="price-item"><div class="label">流通市值</div><div class="val">${p.float_mcap}亿</div></div>
+        <div class="price-item"><div class="label">首日流通</div><div class="val">${p.float_shares}万</div></div>
+      </div>
+      <div class="themes">${themes}</div>
+      ${actualHtml}
+    </div>`;
+  }).join('');
+}
+
+async function showDetail(code, listDate) {
+  currentCode = code;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab')[1].classList.add('active');
+  document.getElementById('tab-detail').classList.add('active');
+
+  document.getElementById('detail-content').innerHTML = '<div class="loading">加载详情...</div>';
+  const data = await apiGet(`/api/ipo_research/prediction/${code}?list_date=${listDate||''}`);
+  if (data.error) {
+    document.getElementById('detail-content').innerHTML = `<div class="empty">${data.error}</div>`;
+    return;
+  }
+  const p = data.prediction;
+  const perfs = data.performance || [];
+
+  // 5时间点换手率颜色标记
+  function tpColor(val, high, superHigh) {
+    if (val == null || val <= 0) return 'color:var(--gray)';
+    if (val >= superHigh) return 'color:#ef4444;font-weight:600';
+    if (val >= high) return 'color:#f59e0b;font-weight:600';
+    return 'color:var(--text)';
+  }
+  const perfRows = perfs.map(d => {
+    const cls = d.change_pct >= 0 ? 'up' : 'down';
+    const trendCls = d.trend_class === '滑翔机' ? 'trend-glider' :
+      d.trend_class === '高开高走' || d.trend_class === '低开高走' ? 'trend-high-open-high' : 'trend-other';
+    // 5时间点换手率（从turnover_timepoints或tp_xxx字段获取）
+    const tps = d.turnover_timepoints || [];
+    const tp10 = d.tp_10min != null ? d.tp_10min : (tps.find(t=>t.minute===10)||{}).turnover;
+    const tp30 = d.tp_30min != null ? d.tp_30min : (tps.find(t=>t.minute===30)||{}).turnover;
+    const tp60 = d.tp_60min != null ? d.tp_60min : (tps.find(t=>t.minute===60)||{}).turnover;
+    const tp120 = d.tp_120min != null ? d.tp_120min : (tps.find(t=>t.minute===120)||{}).turnover;
+    const tpClose = d.tp_close != null ? d.tp_close : (tps.find(t=>t.minute===240)||{}).turnover;
+    const fmtTp = (v) => (v != null && v > 0) ? v.toFixed(1) + '%' : '-';
+    return `<tr>
+      <td>D${d.day_index}</td><td>${d.trade_date}</td>
+      <td>${d.open_price}</td><td>${d.high_price}</td><td>${d.low_price}</td><td>${d.close_price}</td>
+      <td class="${cls}">${d.change_pct>=0?'+':''}${d.change_pct}%</td>
+      <td>${d.open_turnover||'-'}%</td>
+      <td style="${tpColor(tp10,35,40)}">${fmtTp(tp10)}</td>
+      <td style="${tpColor(tp30,45,55)}">${fmtTp(tp30)}</td>
+      <td style="${tpColor(tp60,58,65)}">${fmtTp(tp60)}</td>
+      <td style="${tpColor(tp120,65,70)}">${fmtTp(tp120)}</td>
+      <td style="${tpColor(tpClose,80,85)}">${fmtTp(tpClose)}</td>
+      <td>${d.amplitude}%</td><td>${d.vwap||'-'}</td>
+      <td><span class="trend-tag ${trendCls}">${d.trend_class}</span></td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('detail-content').innerHTML = `
+    <div class="detail-header">
+      <h2>${p.name} (${p.code}) ${boardTag(p.board)} <span style="font-size:14px;color:var(--gray);font-weight:400">上市日: ${p.list_date}</span></h2>
+      <div style="display:flex;gap:8px">
+        <span class="idx quality" style="font-size:20px;font-weight:700">优质 ${p.quality_index}</span>
+        <span class="idx hype" style="font-size:20px;font-weight:700">炒作 ${p.hype_index}</span>
+      </div>
+    </div>
+    <div class="detail-grid">
+      <div class="detail-card">
+        <h3>发行与基本面</h3>
+        <table class="data-table">
+          <tr><td>发行价</td><td>${p.issue_price}元</td></tr>
+          <tr><td>发行PE</td><td>${p.issue_pe}倍</td></tr>
+          <tr><td>估值用PE</td><td>${p.comp_pe}倍</td></tr>
+          <tr><td>总股本</td><td>${p.total_shares}亿股</td></tr>
+          <tr><td>首日流通</td><td>${p.float_shares}万股</td></tr>
+          <tr><td>流通市值</td><td>${p.float_mcap}亿元</td></tr>
+          <tr><td>2025营收</td><td>${p.revenue_2025}亿</td></tr>
+          <tr><td>2025净利</td><td>${p.profit_2025}亿</td></tr>
+          <tr><td>2026E净利</td><td>${p.profit_2026e}亿</td></tr>
+          <tr><td>超募情况</td><td>${p.over_raising||'-'}</td></tr>
+          <tr><td>需求热度</td><td>${p.demand_heat||'-'}</td></tr>
+          <tr><td>题材概念</td><td style="text-align:left">${p.theme_concept||'-'}</td></tr>
+        </table>
+      </div>
+      <div class="detail-card">
+        <h3>估值与风险分区</h3>
+        <table class="data-table">
+          <tr><td>合理市值</td><td>${p.pred_reasonable_mcap}亿</td></tr>
+          <tr><td>预测开盘价</td><td style="color:var(--primary);font-size:18px">${p.pred_open_price}元</td></tr>
+          <tr><td>中长线目标</td><td>${p.pred_midlong_target}元</td></tr>
+        </table>
+        <div class="risk-zones">
+          <div class="zone low"><span>低风险区(安全)</span><span>${p.pred_low_zone}元以下</span></div>
+          <div class="zone game"><span>合理博弈区</span><span>${p.pred_game_low} - ${p.pred_game_high}元</span></div>
+          <div class="zone high"><span>高风险区(谨慎)</span><span>${p.pred_high_zone}元以上</span></div>
+          <div class="zone midlong"><span>中长线回归</span><span>${p.pred_midlong_target}元</span></div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:var(--gray)">${p.prediction_note||''}</div>
+      </div>
+    </div>
+    <div class="detail-card" style="margin-top:20px">
+      <h3>5日走势跟踪 (${perfs.length}/5天) <span style="font-size:11px;color:var(--gray);font-weight:400">换手率：<span style="color:#f59e0b">橙色=高</span> <span style="color:#ef4444">红色=超高</span></span></h3>
+      <div id="kline-chart"></div>
+      <table class="perf-table">
+        <thead><tr><th>日</th><th>日期</th><th>开盘</th><th>最高</th><th>最低</th><th>收盘</th>
+          <th>涨跌</th><th>竞价</th><th>10min</th><th>30min</th><th>60min</th><th>120min</th><th>收盘</th><th>振幅</th><th>VWAP</th><th>走势</th></tr></thead>
+        <tbody>${perfRows || '<tr><td colspan="16" style="color:var(--gray)">暂无跟踪数据</td></tr>'}</tbody>
+      </table>
+    </div>
+  `;
+
+  // 渲染K线
+  if (perfs.length > 0) {
+    setTimeout(() => renderKline(perfs), 100);
+  }
+}
+
+function renderKline(perfs) {
+  const el = document.getElementById('kline-chart');
+  if (!el) return;
+  if (klineChart) klineChart.dispose();
+  klineChart = echarts.init(el);
+  const dates = perfs.map(d => 'D' + d.day_index + ' ' + d.trade_date.slice(5));
+  const kdata = perfs.map(d => [d.open_price, d.close_price, d.low_price, d.high_price]);
+  const volumes = perfs.map(d => d.volume);
+  klineChart.setOption({
+    backgroundColor: 'transparent',
+    title: { text: '5日K线', textStyle: { color: '#8b8fa3', fontSize: 13 } },
+    tooltip: { trigger: 'axis', triggerOn: 'click', renderMode: 'richText', confine: true,
+      axisPointer: { type: 'cross' } },
+    grid: [
+      { left: 50, right: 20, top: 40, height: '55%' },
+      { left: 50, right: 20, top: '72%', height: '18%' }
+    ],
+    xAxis: [
+      { type: 'category', data: dates, gridIndex: 0, axisLabel: { color: '#8b8fa3', fontSize: 10 } },
+      { type: 'category', data: dates, gridIndex: 1, axisLabel: { show: false } }
+    ],
+    yAxis: [
+      { type: 'value', gridIndex: 0, scale: true, axisLabel: { color: '#8b8fa3', fontSize: 10 }, splitLine: { lineStyle: { color: '#2a2d35' } } },
+      { type: 'value', gridIndex: 1, scale: true, axisLabel: { color: '#8b8fa3', fontSize: 10 }, splitLine: { show: false } }
+    ],
+    series: [
+      { name: 'K线', type: 'candlestick', data: kdata, xAxisIndex: 0, yAxisIndex: 0,
+        itemStyle: { color: '#ef4444', color0: '#22c55e', borderColor: '#ef4444', borderColor0: '#22c55e' } },
+      { name: '成交量', type: 'bar', data: volumes, xAxisIndex: 1, yAxisIndex: 1,
+        itemStyle: { color: function(params) { return kdata[params.dataIndex][1] >= kdata[params.dataIndex][0] ? '#ef4444' : '#22c55e'; } } }
+    ]
+  });
+}
+
+async function loadBacktest() {
+  const minQ = document.getElementById('bt-quality').value;
+  const minH = document.getElementById('bt-hype').value;
+  const board = document.getElementById('bt-board').value;
+  const otMin = document.getElementById('bt-ot-min').value;
+  const otMax = document.getElementById('bt-ot-max').value;
+  let url = `/api/ipo_research/backtest?min_quality=${minQ}&min_hype=${minH}`;
+  if (board) url += '&board=' + board;
+  url += `&min_open_turnover=${otMin}&max_open_turnover=${otMax}`;
+
+  const data = await apiGet(url);
+  const s = data.stats || {};
+  document.getElementById('bt-stats').innerHTML = `
+    <div class="stat-card"><div class="val">${s.total||0}</div><div class="label">样本总数</div></div>
+    <div class="stat-card"><div class="val">${s.with_actual||0}</div><div class="label">有实际数据</div></div>
+    <div class="stat-card"><div class="val" style="color:var(--success)">${s.hit_zone_rate||0}%</div><div class="label">命中低/博弈区</div></div>
+    <div class="stat-card"><div class="val" style="color:var(--primary)">${s.avg_open_error_pct||0}%</div><div class="label">平均开盘误差</div></div>
+  `;
+
+  const results = data.results || [];
+  document.getElementById('bt-body').innerHTML = results.map(o => {
+    const cls = (o.actual_change_d0||0) >= 0 ? 'up' : 'down';
+    const hitCls = o.hit_zone === 'low' || o.hit_zone === 'game' ? 'style="color:var(--success)"' :
+      o.hit_zone === 'high' ? 'style="color:var(--danger)"' : '';
+    return `<tr style="cursor:pointer" onclick="showDetail('${o.code}','${o.list_date}')">
+      <td>${o.code}</td><td>${o.name}</td><td>${o.board||''}</td><td>${o.list_date||''}</td>
+      <td class="quality">${o.quality_index||'-'}</td><td class="hype">${o.hype_index||'-'}</td>
+      <td>${o.pred_open_price||'-'}</td><td>${o.actual_open||'-'}</td>
+      <td>${o.open_error_pct!=null?o.open_error_pct+'%':'-'}</td>
+      <td>${o.actual_open_turnover!=null?o.actual_open_turnover+'%':'-'}</td>
+      <td>${o.actual_full_turnover!=null?o.actual_full_turnover+'%':'-'}</td>
+      <td class="${cls}">${o.actual_change_d0!=null?(o.actual_change_d0>=0?'+':'')+o.actual_change_d0+'%':'-'}</td>
+      <td>${o.actual_close_d0||'-'}</td>
+      <td ${hitCls}>${o.hit_zone||'-'}</td>
+      <td>${o.trend_class||'-'}</td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="15" class="empty">暂无回测数据</td></tr>';
+}
+
+async function refreshPredictions() {
+  if (!confirm('确认刷新新股预测? (将重新抓取并生成预测)')) return;
+  const btn = event.target;
+  btn.textContent = '运行中...';
+  btn.disabled = true;
+  try {
+    const r = await apiPost('/api/ipo_research/refresh');
+    alert(`预测完成, 共处理 ${r.count||0} 只`);
+    loadPredictions();
+  } catch(e) { alert('预测失败: ' + e.message); }
+  btn.textContent = '刷新预测';
+  btn.disabled = false;
+}
+
+async function runTracking() {
+  const btn = event.target;
+  btn.textContent = '运行中...';
+  btn.disabled = true;
+  try {
+    const r = await apiPost('/api/ipo_research/track?all=true');
+    alert(`跟踪完成, 共填充 ${r.count||0} 条日数据`);
+    if (currentCode) showDetail(currentCode);
+    loadBacktest();
+  } catch(e) { alert('跟踪失败: ' + e.message); }
+  btn.textContent = '运行跟踪';
+  btn.disabled = false;
+}
+
+function loadAll() {
+  loadPredictions();
+  loadBacktest();
+}
+
+// 初始化
+loadPredictions();
+</script>
+</body>
+</html>

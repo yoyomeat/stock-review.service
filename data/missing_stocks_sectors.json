@@ -1,0 +1,3582 @@
+{
+  "000004": {
+    "stock_code": "000004",
+    "stock_name": "*ST国华",
+    "sector_name": "软件开发"
+  },
+  "000010": {
+    "stock_code": "000010",
+    "stock_name": "*ST美丽",
+    "sector_name": "基础建设"
+  },
+  "000020": {
+    "stock_code": "000020",
+    "stock_name": "深华发Ａ",
+    "sector_name": "光学光电子"
+  },
+  "000037": {
+    "stock_code": "000037",
+    "stock_name": "深南电A",
+    "sector_name": "电力"
+  },
+  "000065": {
+    "stock_code": "000065",
+    "stock_name": "北方国际",
+    "sector_name": "专业工程"
+  },
+  "000402": {
+    "stock_code": "000402",
+    "stock_name": "金 融 街",
+    "sector_name": "房地产开发"
+  },
+  "000533": {
+    "stock_code": "000533",
+    "stock_name": "顺钠股份",
+    "sector_name": "电网设备"
+  },
+  "000612": {
+    "stock_code": "000612",
+    "stock_name": "焦作万方",
+    "sector_name": "工业金属"
+  },
+  "000628": {
+    "stock_code": "000628",
+    "stock_name": "高新发展",
+    "sector_name": "房屋建设Ⅱ"
+  },
+  "000638": {
+    "stock_code": "000638",
+    "stock_name": "*ST万方",
+    "sector_name": "农产品加工"
+  },
+  "000757": {
+    "stock_code": "000757",
+    "stock_name": "浩物股份",
+    "sector_name": "汽车服务"
+  },
+  "000786": {
+    "stock_code": "000786",
+    "stock_name": "北新建材",
+    "sector_name": "装修建材"
+  },
+  "000803": {
+    "stock_code": "000803",
+    "stock_name": "山高环能",
+    "sector_name": "电力"
+  },
+  "000910": {
+    "stock_code": "000910",
+    "stock_name": "大亚圣象",
+    "sector_name": "家居用品"
+  },
+  "000933": {
+    "stock_code": "000933",
+    "stock_name": "神火股份",
+    "sector_name": "工业金属"
+  },
+  "001233": {
+    "stock_code": "001233",
+    "stock_name": "海安集团",
+    "sector_name": "汽车零部件"
+  },
+  "001237": {
+    "stock_code": "001237",
+    "stock_name": "惠康科技",
+    "sector_name": "通用设备"
+  },
+  "001256": {
+    "stock_code": "001256",
+    "stock_name": "炜冈科技",
+    "sector_name": "专用设备"
+  },
+  "001260": {
+    "stock_code": "001260",
+    "stock_name": "坤泰股份",
+    "sector_name": "汽车零部件"
+  },
+  "001266": {
+    "stock_code": "001266",
+    "stock_name": "宏英智能",
+    "sector_name": "自动化设备"
+  },
+  "001282": {
+    "stock_code": "001282",
+    "stock_name": "三联锻造",
+    "sector_name": "汽车零部件"
+  },
+  "001326": {
+    "stock_code": "001326",
+    "stock_name": "联域股份",
+    "sector_name": "照明设备Ⅱ"
+  },
+  "001358": {
+    "stock_code": "001358",
+    "stock_name": "兴欣新材",
+    "sector_name": "化学制品"
+  },
+  "001365": {
+    "stock_code": "001365",
+    "stock_name": "天海电子",
+    "sector_name": "汽车零部件"
+  },
+  "001367": {
+    "stock_code": "001367",
+    "stock_name": "海森药业",
+    "sector_name": "化学制药"
+  },
+  "001380": {
+    "stock_code": "001380",
+    "stock_name": "华纬科技",
+    "sector_name": "汽车零部件"
+  },
+  "001393": {
+    "stock_code": "001393",
+    "stock_name": "维通利",
+    "sector_name": "电网设备"
+  },
+  "002019": {
+    "stock_code": "002019",
+    "stock_name": "亿帆医药",
+    "sector_name": "化学制药"
+  },
+  "002081": {
+    "stock_code": "002081",
+    "stock_name": "金 螳 螂",
+    "sector_name": "装修装饰Ⅱ"
+  },
+  "002109": {
+    "stock_code": "002109",
+    "stock_name": "ST兴化",
+    "sector_name": "化学原料"
+  },
+  "002112": {
+    "stock_code": "002112",
+    "stock_name": "三变科技",
+    "sector_name": "电网设备"
+  },
+  "002125": {
+    "stock_code": "002125",
+    "stock_name": "湘潭电化",
+    "sector_name": "电池"
+  },
+  "002131": {
+    "stock_code": "002131",
+    "stock_name": "利欧股份",
+    "sector_name": "通用设备"
+  },
+  "002150": {
+    "stock_code": "002150",
+    "stock_name": "正泰电源",
+    "sector_name": "通用设备"
+  },
+  "002162": {
+    "stock_code": "002162",
+    "stock_name": "悦心健康",
+    "sector_name": "家居用品"
+  },
+  "002168": {
+    "stock_code": "002168",
+    "stock_name": "*ST惠程",
+    "sector_name": "电网设备"
+  },
+  "002180": {
+    "stock_code": "002180",
+    "stock_name": "奔图科技",
+    "sector_name": "计算机设备"
+  },
+  "002198": {
+    "stock_code": "002198",
+    "stock_name": "ST嘉应",
+    "sector_name": "中药Ⅱ"
+  },
+  "002236": {
+    "stock_code": "002236",
+    "stock_name": "大华股份",
+    "sector_name": "计算机设备"
+  },
+  "002246": {
+    "stock_code": "002246",
+    "stock_name": "北化股份",
+    "sector_name": "化学制品"
+  },
+  "002247": {
+    "stock_code": "002247",
+    "stock_name": "聚力文化",
+    "sector_name": "装修建材"
+  },
+  "002248": {
+    "stock_code": "002248",
+    "stock_name": "华东数控",
+    "sector_name": "通用设备"
+  },
+  "002282": {
+    "stock_code": "002282",
+    "stock_name": "博深股份",
+    "sector_name": "通用设备"
+  },
+  "002300": {
+    "stock_code": "002300",
+    "stock_name": "太阳电缆",
+    "sector_name": "电网设备"
+  },
+  "002323": {
+    "stock_code": "002323",
+    "stock_name": "*ST雅博",
+    "sector_name": "专业工程"
+  },
+  "002363": {
+    "stock_code": "002363",
+    "stock_name": "隆基机械",
+    "sector_name": "汽车零部件"
+  },
+  "002367": {
+    "stock_code": "002367",
+    "stock_name": "康力电梯",
+    "sector_name": "专用设备"
+  },
+  "002400": {
+    "stock_code": "002400",
+    "stock_name": "省广集团",
+    "sector_name": "广告营销"
+  },
+  "002410": {
+    "stock_code": "002410",
+    "stock_name": "广联达",
+    "sector_name": "软件开发"
+  },
+  "002421": {
+    "stock_code": "002421",
+    "stock_name": "达实智能",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "002432": {
+    "stock_code": "002432",
+    "stock_name": "九安医疗",
+    "sector_name": "医疗器械"
+  },
+  "002441": {
+    "stock_code": "002441",
+    "stock_name": "众业达",
+    "sector_name": "电网设备"
+  },
+  "002445": {
+    "stock_code": "002445",
+    "stock_name": "中南文化",
+    "sector_name": "通用设备"
+  },
+  "002454": {
+    "stock_code": "002454",
+    "stock_name": "松芝股份",
+    "sector_name": "汽车零部件"
+  },
+  "002483": {
+    "stock_code": "002483",
+    "stock_name": "润邦股份",
+    "sector_name": "专用设备"
+  },
+  "002514": {
+    "stock_code": "002514",
+    "stock_name": "*ST宝馨",
+    "sector_name": "通用设备"
+  },
+  "002529": {
+    "stock_code": "002529",
+    "stock_name": "*ST海源",
+    "sector_name": "专用设备"
+  },
+  "002541": {
+    "stock_code": "002541",
+    "stock_name": "鸿路钢构",
+    "sector_name": "专业工程"
+  },
+  "002546": {
+    "stock_code": "002546",
+    "stock_name": "新联电子",
+    "sector_name": "电网设备"
+  },
+  "002551": {
+    "stock_code": "002551",
+    "stock_name": "尚荣医疗",
+    "sector_name": "医疗器械"
+  },
+  "002585": {
+    "stock_code": "002585",
+    "stock_name": "双星新材",
+    "sector_name": "塑料"
+  },
+  "002586": {
+    "stock_code": "002586",
+    "stock_name": "ST围海",
+    "sector_name": "基础建设"
+  },
+  "002606": {
+    "stock_code": "002606",
+    "stock_name": "大连电瓷",
+    "sector_name": "电网设备"
+  },
+  "002625": {
+    "stock_code": "002625",
+    "stock_name": "光启技术",
+    "sector_name": "航空装备Ⅱ"
+  },
+  "002636": {
+    "stock_code": "002636",
+    "stock_name": "金安国纪",
+    "sector_name": "元件"
+  },
+  "002692": {
+    "stock_code": "002692",
+    "stock_name": "远程股份",
+    "sector_name": "电网设备"
+  },
+  "002698": {
+    "stock_code": "002698",
+    "stock_name": "博实股份",
+    "sector_name": "自动化设备"
+  },
+  "002703": {
+    "stock_code": "002703",
+    "stock_name": "浙江世宝",
+    "sector_name": "汽车零部件"
+  },
+  "002706": {
+    "stock_code": "002706",
+    "stock_name": "良信股份",
+    "sector_name": "电网设备"
+  },
+  "002731": {
+    "stock_code": "002731",
+    "stock_name": "ST萃华",
+    "sector_name": "饰品"
+  },
+  "002734": {
+    "stock_code": "002734",
+    "stock_name": "利民股份",
+    "sector_name": "农化制品"
+  },
+  "002745": {
+    "stock_code": "002745",
+    "stock_name": "木林森",
+    "sector_name": "光学光电子"
+  },
+  "002761": {
+    "stock_code": "002761",
+    "stock_name": "浙江建投",
+    "sector_name": "房屋建设Ⅱ"
+  },
+  "002774": {
+    "stock_code": "002774",
+    "stock_name": "快意电梯",
+    "sector_name": "专用设备"
+  },
+  "002785": {
+    "stock_code": "002785",
+    "stock_name": "万里石",
+    "sector_name": "装修建材"
+  },
+  "002786": {
+    "stock_code": "002786",
+    "stock_name": "银宝山新",
+    "sector_name": "专用设备"
+  },
+  "002793": {
+    "stock_code": "002793",
+    "stock_name": "罗欣药业",
+    "sector_name": "化学制药"
+  },
+  "002795": {
+    "stock_code": "002795",
+    "stock_name": "永和智控",
+    "sector_name": "通用设备"
+  },
+  "002808": {
+    "stock_code": "002808",
+    "stock_name": "*ST恒久",
+    "sector_name": "光学光电子"
+  },
+  "002810": {
+    "stock_code": "002810",
+    "stock_name": "山东赫达",
+    "sector_name": "化学制品"
+  },
+  "002811": {
+    "stock_code": "002811",
+    "stock_name": "郑中设计",
+    "sector_name": "装修装饰Ⅱ"
+  },
+  "002818": {
+    "stock_code": "002818",
+    "stock_name": "富森美",
+    "sector_name": "一般零售"
+  },
+  "002832": {
+    "stock_code": "002832",
+    "stock_name": "比音勒芬",
+    "sector_name": "服装家纺"
+  },
+  "002833": {
+    "stock_code": "002833",
+    "stock_name": "弘亚数控",
+    "sector_name": "专用设备"
+  },
+  "002867": {
+    "stock_code": "002867",
+    "stock_name": "周大生",
+    "sector_name": "饰品"
+  },
+  "002870": {
+    "stock_code": "002870",
+    "stock_name": "香山股份",
+    "sector_name": "汽车零部件"
+  },
+  "002871": {
+    "stock_code": "002871",
+    "stock_name": "伟隆股份",
+    "sector_name": "通用设备"
+  },
+  "002877": {
+    "stock_code": "002877",
+    "stock_name": "智能自控",
+    "sector_name": "通用设备"
+  },
+  "002898": {
+    "stock_code": "002898",
+    "stock_name": "*ST赛隆",
+    "sector_name": "化学制药"
+  },
+  "002901": {
+    "stock_code": "002901",
+    "stock_name": "大博医疗",
+    "sector_name": "医疗器械"
+  },
+  "002937": {
+    "stock_code": "002937",
+    "stock_name": "兴瑞科技",
+    "sector_name": "汽车零部件"
+  },
+  "002940": {
+    "stock_code": "002940",
+    "stock_name": "昂利康",
+    "sector_name": "化学制药"
+  },
+  "002951": {
+    "stock_code": "002951",
+    "stock_name": "金时科技",
+    "sector_name": "其他电源设备Ⅱ"
+  },
+  "002973": {
+    "stock_code": "002973",
+    "stock_name": "侨银股份",
+    "sector_name": "环境治理"
+  },
+  "002983": {
+    "stock_code": "002983",
+    "stock_name": "芯瑞达",
+    "sector_name": "光学光电子"
+  },
+  "002989": {
+    "stock_code": "002989",
+    "stock_name": "中天精装",
+    "sector_name": "装修装饰Ⅱ"
+  },
+  "002992": {
+    "stock_code": "002992",
+    "stock_name": "宝明科技",
+    "sector_name": "光学光电子"
+  },
+  "003013": {
+    "stock_code": "003013",
+    "stock_name": "地铁设计",
+    "sector_name": "工程咨询服务Ⅱ"
+  },
+  "003026": {
+    "stock_code": "003026",
+    "stock_name": "中晶科技",
+    "sector_name": "半导体"
+  },
+  "300001": {
+    "stock_code": "300001",
+    "stock_name": "特锐德",
+    "sector_name": "电网设备"
+  },
+  "300029": {
+    "stock_code": "300029",
+    "stock_name": "*ST天龙",
+    "sector_name": "专业工程"
+  },
+  "300033": {
+    "stock_code": "300033",
+    "stock_name": "同花顺",
+    "sector_name": "软件开发"
+  },
+  "300048": {
+    "stock_code": "300048",
+    "stock_name": "合康新能",
+    "sector_name": "自动化设备"
+  },
+  "300061": {
+    "stock_code": "300061",
+    "stock_name": "旗天科技",
+    "sector_name": "广告营销"
+  },
+  "300069": {
+    "stock_code": "300069",
+    "stock_name": "金利华电",
+    "sector_name": "电网设备"
+  },
+  "300082": {
+    "stock_code": "300082",
+    "stock_name": "奥克股份",
+    "sector_name": "化学原料"
+  },
+  "300093": {
+    "stock_code": "300093",
+    "stock_name": "*ST金刚",
+    "sector_name": "光伏设备"
+  },
+  "300126": {
+    "stock_code": "300126",
+    "stock_name": "锐奇股份",
+    "sector_name": "通用设备"
+  },
+  "300140": {
+    "stock_code": "300140",
+    "stock_name": "节能环境",
+    "sector_name": "环境治理"
+  },
+  "300150": {
+    "stock_code": "300150",
+    "stock_name": "世纪瑞尔",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "300154": {
+    "stock_code": "300154",
+    "stock_name": "瑞凌股份",
+    "sector_name": "通用设备"
+  },
+  "300193": {
+    "stock_code": "300193",
+    "stock_name": "佳士科技",
+    "sector_name": "通用设备"
+  },
+  "300198": {
+    "stock_code": "300198",
+    "stock_name": "*ST纳川",
+    "sector_name": "装修建材"
+  },
+  "300206": {
+    "stock_code": "300206",
+    "stock_name": "理邦仪器",
+    "sector_name": "医疗器械"
+  },
+  "300210": {
+    "stock_code": "300210",
+    "stock_name": "森远股份",
+    "sector_name": "环保设备Ⅱ"
+  },
+  "300231": {
+    "stock_code": "300231",
+    "stock_name": "银信科技",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "300235": {
+    "stock_code": "300235",
+    "stock_name": "方直科技",
+    "sector_name": "软件开发"
+  },
+  "300243": {
+    "stock_code": "300243",
+    "stock_name": "瑞丰高材",
+    "sector_name": "塑料"
+  },
+  "300286": {
+    "stock_code": "300286",
+    "stock_name": "安科瑞",
+    "sector_name": "电网设备"
+  },
+  "300298": {
+    "stock_code": "300298",
+    "stock_name": "三诺生物",
+    "sector_name": "医疗器械"
+  },
+  "300327": {
+    "stock_code": "300327",
+    "stock_name": "中颖电子",
+    "sector_name": "半导体"
+  },
+  "300347": {
+    "stock_code": "300347",
+    "stock_name": "泰格医药",
+    "sector_name": "医疗服务"
+  },
+  "300377": {
+    "stock_code": "300377",
+    "stock_name": "赢时胜",
+    "sector_name": "软件开发"
+  },
+  "300380": {
+    "stock_code": "300380",
+    "stock_name": "安硕信息",
+    "sector_name": "软件开发"
+  },
+  "300388": {
+    "stock_code": "300388",
+    "stock_name": "节能国祯",
+    "sector_name": "环境治理"
+  },
+  "300425": {
+    "stock_code": "300425",
+    "stock_name": "中建环能",
+    "sector_name": "环境治理"
+  },
+  "300436": {
+    "stock_code": "300436",
+    "stock_name": "广生堂",
+    "sector_name": "化学制药"
+  },
+  "300440": {
+    "stock_code": "300440",
+    "stock_name": "运达科技",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "300444": {
+    "stock_code": "300444",
+    "stock_name": "双杰电气",
+    "sector_name": "电网设备"
+  },
+  "300450": {
+    "stock_code": "300450",
+    "stock_name": "先导智能",
+    "sector_name": "电池"
+  },
+  "300452": {
+    "stock_code": "300452",
+    "stock_name": "山河药辅",
+    "sector_name": "化学制药"
+  },
+  "300468": {
+    "stock_code": "300468",
+    "stock_name": "四方精创",
+    "sector_name": "软件开发"
+  },
+  "300506": {
+    "stock_code": "300506",
+    "stock_name": "ST名家汇",
+    "sector_name": "装修装饰Ⅱ"
+  },
+  "300549": {
+    "stock_code": "300549",
+    "stock_name": "优德精密",
+    "sector_name": "专用设备"
+  },
+  "300559": {
+    "stock_code": "300559",
+    "stock_name": "佳发教育",
+    "sector_name": "软件开发"
+  },
+  "300562": {
+    "stock_code": "300562",
+    "stock_name": "乐心医疗",
+    "sector_name": "医疗器械"
+  },
+  "300585": {
+    "stock_code": "300585",
+    "stock_name": "奥联电子",
+    "sector_name": "汽车零部件"
+  },
+  "300606": {
+    "stock_code": "300606",
+    "stock_name": "金太阳",
+    "sector_name": "通用设备"
+  },
+  "300611": {
+    "stock_code": "300611",
+    "stock_name": "美力科技",
+    "sector_name": "汽车零部件"
+  },
+  "300615": {
+    "stock_code": "300615",
+    "stock_name": "欣天科技",
+    "sector_name": "通信设备"
+  },
+  "300633": {
+    "stock_code": "300633",
+    "stock_name": "开立医疗",
+    "sector_name": "医疗器械"
+  },
+  "300640": {
+    "stock_code": "300640",
+    "stock_name": "德艺文创",
+    "sector_name": "家居用品"
+  },
+  "300641": {
+    "stock_code": "300641",
+    "stock_name": "正丹股份",
+    "sector_name": "化学制品"
+  },
+  "300661": {
+    "stock_code": "300661",
+    "stock_name": "圣邦股份",
+    "sector_name": "半导体"
+  },
+  "300670": {
+    "stock_code": "300670",
+    "stock_name": "大烨智能",
+    "sector_name": "电网设备"
+  },
+  "300677": {
+    "stock_code": "300677",
+    "stock_name": "英科医疗",
+    "sector_name": "医疗器械"
+  },
+  "300686": {
+    "stock_code": "300686",
+    "stock_name": "智动力",
+    "sector_name": "消费电子"
+  },
+  "300707": {
+    "stock_code": "300707",
+    "stock_name": "威唐工业",
+    "sector_name": "汽车零部件"
+  },
+  "300723": {
+    "stock_code": "300723",
+    "stock_name": "一品红",
+    "sector_name": "化学制药"
+  },
+  "300743": {
+    "stock_code": "300743",
+    "stock_name": "天地数码",
+    "sector_name": "计算机设备"
+  },
+  "300749": {
+    "stock_code": "300749",
+    "stock_name": "顶固集创",
+    "sector_name": "家居用品"
+  },
+  "300756": {
+    "stock_code": "300756",
+    "stock_name": "金马游乐",
+    "sector_name": "专用设备"
+  },
+  "300771": {
+    "stock_code": "300771",
+    "stock_name": "智莱科技",
+    "sector_name": "计算机设备"
+  },
+  "300782": {
+    "stock_code": "300782",
+    "stock_name": "卓胜微",
+    "sector_name": "半导体"
+  },
+  "300795": {
+    "stock_code": "300795",
+    "stock_name": "米奥会展",
+    "sector_name": "专业服务"
+  },
+  "300802": {
+    "stock_code": "300802",
+    "stock_name": "矩子科技",
+    "sector_name": "自动化设备"
+  },
+  "300803": {
+    "stock_code": "300803",
+    "stock_name": "指南针",
+    "sector_name": "软件开发"
+  },
+  "300812": {
+    "stock_code": "300812",
+    "stock_name": "易天股份",
+    "sector_name": "消费电子"
+  },
+  "300813": {
+    "stock_code": "300813",
+    "stock_name": "泰林生物",
+    "sector_name": "专用设备"
+  },
+  "300838": {
+    "stock_code": "300838",
+    "stock_name": "浙江力诺",
+    "sector_name": "通用设备"
+  },
+  "300842": {
+    "stock_code": "300842",
+    "stock_name": "帝科股份",
+    "sector_name": "光伏设备"
+  },
+  "300853": {
+    "stock_code": "300853",
+    "stock_name": "申昊科技",
+    "sector_name": "电网设备"
+  },
+  "300882": {
+    "stock_code": "300882",
+    "stock_name": "万胜智能",
+    "sector_name": "电网设备"
+  },
+  "300889": {
+    "stock_code": "300889",
+    "stock_name": "爱克股份",
+    "sector_name": "光学光电子"
+  },
+  "300893": {
+    "stock_code": "300893",
+    "stock_name": "松原安全",
+    "sector_name": "汽车零部件"
+  },
+  "300909": {
+    "stock_code": "300909",
+    "stock_name": "汇创达",
+    "sector_name": "光学光电子"
+  },
+  "300910": {
+    "stock_code": "300910",
+    "stock_name": "瑞丰新材",
+    "sector_name": "化学制品"
+  },
+  "300922": {
+    "stock_code": "300922",
+    "stock_name": "天秦装备",
+    "sector_name": "地面兵装Ⅱ"
+  },
+  "300931": {
+    "stock_code": "300931",
+    "stock_name": "通用电梯",
+    "sector_name": "专用设备"
+  },
+  "300932": {
+    "stock_code": "300932",
+    "stock_name": "三友联众",
+    "sector_name": "电网设备"
+  },
+  "300933": {
+    "stock_code": "300933",
+    "stock_name": "中辰股份",
+    "sector_name": "电网设备"
+  },
+  "300945": {
+    "stock_code": "300945",
+    "stock_name": "曼卡龙",
+    "sector_name": "饰品"
+  },
+  "300964": {
+    "stock_code": "300964",
+    "stock_name": "本川智能",
+    "sector_name": "元件"
+  },
+  "300965": {
+    "stock_code": "300965",
+    "stock_name": "恒宇信通",
+    "sector_name": "航空装备Ⅱ"
+  },
+  "300966": {
+    "stock_code": "300966",
+    "stock_name": "共同药业",
+    "sector_name": "化学制药"
+  },
+  "300972": {
+    "stock_code": "300972",
+    "stock_name": "万辰集团",
+    "sector_name": "休闲食品"
+  },
+  "300978": {
+    "stock_code": "300978",
+    "stock_name": "东箭科技",
+    "sector_name": "汽车零部件"
+  },
+  "300982": {
+    "stock_code": "300982",
+    "stock_name": "苏文电能",
+    "sector_name": "基础建设"
+  },
+  "300988": {
+    "stock_code": "300988",
+    "stock_name": "津荣天宇",
+    "sector_name": "专用设备"
+  },
+  "300992": {
+    "stock_code": "300992",
+    "stock_name": "泰福泵业",
+    "sector_name": "通用设备"
+  },
+  "300998": {
+    "stock_code": "300998",
+    "stock_name": "宁波方正",
+    "sector_name": "汽车零部件"
+  },
+  "301012": {
+    "stock_code": "301012",
+    "stock_name": "扬电科技",
+    "sector_name": "电网设备"
+  },
+  "301020": {
+    "stock_code": "301020",
+    "stock_name": "密封科技",
+    "sector_name": "汽车零部件"
+  },
+  "301022": {
+    "stock_code": "301022",
+    "stock_name": "海泰科",
+    "sector_name": "汽车零部件"
+  },
+  "301025": {
+    "stock_code": "301025",
+    "stock_name": "读客文化",
+    "sector_name": "出版"
+  },
+  "301029": {
+    "stock_code": "301029",
+    "stock_name": "怡合达",
+    "sector_name": "自动化设备"
+  },
+  "301045": {
+    "stock_code": "301045",
+    "stock_name": "天禄科技",
+    "sector_name": "光学光电子"
+  },
+  "301052": {
+    "stock_code": "301052",
+    "stock_name": "果麦文化",
+    "sector_name": "出版"
+  },
+  "301053": {
+    "stock_code": "301053",
+    "stock_name": "远信工业",
+    "sector_name": "专用设备"
+  },
+  "301068": {
+    "stock_code": "301068",
+    "stock_name": "大地海洋",
+    "sector_name": "环境治理"
+  },
+  "301070": {
+    "stock_code": "301070",
+    "stock_name": "开勒股份",
+    "sector_name": "通用设备"
+  },
+  "301072": {
+    "stock_code": "301072",
+    "stock_name": "中捷精工",
+    "sector_name": "汽车零部件"
+  },
+  "301076": {
+    "stock_code": "301076",
+    "stock_name": "新瀚新材",
+    "sector_name": "化学制品"
+  },
+  "301083": {
+    "stock_code": "301083",
+    "stock_name": "百胜智能",
+    "sector_name": "专用设备"
+  },
+  "301086": {
+    "stock_code": "301086",
+    "stock_name": "鸿富瀚",
+    "sector_name": "消费电子"
+  },
+  "301090": {
+    "stock_code": "301090",
+    "stock_name": "华润材料",
+    "sector_name": "塑料"
+  },
+  "301097": {
+    "stock_code": "301097",
+    "stock_name": "天益医疗",
+    "sector_name": "医疗器械"
+  },
+  "301107": {
+    "stock_code": "301107",
+    "stock_name": "瑜欣电子",
+    "sector_name": "通用设备"
+  },
+  "301119": {
+    "stock_code": "301119",
+    "stock_name": "正强股份",
+    "sector_name": "汽车零部件"
+  },
+  "301120": {
+    "stock_code": "301120",
+    "stock_name": "新特电气",
+    "sector_name": "电网设备"
+  },
+  "301122": {
+    "stock_code": "301122",
+    "stock_name": "采纳股份",
+    "sector_name": "医疗器械"
+  },
+  "301138": {
+    "stock_code": "301138",
+    "stock_name": "华研精机",
+    "sector_name": "专用设备"
+  },
+  "301148": {
+    "stock_code": "301148",
+    "stock_name": "嘉戎技术",
+    "sector_name": "环境治理"
+  },
+  "301149": {
+    "stock_code": "301149",
+    "stock_name": "隆华新材",
+    "sector_name": "化学制品"
+  },
+  "301150": {
+    "stock_code": "301150",
+    "stock_name": "中一科技",
+    "sector_name": "电池"
+  },
+  "301152": {
+    "stock_code": "301152",
+    "stock_name": "天力锂能",
+    "sector_name": "电池"
+  },
+  "301162": {
+    "stock_code": "301162",
+    "stock_name": "国能日新",
+    "sector_name": "软件开发"
+  },
+  "301170": {
+    "stock_code": "301170",
+    "stock_name": "锡南科技",
+    "sector_name": "汽车零部件"
+  },
+  "301173": {
+    "stock_code": "301173",
+    "stock_name": "毓恬冠佳",
+    "sector_name": "汽车零部件"
+  },
+  "301195": {
+    "stock_code": "301195",
+    "stock_name": "北路智控",
+    "sector_name": "软件开发"
+  },
+  "301200": {
+    "stock_code": "301200",
+    "stock_name": "大族数控",
+    "sector_name": "专用设备"
+  },
+  "301202": {
+    "stock_code": "301202",
+    "stock_name": "朗威股份",
+    "sector_name": "通信设备"
+  },
+  "301203": {
+    "stock_code": "301203",
+    "stock_name": "国泰环保",
+    "sector_name": "环境治理"
+  },
+  "301208": {
+    "stock_code": "301208",
+    "stock_name": "中亦科技",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "301216": {
+    "stock_code": "301216",
+    "stock_name": "万凯新材",
+    "sector_name": "塑料"
+  },
+  "301218": {
+    "stock_code": "301218",
+    "stock_name": "华是科技",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "301229": {
+    "stock_code": "301229",
+    "stock_name": "纽泰格",
+    "sector_name": "汽车零部件"
+  },
+  "301231": {
+    "stock_code": "301231",
+    "stock_name": "荣信文化",
+    "sector_name": "出版"
+  },
+  "301259": {
+    "stock_code": "301259",
+    "stock_name": "艾布鲁",
+    "sector_name": "环境治理"
+  },
+  "301262": {
+    "stock_code": "301262",
+    "stock_name": "海看股份",
+    "sector_name": "广告营销"
+  },
+  "301281": {
+    "stock_code": "301281",
+    "stock_name": "科源制药",
+    "sector_name": "化学制药"
+  },
+  "301283": {
+    "stock_code": "301283",
+    "stock_name": "聚胶股份",
+    "sector_name": "化学制品"
+  },
+  "301291": {
+    "stock_code": "301291",
+    "stock_name": "明阳电气",
+    "sector_name": "电网设备"
+  },
+  "301292": {
+    "stock_code": "301292",
+    "stock_name": "海科新源",
+    "sector_name": "电池"
+  },
+  "301299": {
+    "stock_code": "301299",
+    "stock_name": "卓创资讯",
+    "sector_name": "数字媒体"
+  },
+  "301307": {
+    "stock_code": "301307",
+    "stock_name": "美利信",
+    "sector_name": "通信设备"
+  },
+  "301309": {
+    "stock_code": "301309",
+    "stock_name": "万得凯",
+    "sector_name": "通用设备"
+  },
+  "301320": {
+    "stock_code": "301320",
+    "stock_name": "豪江智能",
+    "sector_name": "自动化设备"
+  },
+  "301327": {
+    "stock_code": "301327",
+    "stock_name": "华宝新能",
+    "sector_name": "电池"
+  },
+  "301335": {
+    "stock_code": "301335",
+    "stock_name": "天元宠物",
+    "sector_name": "文娱用品"
+  },
+  "301336": {
+    "stock_code": "301336",
+    "stock_name": "趣睡科技",
+    "sector_name": "家居用品"
+  },
+  "301353": {
+    "stock_code": "301353",
+    "stock_name": "普莱得",
+    "sector_name": "通用设备"
+  },
+  "301356": {
+    "stock_code": "301356",
+    "stock_name": "天振股份",
+    "sector_name": "家居用品"
+  },
+  "301358": {
+    "stock_code": "301358",
+    "stock_name": "湖南裕能",
+    "sector_name": "电池"
+  },
+  "301372": {
+    "stock_code": "301372",
+    "stock_name": "科净源",
+    "sector_name": "环境治理"
+  },
+  "301373": {
+    "stock_code": "301373",
+    "stock_name": "凌玮科技",
+    "sector_name": "化学制品"
+  },
+  "301376": {
+    "stock_code": "301376",
+    "stock_name": "致欧科技",
+    "sector_name": "家居用品"
+  },
+  "301377": {
+    "stock_code": "301377",
+    "stock_name": "鼎泰高科",
+    "sector_name": "通用设备"
+  },
+  "301378": {
+    "stock_code": "301378",
+    "stock_name": "通达海",
+    "sector_name": "软件开发"
+  },
+  "301388": {
+    "stock_code": "301388",
+    "stock_name": "欣灵电气",
+    "sector_name": "电网设备"
+  },
+  "301389": {
+    "stock_code": "301389",
+    "stock_name": "隆扬电子",
+    "sector_name": "消费电子"
+  },
+  "301419": {
+    "stock_code": "301419",
+    "stock_name": "阿莱德",
+    "sector_name": "通信设备"
+  },
+  "301448": {
+    "stock_code": "301448",
+    "stock_name": "开创电气",
+    "sector_name": "通用设备"
+  },
+  "301486": {
+    "stock_code": "301486",
+    "stock_name": "致尚科技",
+    "sector_name": "消费电子"
+  },
+  "301515": {
+    "stock_code": "301515",
+    "stock_name": "港通医疗",
+    "sector_name": "医疗器械"
+  },
+  "301518": {
+    "stock_code": "301518",
+    "stock_name": "长华化学",
+    "sector_name": "化学制品"
+  },
+  "301519": {
+    "stock_code": "301519",
+    "stock_name": "舜禹股份",
+    "sector_name": "环境治理"
+  },
+  "301531": {
+    "stock_code": "301531",
+    "stock_name": "春光集团",
+    "sector_name": "金属新材料"
+  },
+  "301533": {
+    "stock_code": "301533",
+    "stock_name": "威马农机",
+    "sector_name": "专用设备"
+  },
+  "301539": {
+    "stock_code": "301539",
+    "stock_name": "宏鑫科技",
+    "sector_name": "汽车零部件"
+  },
+  "301552": {
+    "stock_code": "301552",
+    "stock_name": "科力装备",
+    "sector_name": "汽车零部件"
+  },
+  "301571": {
+    "stock_code": "301571",
+    "stock_name": "国科天成",
+    "sector_name": "军工电子Ⅱ"
+  },
+  "301580": {
+    "stock_code": "301580",
+    "stock_name": "爱迪特",
+    "sector_name": "医疗器械"
+  },
+  "301585": {
+    "stock_code": "301585",
+    "stock_name": "蓝宇股份",
+    "sector_name": "化学制品"
+  },
+  "301587": {
+    "stock_code": "301587",
+    "stock_name": "中瑞股份",
+    "sector_name": "电池"
+  },
+  "301588": {
+    "stock_code": "301588",
+    "stock_name": "美新科技",
+    "sector_name": "家居用品"
+  },
+  "301598": {
+    "stock_code": "301598",
+    "stock_name": "博科测试",
+    "sector_name": "专用设备"
+  },
+  "301599": {
+    "stock_code": "301599",
+    "stock_name": "C理奇",
+    "sector_name": "自动化设备"
+  },
+  "301602": {
+    "stock_code": "301602",
+    "stock_name": "超研股份",
+    "sector_name": "医疗器械"
+  },
+  "301606": {
+    "stock_code": "301606",
+    "stock_name": "绿联科技",
+    "sector_name": "消费电子"
+  },
+  "301607": {
+    "stock_code": "301607",
+    "stock_name": "富特科技",
+    "sector_name": "汽车零部件"
+  },
+  "301617": {
+    "stock_code": "301617",
+    "stock_name": "博苑股份",
+    "sector_name": "化学制品"
+  },
+  "301631": {
+    "stock_code": "301631",
+    "stock_name": "壹连科技",
+    "sector_name": "汽车零部件"
+  },
+  "301638": {
+    "stock_code": "301638",
+    "stock_name": "南网数字",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "301656": {
+    "stock_code": "301656",
+    "stock_name": "联合动力",
+    "sector_name": "汽车零部件"
+  },
+  "301667": {
+    "stock_code": "301667",
+    "stock_name": "纳百川",
+    "sector_name": "汽车零部件"
+  },
+  "600032": {
+    "stock_code": "600032",
+    "stock_name": "浙江新能",
+    "sector_name": "电力"
+  },
+  "600033": {
+    "stock_code": "600033",
+    "stock_name": "福建高速",
+    "sector_name": "铁路公路"
+  },
+  "600080": {
+    "stock_code": "600080",
+    "stock_name": "ST金花",
+    "sector_name": "中药Ⅱ"
+  },
+  "600113": {
+    "stock_code": "600113",
+    "stock_name": "浙江东日",
+    "sector_name": "一般零售"
+  },
+  "600136": {
+    "stock_code": "600136",
+    "stock_name": "ST明诚",
+    "sector_name": "房地产服务"
+  },
+  "600193": {
+    "stock_code": "600193",
+    "stock_name": "*ST创兴",
+    "sector_name": "装修装饰Ⅱ"
+  },
+  "600261": {
+    "stock_code": "600261",
+    "stock_name": "阳光照明",
+    "sector_name": "照明设备Ⅱ"
+  },
+  "600268": {
+    "stock_code": "600268",
+    "stock_name": "国电南自",
+    "sector_name": "电网设备"
+  },
+  "600299": {
+    "stock_code": "600299",
+    "stock_name": "安迪苏",
+    "sector_name": "化学制品"
+  },
+  "600302": {
+    "stock_code": "600302",
+    "stock_name": "ST标准",
+    "sector_name": "专用设备"
+  },
+  "600312": {
+    "stock_code": "600312",
+    "stock_name": "平高电气",
+    "sector_name": "电网设备"
+  },
+  "600350": {
+    "stock_code": "600350",
+    "stock_name": "山东高速",
+    "sector_name": "铁路公路"
+  },
+  "600421": {
+    "stock_code": "600421",
+    "stock_name": "*ST华嵘",
+    "sector_name": "通用设备"
+  },
+  "600477": {
+    "stock_code": "600477",
+    "stock_name": "杭萧钢构",
+    "sector_name": "专业工程"
+  },
+  "600512": {
+    "stock_code": "600512",
+    "stock_name": "腾达建设",
+    "sector_name": "基础建设"
+  },
+  "600520": {
+    "stock_code": "600520",
+    "stock_name": "三佳科技",
+    "sector_name": "专用设备"
+  },
+  "600525": {
+    "stock_code": "600525",
+    "stock_name": "ST长园",
+    "sector_name": "电网设备"
+  },
+  "600550": {
+    "stock_code": "600550",
+    "stock_name": "保变电气",
+    "sector_name": "电网设备"
+  },
+  "600556": {
+    "stock_code": "600556",
+    "stock_name": "天下秀",
+    "sector_name": "广告营销"
+  },
+  "600560": {
+    "stock_code": "600560",
+    "stock_name": "金自天正",
+    "sector_name": "专用设备"
+  },
+  "600599": {
+    "stock_code": "600599",
+    "stock_name": "*ST熊猫",
+    "sector_name": "多元金融"
+  },
+  "600602": {
+    "stock_code": "600602",
+    "stock_name": "云赛智联",
+    "sector_name": "软件开发"
+  },
+  "600608": {
+    "stock_code": "600608",
+    "stock_name": "*ST沪科",
+    "sector_name": "贸易Ⅱ"
+  },
+  "600612": {
+    "stock_code": "600612",
+    "stock_name": "老凤祥",
+    "sector_name": "饰品"
+  },
+  "600636": {
+    "stock_code": "600636",
+    "stock_name": "*ST国化",
+    "sector_name": "教育"
+  },
+  "600651": {
+    "stock_code": "600651",
+    "stock_name": "飞乐音响",
+    "sector_name": "汽车零部件"
+  },
+  "600654": {
+    "stock_code": "600654",
+    "stock_name": "中安科",
+    "sector_name": "软件开发"
+  },
+  "600667": {
+    "stock_code": "600667",
+    "stock_name": "太极实业",
+    "sector_name": "工程咨询服务Ⅱ"
+  },
+  "600678": {
+    "stock_code": "600678",
+    "stock_name": "ST金顶",
+    "sector_name": "水泥"
+  },
+  "600696": {
+    "stock_code": "600696",
+    "stock_name": "*ST岩石",
+    "sector_name": "白酒Ⅱ"
+  },
+  "600716": {
+    "stock_code": "600716",
+    "stock_name": "凤凰股份",
+    "sector_name": "房地产开发"
+  },
+  "600722": {
+    "stock_code": "600722",
+    "stock_name": "金牛化工",
+    "sector_name": "化学原料"
+  },
+  "600741": {
+    "stock_code": "600741",
+    "stock_name": "华域汽车",
+    "sector_name": "汽车零部件"
+  },
+  "600744": {
+    "stock_code": "600744",
+    "stock_name": "华银电力",
+    "sector_name": "电力"
+  },
+  "600820": {
+    "stock_code": "600820",
+    "stock_name": "隧道股份",
+    "sector_name": "基础建设"
+  },
+  "600821": {
+    "stock_code": "600821",
+    "stock_name": "金开新能",
+    "sector_name": "电力"
+  },
+  "600835": {
+    "stock_code": "600835",
+    "stock_name": "上海机电",
+    "sector_name": "专用设备"
+  },
+  "600857": {
+    "stock_code": "600857",
+    "stock_name": "宁波中百",
+    "sector_name": "一般零售"
+  },
+  "600861": {
+    "stock_code": "600861",
+    "stock_name": "北京人力",
+    "sector_name": "专业服务"
+  },
+  "600885": {
+    "stock_code": "600885",
+    "stock_name": "宏发股份",
+    "sector_name": "电网设备"
+  },
+  "600930": {
+    "stock_code": "600930",
+    "stock_name": "华电新能",
+    "sector_name": "电力"
+  },
+  "601002": {
+    "stock_code": "601002",
+    "stock_name": "晋亿实业",
+    "sector_name": "通用设备"
+  },
+  "601010": {
+    "stock_code": "601010",
+    "stock_name": "ST文峰",
+    "sector_name": "一般零售"
+  },
+  "601012": {
+    "stock_code": "601012",
+    "stock_name": "隆基绿能",
+    "sector_name": "光伏设备"
+  },
+  "601016": {
+    "stock_code": "601016",
+    "stock_name": "节能风电",
+    "sector_name": "电力"
+  },
+  "601089": {
+    "stock_code": "601089",
+    "stock_name": "福元医药",
+    "sector_name": "化学制药"
+  },
+  "601096": {
+    "stock_code": "601096",
+    "stock_name": "宏盛华源",
+    "sector_name": "专业工程"
+  },
+  "601177": {
+    "stock_code": "601177",
+    "stock_name": "杭齿前进",
+    "sector_name": "通用设备"
+  },
+  "601186": {
+    "stock_code": "601186",
+    "stock_name": "中国铁建",
+    "sector_name": "基础建设"
+  },
+  "601222": {
+    "stock_code": "601222",
+    "stock_name": "林洋能源",
+    "sector_name": "电网设备"
+  },
+  "601279": {
+    "stock_code": "601279",
+    "stock_name": "英利汽车",
+    "sector_name": "汽车零部件"
+  },
+  "601500": {
+    "stock_code": "601500",
+    "stock_name": "通用股份",
+    "sector_name": "汽车零部件"
+  },
+  "601618": {
+    "stock_code": "601618",
+    "stock_name": "中国中冶",
+    "sector_name": "专业工程"
+  },
+  "601800": {
+    "stock_code": "601800",
+    "stock_name": "中国交建",
+    "sector_name": "基础建设"
+  },
+  "601900": {
+    "stock_code": "601900",
+    "stock_name": "南方传媒",
+    "sector_name": "出版"
+  },
+  "601933": {
+    "stock_code": "601933",
+    "stock_name": "永辉超市",
+    "sector_name": "一般零售"
+  },
+  "601966": {
+    "stock_code": "601966",
+    "stock_name": "玲珑轮胎",
+    "sector_name": "汽车零部件"
+  },
+  "603008": {
+    "stock_code": "603008",
+    "stock_name": "ST喜临门",
+    "sector_name": "家居用品"
+  },
+  "603013": {
+    "stock_code": "603013",
+    "stock_name": "亚普股份",
+    "sector_name": "汽车零部件"
+  },
+  "603014": {
+    "stock_code": "603014",
+    "stock_name": "威高血净",
+    "sector_name": "医疗器械"
+  },
+  "603016": {
+    "stock_code": "603016",
+    "stock_name": "新宏泰",
+    "sector_name": "电网设备"
+  },
+  "603029": {
+    "stock_code": "603029",
+    "stock_name": "天鹅股份",
+    "sector_name": "专用设备"
+  },
+  "603038": {
+    "stock_code": "603038",
+    "stock_name": "华立股份",
+    "sector_name": "装修建材"
+  },
+  "603040": {
+    "stock_code": "603040",
+    "stock_name": "新坐标",
+    "sector_name": "汽车零部件"
+  },
+  "603048": {
+    "stock_code": "603048",
+    "stock_name": "浙江黎明",
+    "sector_name": "汽车零部件"
+  },
+  "603057": {
+    "stock_code": "603057",
+    "stock_name": "紫燕食品",
+    "sector_name": "休闲食品"
+  },
+  "603062": {
+    "stock_code": "603062",
+    "stock_name": "麦加芯彩",
+    "sector_name": "化学制品"
+  },
+  "603065": {
+    "stock_code": "603065",
+    "stock_name": "宿迁联盛",
+    "sector_name": "化学制品"
+  },
+  "603070": {
+    "stock_code": "603070",
+    "stock_name": "万控智造",
+    "sector_name": "电网设备"
+  },
+  "603079": {
+    "stock_code": "603079",
+    "stock_name": "圣达生物",
+    "sector_name": "化学制品"
+  },
+  "603090": {
+    "stock_code": "603090",
+    "stock_name": "宏盛股份",
+    "sector_name": "通用设备"
+  },
+  "603095": {
+    "stock_code": "603095",
+    "stock_name": "越剑智能",
+    "sector_name": "专用设备"
+  },
+  "603101": {
+    "stock_code": "603101",
+    "stock_name": "汇嘉时代",
+    "sector_name": "一般零售"
+  },
+  "603105": {
+    "stock_code": "603105",
+    "stock_name": "芯能科技",
+    "sector_name": "电力"
+  },
+  "603121": {
+    "stock_code": "603121",
+    "stock_name": "华培动力",
+    "sector_name": "汽车零部件"
+  },
+  "603137": {
+    "stock_code": "603137",
+    "stock_name": "恒尚节能",
+    "sector_name": "装修装饰Ⅱ"
+  },
+  "603159": {
+    "stock_code": "603159",
+    "stock_name": "上海亚虹",
+    "sector_name": "专用设备"
+  },
+  "603161": {
+    "stock_code": "603161",
+    "stock_name": "科华控股",
+    "sector_name": "汽车零部件"
+  },
+  "603173": {
+    "stock_code": "603173",
+    "stock_name": "福斯达",
+    "sector_name": "专用设备"
+  },
+  "603175": {
+    "stock_code": "603175",
+    "stock_name": "超颖电子",
+    "sector_name": "元件"
+  },
+  "603187": {
+    "stock_code": "603187",
+    "stock_name": "海容冷链",
+    "sector_name": "通用设备"
+  },
+  "603196": {
+    "stock_code": "603196",
+    "stock_name": "璞源材料",
+    "sector_name": "服装家纺"
+  },
+  "603201": {
+    "stock_code": "603201",
+    "stock_name": "常润股份",
+    "sector_name": "汽车零部件"
+  },
+  "603210": {
+    "stock_code": "603210",
+    "stock_name": "泰鸿万立",
+    "sector_name": "汽车零部件"
+  },
+  "603221": {
+    "stock_code": "603221",
+    "stock_name": "爱丽家居",
+    "sector_name": "家居用品"
+  },
+  "603269": {
+    "stock_code": "603269",
+    "stock_name": "海鸥股份",
+    "sector_name": "通用设备"
+  },
+  "603272": {
+    "stock_code": "603272",
+    "stock_name": "*ST联翔",
+    "sector_name": "家居用品"
+  },
+  "603275": {
+    "stock_code": "603275",
+    "stock_name": "众辰科技",
+    "sector_name": "自动化设备"
+  },
+  "603277": {
+    "stock_code": "603277",
+    "stock_name": "银都股份",
+    "sector_name": "通用设备"
+  },
+  "603279": {
+    "stock_code": "603279",
+    "stock_name": "景津装备",
+    "sector_name": "通用设备"
+  },
+  "603285": {
+    "stock_code": "603285",
+    "stock_name": "键邦股份",
+    "sector_name": "化学制品"
+  },
+  "603301": {
+    "stock_code": "603301",
+    "stock_name": "振德医疗",
+    "sector_name": "医疗器械"
+  },
+  "603312": {
+    "stock_code": "603312",
+    "stock_name": "西典新能",
+    "sector_name": "电网设备"
+  },
+  "603317": {
+    "stock_code": "603317",
+    "stock_name": "天味食品",
+    "sector_name": "调味发酵品Ⅱ"
+  },
+  "603321": {
+    "stock_code": "603321",
+    "stock_name": "梅轮电梯",
+    "sector_name": "专用设备"
+  },
+  "603325": {
+    "stock_code": "603325",
+    "stock_name": "博隆技术",
+    "sector_name": "专用设备"
+  },
+  "603345": {
+    "stock_code": "603345",
+    "stock_name": "安井食品",
+    "sector_name": "食品加工"
+  },
+  "603351": {
+    "stock_code": "603351",
+    "stock_name": "威尔药业",
+    "sector_name": "化学制药"
+  },
+  "603356": {
+    "stock_code": "603356",
+    "stock_name": "华菱精工",
+    "sector_name": "专用设备"
+  },
+  "603359": {
+    "stock_code": "603359",
+    "stock_name": "*ST东珠",
+    "sector_name": "基础建设"
+  },
+  "603365": {
+    "stock_code": "603365",
+    "stock_name": "水星家纺",
+    "sector_name": "服装家纺"
+  },
+  "603367": {
+    "stock_code": "603367",
+    "stock_name": "辰欣药业",
+    "sector_name": "化学制药"
+  },
+  "603376": {
+    "stock_code": "603376",
+    "stock_name": "大明电子",
+    "sector_name": "汽车零部件"
+  },
+  "603391": {
+    "stock_code": "603391",
+    "stock_name": "力聚热能",
+    "sector_name": "专用设备"
+  },
+  "603398": {
+    "stock_code": "603398",
+    "stock_name": "*ST沐邦",
+    "sector_name": "光伏设备"
+  },
+  "603407": {
+    "stock_code": "603407",
+    "stock_name": "长裕集团",
+    "sector_name": "化学原料"
+  },
+  "603416": {
+    "stock_code": "603416",
+    "stock_name": "信捷电气",
+    "sector_name": "自动化设备"
+  },
+  "603421": {
+    "stock_code": "603421",
+    "stock_name": "鼎信通讯",
+    "sector_name": "通信设备"
+  },
+  "603435": {
+    "stock_code": "603435",
+    "stock_name": "嘉德利",
+    "sector_name": "电子化学品Ⅱ"
+  },
+  "603508": {
+    "stock_code": "603508",
+    "stock_name": "思维列控",
+    "sector_name": "计算机设备"
+  },
+  "603533": {
+    "stock_code": "603533",
+    "stock_name": "掌阅科技",
+    "sector_name": "数字媒体"
+  },
+  "603557": {
+    "stock_code": "603557",
+    "stock_name": "*ST起步",
+    "sector_name": "服装家纺"
+  },
+  "603586": {
+    "stock_code": "603586",
+    "stock_name": "金麒麟",
+    "sector_name": "汽车零部件"
+  },
+  "603606": {
+    "stock_code": "603606",
+    "stock_name": "东方电缆",
+    "sector_name": "电网设备"
+  },
+  "603610": {
+    "stock_code": "603610",
+    "stock_name": "麒盛科技",
+    "sector_name": "家居用品"
+  },
+  "603655": {
+    "stock_code": "603655",
+    "stock_name": "朗博科技",
+    "sector_name": "汽车零部件"
+  },
+  "603682": {
+    "stock_code": "603682",
+    "stock_name": "锦和商管",
+    "sector_name": "一般零售"
+  },
+  "603683": {
+    "stock_code": "603683",
+    "stock_name": "晶华新材",
+    "sector_name": "化学制品"
+  },
+  "603737": {
+    "stock_code": "603737",
+    "stock_name": "三棵树",
+    "sector_name": "装修建材"
+  },
+  "603779": {
+    "stock_code": "603779",
+    "stock_name": "威龙股份",
+    "sector_name": "非白酒"
+  },
+  "603788": {
+    "stock_code": "603788",
+    "stock_name": "宁波高发",
+    "sector_name": "汽车零部件"
+  },
+  "603801": {
+    "stock_code": "603801",
+    "stock_name": "志邦家居",
+    "sector_name": "家居用品"
+  },
+  "603815": {
+    "stock_code": "603815",
+    "stock_name": "交建股份",
+    "sector_name": "基础建设"
+  },
+  "603817": {
+    "stock_code": "603817",
+    "stock_name": "海峡环保",
+    "sector_name": "环境治理"
+  },
+  "603855": {
+    "stock_code": "603855",
+    "stock_name": "华荣股份",
+    "sector_name": "专用设备"
+  },
+  "603879": {
+    "stock_code": "603879",
+    "stock_name": "永悦科技",
+    "sector_name": "塑料"
+  },
+  "603880": {
+    "stock_code": "603880",
+    "stock_name": "南卫股份",
+    "sector_name": "医疗器械"
+  },
+  "603898": {
+    "stock_code": "603898",
+    "stock_name": "好莱客",
+    "sector_name": "家居用品"
+  },
+  "603901": {
+    "stock_code": "603901",
+    "stock_name": "永创智能",
+    "sector_name": "专用设备"
+  },
+  "603906": {
+    "stock_code": "603906",
+    "stock_name": "龙蟠科技",
+    "sector_name": "电池"
+  },
+  "603922": {
+    "stock_code": "603922",
+    "stock_name": "ST金鸿顺",
+    "sector_name": "汽车零部件"
+  },
+  "603929": {
+    "stock_code": "603929",
+    "stock_name": "亚翔集成",
+    "sector_name": "专业工程"
+  },
+  "603948": {
+    "stock_code": "603948",
+    "stock_name": "建业股份",
+    "sector_name": "化学制品"
+  },
+  "603986": {
+    "stock_code": "603986",
+    "stock_name": "兆易创新",
+    "sector_name": "半导体"
+  },
+  "603987": {
+    "stock_code": "603987",
+    "stock_name": "康德莱",
+    "sector_name": "医疗器械"
+  },
+  "603997": {
+    "stock_code": "603997",
+    "stock_name": "继峰股份",
+    "sector_name": "汽车零部件"
+  },
+  "605066": {
+    "stock_code": "605066",
+    "stock_name": "天正电气",
+    "sector_name": "电网设备"
+  },
+  "605081": {
+    "stock_code": "605081",
+    "stock_name": "*ST太和",
+    "sector_name": "环境治理"
+  },
+  "605128": {
+    "stock_code": "605128",
+    "stock_name": "上海沿浦",
+    "sector_name": "汽车零部件"
+  },
+  "605155": {
+    "stock_code": "605155",
+    "stock_name": "西大门",
+    "sector_name": "家居用品"
+  },
+  "605168": {
+    "stock_code": "605168",
+    "stock_name": "三人行",
+    "sector_name": "广告营销"
+  },
+  "605196": {
+    "stock_code": "605196",
+    "stock_name": "华通线缆",
+    "sector_name": "电网设备"
+  },
+  "605228": {
+    "stock_code": "605228",
+    "stock_name": "神通科技",
+    "sector_name": "汽车零部件"
+  },
+  "605255": {
+    "stock_code": "605255",
+    "stock_name": "天普股份",
+    "sector_name": "汽车零部件"
+  },
+  "605268": {
+    "stock_code": "605268",
+    "stock_name": "王力安防",
+    "sector_name": "家居用品"
+  },
+  "605286": {
+    "stock_code": "605286",
+    "stock_name": "同力天启",
+    "sector_name": "专用设备"
+  },
+  "605319": {
+    "stock_code": "605319",
+    "stock_name": "无锡振华",
+    "sector_name": "汽车零部件"
+  },
+  "605333": {
+    "stock_code": "605333",
+    "stock_name": "沪光股份",
+    "sector_name": "汽车零部件"
+  },
+  "605398": {
+    "stock_code": "605398",
+    "stock_name": "新炬网络",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "605599": {
+    "stock_code": "605599",
+    "stock_name": "菜百股份",
+    "sector_name": "饰品"
+  },
+  "688004": {
+    "stock_code": "688004",
+    "stock_name": "博汇科技",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "688013": {
+    "stock_code": "688013",
+    "stock_name": "天臣医疗",
+    "sector_name": "医疗器械"
+  },
+  "688021": {
+    "stock_code": "688021",
+    "stock_name": "奥福科技",
+    "sector_name": "汽车零部件"
+  },
+  "688023": {
+    "stock_code": "688023",
+    "stock_name": "安恒信息",
+    "sector_name": "软件开发"
+  },
+  "688026": {
+    "stock_code": "688026",
+    "stock_name": "洁特生物",
+    "sector_name": "医疗器械"
+  },
+  "688027": {
+    "stock_code": "688027",
+    "stock_name": "国盾量子",
+    "sector_name": "通信设备"
+  },
+  "688029": {
+    "stock_code": "688029",
+    "stock_name": "南微医学",
+    "sector_name": "医疗器械"
+  },
+  "688037": {
+    "stock_code": "688037",
+    "stock_name": "芯源微",
+    "sector_name": "半导体"
+  },
+  "688045": {
+    "stock_code": "688045",
+    "stock_name": "必易微",
+    "sector_name": "半导体"
+  },
+  "688047": {
+    "stock_code": "688047",
+    "stock_name": "龙芯中科",
+    "sector_name": "半导体"
+  },
+  "688059": {
+    "stock_code": "688059",
+    "stock_name": "华锐精密",
+    "sector_name": "通用设备"
+  },
+  "688063": {
+    "stock_code": "688063",
+    "stock_name": "派能科技",
+    "sector_name": "电池"
+  },
+  "688067": {
+    "stock_code": "688067",
+    "stock_name": "爱威科技",
+    "sector_name": "医疗器械"
+  },
+  "688069": {
+    "stock_code": "688069",
+    "stock_name": "德林海",
+    "sector_name": "环境治理"
+  },
+  "688080": {
+    "stock_code": "688080",
+    "stock_name": "映翰通",
+    "sector_name": "通信设备"
+  },
+  "688087": {
+    "stock_code": "688087",
+    "stock_name": "英科再生",
+    "sector_name": "塑料"
+  },
+  "688091": {
+    "stock_code": "688091",
+    "stock_name": "上海谊众",
+    "sector_name": "化学制药"
+  },
+  "688092": {
+    "stock_code": "688092",
+    "stock_name": "爱科科技",
+    "sector_name": "专用设备"
+  },
+  "688095": {
+    "stock_code": "688095",
+    "stock_name": "福昕软件",
+    "sector_name": "软件开发"
+  },
+  "688100": {
+    "stock_code": "688100",
+    "stock_name": "威胜信息",
+    "sector_name": "通信设备"
+  },
+  "688108": {
+    "stock_code": "688108",
+    "stock_name": "赛诺医疗",
+    "sector_name": "医疗器械"
+  },
+  "688110": {
+    "stock_code": "688110",
+    "stock_name": "东芯股份",
+    "sector_name": "半导体"
+  },
+  "688113": {
+    "stock_code": "688113",
+    "stock_name": "联测科技",
+    "sector_name": "专用设备"
+  },
+  "688116": {
+    "stock_code": "688116",
+    "stock_name": "天奈科技",
+    "sector_name": "电池"
+  },
+  "688120": {
+    "stock_code": "688120",
+    "stock_name": "华海清科",
+    "sector_name": "半导体"
+  },
+  "688121": {
+    "stock_code": "688121",
+    "stock_name": "卓然股份",
+    "sector_name": "专用设备"
+  },
+  "688125": {
+    "stock_code": "688125",
+    "stock_name": "安达智能",
+    "sector_name": "自动化设备"
+  },
+  "688129": {
+    "stock_code": "688129",
+    "stock_name": "东来技术",
+    "sector_name": "化学制品"
+  },
+  "688133": {
+    "stock_code": "688133",
+    "stock_name": "泰坦科技",
+    "sector_name": "化学制品"
+  },
+  "688135": {
+    "stock_code": "688135",
+    "stock_name": "利扬芯片",
+    "sector_name": "半导体"
+  },
+  "688138": {
+    "stock_code": "688138",
+    "stock_name": "清溢光电",
+    "sector_name": "半导体"
+  },
+  "688139": {
+    "stock_code": "688139",
+    "stock_name": "海尔生物",
+    "sector_name": "医疗器械"
+  },
+  "688141": {
+    "stock_code": "688141",
+    "stock_name": "杰华特",
+    "sector_name": "半导体"
+  },
+  "688147": {
+    "stock_code": "688147",
+    "stock_name": "微导纳米",
+    "sector_name": "半导体"
+  },
+  "688148": {
+    "stock_code": "688148",
+    "stock_name": "芳源股份",
+    "sector_name": "电池"
+  },
+  "688155": {
+    "stock_code": "688155",
+    "stock_name": "先惠技术",
+    "sector_name": "电池"
+  },
+  "688161": {
+    "stock_code": "688161",
+    "stock_name": "威高骨科",
+    "sector_name": "医疗器械"
+  },
+  "688171": {
+    "stock_code": "688171",
+    "stock_name": "纬德信息",
+    "sector_name": "软件开发"
+  },
+  "688173": {
+    "stock_code": "688173",
+    "stock_name": "希荻微",
+    "sector_name": "半导体"
+  },
+  "688176": {
+    "stock_code": "688176",
+    "stock_name": "亚虹医药-U",
+    "sector_name": "化学制药"
+  },
+  "688192": {
+    "stock_code": "688192",
+    "stock_name": "迪哲医药-U",
+    "sector_name": "化学制药"
+  },
+  "688193": {
+    "stock_code": "688193",
+    "stock_name": "仁度生物",
+    "sector_name": "医疗器械"
+  },
+  "688197": {
+    "stock_code": "688197",
+    "stock_name": "首药控股-U",
+    "sector_name": "化学制药"
+  },
+  "688206": {
+    "stock_code": "688206",
+    "stock_name": "概伦电子",
+    "sector_name": "软件开发"
+  },
+  "688209": {
+    "stock_code": "688209",
+    "stock_name": "英集芯",
+    "sector_name": "半导体"
+  },
+  "688212": {
+    "stock_code": "688212",
+    "stock_name": "澳华内镜",
+    "sector_name": "医疗器械"
+  },
+  "688215": {
+    "stock_code": "688215",
+    "stock_name": "瑞晟智能",
+    "sector_name": "自动化设备"
+  },
+  "688221": {
+    "stock_code": "688221",
+    "stock_name": "前沿生物-U",
+    "sector_name": "化学制药"
+  },
+  "688222": {
+    "stock_code": "688222",
+    "stock_name": "成都先导",
+    "sector_name": "医疗服务"
+  },
+  "688226": {
+    "stock_code": "688226",
+    "stock_name": "威腾电气",
+    "sector_name": "电网设备"
+  },
+  "688230": {
+    "stock_code": "688230",
+    "stock_name": "芯导科技",
+    "sector_name": "半导体"
+  },
+  "688234": {
+    "stock_code": "688234",
+    "stock_name": "天岳先进",
+    "sector_name": "半导体"
+  },
+  "688236": {
+    "stock_code": "688236",
+    "stock_name": "春立医疗",
+    "sector_name": "医疗器械"
+  },
+  "688249": {
+    "stock_code": "688249",
+    "stock_name": "晶合集成",
+    "sector_name": "半导体"
+  },
+  "688257": {
+    "stock_code": "688257",
+    "stock_name": "新锐股份",
+    "sector_name": "通用设备"
+  },
+  "688273": {
+    "stock_code": "688273",
+    "stock_name": "麦澜德",
+    "sector_name": "医疗器械"
+  },
+  "688275": {
+    "stock_code": "688275",
+    "stock_name": "万润新能",
+    "sector_name": "电池"
+  },
+  "688287": {
+    "stock_code": "688287",
+    "stock_name": "*ST观典",
+    "sector_name": "航空装备Ⅱ"
+  },
+  "688299": {
+    "stock_code": "688299",
+    "stock_name": "长阳科技",
+    "sector_name": "光学光电子"
+  },
+  "688301": {
+    "stock_code": "688301",
+    "stock_name": "奕瑞科技",
+    "sector_name": "医疗器械"
+  },
+  "688308": {
+    "stock_code": "688308",
+    "stock_name": "欧科亿",
+    "sector_name": "通用设备"
+  },
+  "688310": {
+    "stock_code": "688310",
+    "stock_name": "迈得医疗",
+    "sector_name": "自动化设备"
+  },
+  "688312": {
+    "stock_code": "688312",
+    "stock_name": "燕麦科技",
+    "sector_name": "专用设备"
+  },
+  "688318": {
+    "stock_code": "688318",
+    "stock_name": "财富趋势",
+    "sector_name": "软件开发"
+  },
+  "688321": {
+    "stock_code": "688321",
+    "stock_name": "微芯生物",
+    "sector_name": "化学制药"
+  },
+  "688323": {
+    "stock_code": "688323",
+    "stock_name": "瑞华泰",
+    "sector_name": "塑料"
+  },
+  "688326": {
+    "stock_code": "688326",
+    "stock_name": "经纬恒润-W",
+    "sector_name": "软件开发"
+  },
+  "688338": {
+    "stock_code": "688338",
+    "stock_name": "赛科希德",
+    "sector_name": "医疗器械"
+  },
+  "688343": {
+    "stock_code": "688343",
+    "stock_name": "云天励飞-U",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "688345": {
+    "stock_code": "688345",
+    "stock_name": "博力威",
+    "sector_name": "电池"
+  },
+  "688348": {
+    "stock_code": "688348",
+    "stock_name": "昱能科技",
+    "sector_name": "光伏设备"
+  },
+  "688351": {
+    "stock_code": "688351",
+    "stock_name": "微电生理",
+    "sector_name": "医疗器械"
+  },
+  "688352": {
+    "stock_code": "688352",
+    "stock_name": "颀中科技",
+    "sector_name": "半导体"
+  },
+  "688356": {
+    "stock_code": "688356",
+    "stock_name": "键凯科技",
+    "sector_name": "化学制药"
+  },
+  "688362": {
+    "stock_code": "688362",
+    "stock_name": "甬矽电子",
+    "sector_name": "半导体"
+  },
+  "688370": {
+    "stock_code": "688370",
+    "stock_name": "丛麟科技",
+    "sector_name": "环境治理"
+  },
+  "688372": {
+    "stock_code": "688372",
+    "stock_name": "伟测科技",
+    "sector_name": "半导体"
+  },
+  "688373": {
+    "stock_code": "688373",
+    "stock_name": "盟科药业-U",
+    "sector_name": "化学制药"
+  },
+  "688380": {
+    "stock_code": "688380",
+    "stock_name": "中微半导",
+    "sector_name": "半导体"
+  },
+  "688381": {
+    "stock_code": "688381",
+    "stock_name": "帝奥微",
+    "sector_name": "半导体"
+  },
+  "688383": {
+    "stock_code": "688383",
+    "stock_name": "新益昌",
+    "sector_name": "专用设备"
+  },
+  "688385": {
+    "stock_code": "688385",
+    "stock_name": "复旦微电",
+    "sector_name": "半导体"
+  },
+  "688390": {
+    "stock_code": "688390",
+    "stock_name": "固德威",
+    "sector_name": "光伏设备"
+  },
+  "688398": {
+    "stock_code": "688398",
+    "stock_name": "赛特新材",
+    "sector_name": "化学制品"
+  },
+  "688401": {
+    "stock_code": "688401",
+    "stock_name": "路维光电",
+    "sector_name": "半导体"
+  },
+  "688403": {
+    "stock_code": "688403",
+    "stock_name": "汇成股份",
+    "sector_name": "半导体"
+  },
+  "688410": {
+    "stock_code": "688410",
+    "stock_name": "山外山",
+    "sector_name": "医疗器械"
+  },
+  "688419": {
+    "stock_code": "688419",
+    "stock_name": "耐科装备",
+    "sector_name": "半导体"
+  },
+  "688450": {
+    "stock_code": "688450",
+    "stock_name": "光格科技",
+    "sector_name": "通用设备"
+  },
+  "688455": {
+    "stock_code": "688455",
+    "stock_name": "科捷智能",
+    "sector_name": "自动化设备"
+  },
+  "688478": {
+    "stock_code": "688478",
+    "stock_name": "晶升股份",
+    "sector_name": "半导体"
+  },
+  "688498": {
+    "stock_code": "688498",
+    "stock_name": "源杰科技",
+    "sector_name": "半导体"
+  },
+  "688505": {
+    "stock_code": "688505",
+    "stock_name": "复旦张江",
+    "sector_name": "化学制药"
+  },
+  "688506": {
+    "stock_code": "688506",
+    "stock_name": "百利天恒",
+    "sector_name": "生物制品"
+  },
+  "688513": {
+    "stock_code": "688513",
+    "stock_name": "苑东生物",
+    "sector_name": "化学制药"
+  },
+  "688518": {
+    "stock_code": "688518",
+    "stock_name": "联赢激光",
+    "sector_name": "自动化设备"
+  },
+  "688519": {
+    "stock_code": "688519",
+    "stock_name": "南亚新材",
+    "sector_name": "元件"
+  },
+  "688530": {
+    "stock_code": "688530",
+    "stock_name": "欧莱新材",
+    "sector_name": "半导体"
+  },
+  "688533": {
+    "stock_code": "688533",
+    "stock_name": "上声电子",
+    "sector_name": "汽车零部件"
+  },
+  "688536": {
+    "stock_code": "688536",
+    "stock_name": "思瑞浦",
+    "sector_name": "半导体"
+  },
+  "688557": {
+    "stock_code": "688557",
+    "stock_name": "兰剑智能",
+    "sector_name": "通用设备"
+  },
+  "688560": {
+    "stock_code": "688560",
+    "stock_name": "明冠新材",
+    "sector_name": "光伏设备"
+  },
+  "688576": {
+    "stock_code": "688576",
+    "stock_name": "西山科技",
+    "sector_name": "医疗器械"
+  },
+  "688577": {
+    "stock_code": "688577",
+    "stock_name": "浙海德曼",
+    "sector_name": "通用设备"
+  },
+  "688578": {
+    "stock_code": "688578",
+    "stock_name": "艾力斯",
+    "sector_name": "化学制药"
+  },
+  "688583": {
+    "stock_code": "688583",
+    "stock_name": "思看科技",
+    "sector_name": "通用设备"
+  },
+  "688607": {
+    "stock_code": "688607",
+    "stock_name": "康众医疗",
+    "sector_name": "医疗器械"
+  },
+  "688613": {
+    "stock_code": "688613",
+    "stock_name": "奥精医疗",
+    "sector_name": "医疗器械"
+  },
+  "688615": {
+    "stock_code": "688615",
+    "stock_name": "合合信息",
+    "sector_name": "软件开发"
+  },
+  "688617": {
+    "stock_code": "688617",
+    "stock_name": "惠泰医疗",
+    "sector_name": "医疗器械"
+  },
+  "688620": {
+    "stock_code": "688620",
+    "stock_name": "安凯微",
+    "sector_name": "半导体"
+  },
+  "688625": {
+    "stock_code": "688625",
+    "stock_name": "呈和科技",
+    "sector_name": "化学制品"
+  },
+  "688627": {
+    "stock_code": "688627",
+    "stock_name": "精智达",
+    "sector_name": "通用设备"
+  },
+  "688633": {
+    "stock_code": "688633",
+    "stock_name": "星球石墨",
+    "sector_name": "专用设备"
+  },
+  "688646": {
+    "stock_code": "688646",
+    "stock_name": "ST逸飞",
+    "sector_name": "自动化设备"
+  },
+  "688679": {
+    "stock_code": "688679",
+    "stock_name": "通源环境",
+    "sector_name": "环境治理"
+  },
+  "688685": {
+    "stock_code": "688685",
+    "stock_name": "迈信林",
+    "sector_name": "航空装备Ⅱ"
+  },
+  "688689": {
+    "stock_code": "688689",
+    "stock_name": "银河微电",
+    "sector_name": "半导体"
+  },
+  "688691": {
+    "stock_code": "688691",
+    "stock_name": "灿芯股份",
+    "sector_name": "半导体"
+  },
+  "688699": {
+    "stock_code": "688699",
+    "stock_name": "明微电子",
+    "sector_name": "半导体"
+  },
+  "688708": {
+    "stock_code": "688708",
+    "stock_name": "佳驰科技",
+    "sector_name": "航空装备Ⅱ"
+  },
+  "688709": {
+    "stock_code": "688709",
+    "stock_name": "成都华微",
+    "sector_name": "半导体"
+  },
+  "688710": {
+    "stock_code": "688710",
+    "stock_name": "益诺思",
+    "sector_name": "医疗服务"
+  },
+  "688717": {
+    "stock_code": "688717",
+    "stock_name": "艾罗能源",
+    "sector_name": "光伏设备"
+  },
+  "688721": {
+    "stock_code": "688721",
+    "stock_name": "龙图光罩",
+    "sector_name": "半导体"
+  },
+  "688726": {
+    "stock_code": "688726",
+    "stock_name": "拉普拉斯",
+    "sector_name": "光伏设备"
+  },
+  "688766": {
+    "stock_code": "688766",
+    "stock_name": "普冉股份",
+    "sector_name": "半导体"
+  },
+  "688777": {
+    "stock_code": "688777",
+    "stock_name": "中控技术",
+    "sector_name": "自动化设备"
+  },
+  "688778": {
+    "stock_code": "688778",
+    "stock_name": "厦钨新能",
+    "sector_name": "电池"
+  },
+  "688779": {
+    "stock_code": "688779",
+    "stock_name": "五矿新能",
+    "sector_name": "电池"
+  },
+  "688798": {
+    "stock_code": "688798",
+    "stock_name": "艾为电子",
+    "sector_name": "半导体"
+  },
+  "688813": {
+    "stock_code": "688813",
+    "stock_name": "泰金新能",
+    "sector_name": "专用设备"
+  },
+  "920000": {
+    "stock_code": "920000",
+    "stock_name": "安徽凤凰",
+    "sector_name": "汽车零部件"
+  },
+  "920001": {
+    "stock_code": "920001",
+    "stock_name": "纬达光电",
+    "sector_name": "光学光电子"
+  },
+  "920006": {
+    "stock_code": "920006",
+    "stock_name": "晟楠科技",
+    "sector_name": "航空装备Ⅱ"
+  },
+  "920010": {
+    "stock_code": "920010",
+    "stock_name": "凯添燃气",
+    "sector_name": "燃气Ⅱ"
+  },
+  "920015": {
+    "stock_code": "920015",
+    "stock_name": "锦华新材",
+    "sector_name": "化学制品"
+  },
+  "920017": {
+    "stock_code": "920017",
+    "stock_name": "星昊医药",
+    "sector_name": "化学制药"
+  },
+  "920018": {
+    "stock_code": "920018",
+    "stock_name": "宏远股份",
+    "sector_name": "电网设备"
+  },
+  "920020": {
+    "stock_code": "920020",
+    "stock_name": "泰凯英",
+    "sector_name": "工程机械"
+  },
+  "920022": {
+    "stock_code": "920022",
+    "stock_name": "世昌股份",
+    "sector_name": "汽车零部件"
+  },
+  "920026": {
+    "stock_code": "920026",
+    "stock_name": "卓兆点胶",
+    "sector_name": "专用设备"
+  },
+  "920033": {
+    "stock_code": "920033",
+    "stock_name": "康普化学",
+    "sector_name": "化学制品"
+  },
+  "920035": {
+    "stock_code": "920035",
+    "stock_name": "精创电气",
+    "sector_name": "自动化设备"
+  },
+  "920037": {
+    "stock_code": "920037",
+    "stock_name": "DR广信科",
+    "sector_name": "电网设备"
+  },
+  "920045": {
+    "stock_code": "920045",
+    "stock_name": "蘅东光",
+    "sector_name": "通信设备"
+  },
+  "920050": {
+    "stock_code": "920050",
+    "stock_name": "爱舍伦",
+    "sector_name": "医疗器械"
+  },
+  "920056": {
+    "stock_code": "920056",
+    "stock_name": "能之光",
+    "sector_name": "塑料"
+  },
+  "920061": {
+    "stock_code": "920061",
+    "stock_name": "西磁科技",
+    "sector_name": "专用设备"
+  },
+  "920062": {
+    "stock_code": "920062",
+    "stock_name": "科润智控",
+    "sector_name": "电网设备"
+  },
+  "920069": {
+    "stock_code": "920069",
+    "stock_name": "普昂医疗",
+    "sector_name": "医疗器械"
+  },
+  "920075": {
+    "stock_code": "920075",
+    "stock_name": "柏星龙",
+    "sector_name": "包装印刷"
+  },
+  "920090": {
+    "stock_code": "920090",
+    "stock_name": "*ST同辉",
+    "sector_name": "计算机设备"
+  },
+  "920096": {
+    "stock_code": "920096",
+    "stock_name": "嘉晨智能",
+    "sector_name": "自动化设备"
+  },
+  "920110": {
+    "stock_code": "920110",
+    "stock_name": "雷特科技",
+    "sector_name": "其他电源设备Ⅱ"
+  },
+  "920112": {
+    "stock_code": "920112",
+    "stock_name": "巴兰仕",
+    "sector_name": "专用设备"
+  },
+  "920119": {
+    "stock_code": "920119",
+    "stock_name": "美德乐",
+    "sector_name": "自动化设备"
+  },
+  "920121": {
+    "stock_code": "920121",
+    "stock_name": "江天科技",
+    "sector_name": "包装印刷"
+  },
+  "920125": {
+    "stock_code": "920125",
+    "stock_name": "鸿仕达",
+    "sector_name": "自动化设备"
+  },
+  "920139": {
+    "stock_code": "920139",
+    "stock_name": "华岭股份",
+    "sector_name": "半导体"
+  },
+  "920146": {
+    "stock_code": "920146",
+    "stock_name": "华阳变速",
+    "sector_name": "汽车零部件"
+  },
+  "920149": {
+    "stock_code": "920149",
+    "stock_name": "旭杰科技",
+    "sector_name": "工程咨询服务Ⅱ"
+  },
+  "920160": {
+    "stock_code": "920160",
+    "stock_name": "北矿检测",
+    "sector_name": "专业服务"
+  },
+  "920171": {
+    "stock_code": "920171",
+    "stock_name": "志晟信息",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "920174": {
+    "stock_code": "920174",
+    "stock_name": "五新隧装",
+    "sector_name": "基础建设"
+  },
+  "920175": {
+    "stock_code": "920175",
+    "stock_name": "东方碳素",
+    "sector_name": "非金属材料Ⅱ"
+  },
+  "920178": {
+    "stock_code": "920178",
+    "stock_name": "锐翔智能",
+    "sector_name": "自动化设备"
+  },
+  "920181": {
+    "stock_code": "920181",
+    "stock_name": "赛英电子",
+    "sector_name": "半导体"
+  },
+  "920185": {
+    "stock_code": "920185",
+    "stock_name": "贝特瑞",
+    "sector_name": "电池"
+  },
+  "920186": {
+    "stock_code": "920186",
+    "stock_name": "中科仪",
+    "sector_name": "通用设备"
+  },
+  "920188": {
+    "stock_code": "920188",
+    "stock_name": "悦龙科技",
+    "sector_name": "橡胶"
+  },
+  "920195": {
+    "stock_code": "920195",
+    "stock_name": "三祥科技",
+    "sector_name": "汽车零部件"
+  },
+  "920200": {
+    "stock_code": "920200",
+    "stock_name": "振宏股份",
+    "sector_name": "风电设备"
+  },
+  "920204": {
+    "stock_code": "920204",
+    "stock_name": "沪江材料",
+    "sector_name": "包装印刷"
+  },
+  "920207": {
+    "stock_code": "920207",
+    "stock_name": "众诚科技",
+    "sector_name": "软件开发"
+  },
+  "920208": {
+    "stock_code": "920208",
+    "stock_name": "青矩技术",
+    "sector_name": "工程咨询服务Ⅱ"
+  },
+  "920223": {
+    "stock_code": "920223",
+    "stock_name": "荣亿精密",
+    "sector_name": "通用设备"
+  },
+  "920225": {
+    "stock_code": "920225",
+    "stock_name": "利通科技",
+    "sector_name": "橡胶"
+  },
+  "920227": {
+    "stock_code": "920227",
+    "stock_name": "美登科技",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "920230": {
+    "stock_code": "920230",
+    "stock_name": "欧康医药",
+    "sector_name": "化学制药"
+  },
+  "920237": {
+    "stock_code": "920237",
+    "stock_name": "力佳科技",
+    "sector_name": "电池"
+  },
+  "920239": {
+    "stock_code": "920239",
+    "stock_name": "长虹能源",
+    "sector_name": "电池"
+  },
+  "920242": {
+    "stock_code": "920242",
+    "stock_name": "建邦科技",
+    "sector_name": "汽车零部件"
+  },
+  "920245": {
+    "stock_code": "920245",
+    "stock_name": "威博液压",
+    "sector_name": "工程机械"
+  },
+  "920247": {
+    "stock_code": "920247",
+    "stock_name": "华密新材",
+    "sector_name": "汽车零部件"
+  },
+  "920261": {
+    "stock_code": "920261",
+    "stock_name": "一诺威",
+    "sector_name": "化学制品"
+  },
+  "920263": {
+    "stock_code": "920263",
+    "stock_name": "中航泰达",
+    "sector_name": "环境治理"
+  },
+  "920266": {
+    "stock_code": "920266",
+    "stock_name": "生物谷",
+    "sector_name": "中药Ⅱ"
+  },
+  "920267": {
+    "stock_code": "920267",
+    "stock_name": "鑫汇科",
+    "sector_name": "消费电子"
+  },
+  "920271": {
+    "stock_code": "920271",
+    "stock_name": "邦德股份",
+    "sector_name": "汽车零部件"
+  },
+  "920273": {
+    "stock_code": "920273",
+    "stock_name": "一致魔芋",
+    "sector_name": "农产品加工"
+  },
+  "920274": {
+    "stock_code": "920274",
+    "stock_name": "宏裕包材",
+    "sector_name": "包装印刷"
+  },
+  "920275": {
+    "stock_code": "920275",
+    "stock_name": "驱动力",
+    "sector_name": "动物保健Ⅱ"
+  },
+  "920278": {
+    "stock_code": "920278",
+    "stock_name": "鹿得医疗",
+    "sector_name": "医疗器械"
+  },
+  "920284": {
+    "stock_code": "920284",
+    "stock_name": "灵鸽科技",
+    "sector_name": "专用设备"
+  },
+  "920299": {
+    "stock_code": "920299",
+    "stock_name": "灿能电力",
+    "sector_name": "电网设备"
+  },
+  "920305": {
+    "stock_code": "920305",
+    "stock_name": "*ST云创",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "920339": {
+    "stock_code": "920339",
+    "stock_name": "恒太照明",
+    "sector_name": "照明设备Ⅱ"
+  },
+  "920346": {
+    "stock_code": "920346",
+    "stock_name": "威贸电子",
+    "sector_name": "消费电子"
+  },
+  "920357": {
+    "stock_code": "920357",
+    "stock_name": "雅葆轩",
+    "sector_name": "消费电子"
+  },
+  "920367": {
+    "stock_code": "920367",
+    "stock_name": "新赣江",
+    "sector_name": "化学制药"
+  },
+  "920368": {
+    "stock_code": "920368",
+    "stock_name": "连城数控",
+    "sector_name": "光伏设备"
+  },
+  "920371": {
+    "stock_code": "920371",
+    "stock_name": "欧福蛋业",
+    "sector_name": "农产品加工"
+  },
+  "920374": {
+    "stock_code": "920374",
+    "stock_name": "云里物里",
+    "sector_name": "通信设备"
+  },
+  "920375": {
+    "stock_code": "920375",
+    "stock_name": "派诺科技",
+    "sector_name": "电网设备"
+  },
+  "920378": {
+    "stock_code": "920378",
+    "stock_name": "泰德股份",
+    "sector_name": "汽车零部件"
+  },
+  "920392": {
+    "stock_code": "920392",
+    "stock_name": "佳合科技",
+    "sector_name": "包装印刷"
+  },
+  "920394": {
+    "stock_code": "920394",
+    "stock_name": "民士达",
+    "sector_name": "造纸"
+  },
+  "920396": {
+    "stock_code": "920396",
+    "stock_name": "常辅股份",
+    "sector_name": "自动化设备"
+  },
+  "920402": {
+    "stock_code": "920402",
+    "stock_name": "硅烷科技",
+    "sector_name": "化学制品"
+  },
+  "920405": {
+    "stock_code": "920405",
+    "stock_name": "海希通讯",
+    "sector_name": "自动化设备"
+  },
+  "920407": {
+    "stock_code": "920407",
+    "stock_name": "驰诚股份",
+    "sector_name": "通用设备"
+  },
+  "920414": {
+    "stock_code": "920414",
+    "stock_name": "欧普泰",
+    "sector_name": "光伏设备"
+  },
+  "920415": {
+    "stock_code": "920415",
+    "stock_name": "恒拓开源",
+    "sector_name": "软件开发"
+  },
+  "920419": {
+    "stock_code": "920419",
+    "stock_name": "路斯股份",
+    "sector_name": "饲料"
+  },
+  "920422": {
+    "stock_code": "920422",
+    "stock_name": "润普食品",
+    "sector_name": "化学制品"
+  },
+  "920425": {
+    "stock_code": "920425",
+    "stock_name": "乐创技术",
+    "sector_name": "自动化设备"
+  },
+  "920427": {
+    "stock_code": "920427",
+    "stock_name": "华维设计",
+    "sector_name": "工程咨询服务Ⅱ"
+  },
+  "920429": {
+    "stock_code": "920429",
+    "stock_name": "康比特",
+    "sector_name": "食品加工"
+  },
+  "920433": {
+    "stock_code": "920433",
+    "stock_name": "大唐药业",
+    "sector_name": "中药Ⅱ"
+  },
+  "920436": {
+    "stock_code": "920436",
+    "stock_name": "大地电气",
+    "sector_name": "汽车零部件"
+  },
+  "920445": {
+    "stock_code": "920445",
+    "stock_name": "龙竹科技",
+    "sector_name": "家居用品"
+  },
+  "920454": {
+    "stock_code": "920454",
+    "stock_name": "同心传动",
+    "sector_name": "汽车零部件"
+  },
+  "920455": {
+    "stock_code": "920455",
+    "stock_name": "汇隆活塞",
+    "sector_name": "专用设备"
+  },
+  "920471": {
+    "stock_code": "920471",
+    "stock_name": "美邦科技",
+    "sector_name": "化学制品"
+  },
+  "920476": {
+    "stock_code": "920476",
+    "stock_name": "海能技术",
+    "sector_name": "通用设备"
+  },
+  "920478": {
+    "stock_code": "920478",
+    "stock_name": "峆一药业",
+    "sector_name": "化学制药"
+  },
+  "920493": {
+    "stock_code": "920493",
+    "stock_name": "并行科技",
+    "sector_name": "IT服务Ⅱ"
+  },
+  "920496": {
+    "stock_code": "920496",
+    "stock_name": "许昌智能",
+    "sector_name": "电网设备"
+  },
+  "920504": {
+    "stock_code": "920504",
+    "stock_name": "博迅生物",
+    "sector_name": "医疗器械"
+  },
+  "920508": {
+    "stock_code": "920508",
+    "stock_name": "殷图网联",
+    "sector_name": "电网设备"
+  },
+  "920509": {
+    "stock_code": "920509",
+    "stock_name": "同惠电子",
+    "sector_name": "通用设备"
+  },
+  "920519": {
+    "stock_code": "920519",
+    "stock_name": "万德股份",
+    "sector_name": "化学制品"
+  },
+  "920523": {
+    "stock_code": "920523",
+    "stock_name": "德瑞锂电",
+    "sector_name": "电池"
+  },
+  "920526": {
+    "stock_code": "920526",
+    "stock_name": "凯华材料",
+    "sector_name": "电子化学品Ⅱ"
+  },
+  "920541": {
+    "stock_code": "920541",
+    "stock_name": "铁大科技",
+    "sector_name": "轨交设备Ⅱ"
+  },
+  "920547": {
+    "stock_code": "920547",
+    "stock_name": "无锡晶海",
+    "sector_name": "生物制品"
+  },
+  "920553": {
+    "stock_code": "920553",
+    "stock_name": "凯腾精工",
+    "sector_name": "专用设备"
+  },
+  "920566": {
+    "stock_code": "920566",
+    "stock_name": "梓橦宫",
+    "sector_name": "化学制药"
+  },
+  "920570": {
+    "stock_code": "920570",
+    "stock_name": "坤博精工",
+    "sector_name": "通用设备"
+  },
+  "920575": {
+    "stock_code": "920575",
+    "stock_name": "*ST康乐",
+    "sector_name": "生物制品"
+  },
+  "920580": {
+    "stock_code": "920580",
+    "stock_name": "科创新材",
+    "sector_name": "装修建材"
+  },
+  "920592": {
+    "stock_code": "920592",
+    "stock_name": "华信永道",
+    "sector_name": "软件开发"
+  },
+  "920599": {
+    "stock_code": "920599",
+    "stock_name": "同力股份",
+    "sector_name": "工程机械"
+  },
+  "920608": {
+    "stock_code": "920608",
+    "stock_name": "丰安股份",
+    "sector_name": "专用设备"
+  },
+  "920634": {
+    "stock_code": "920634",
+    "stock_name": "新威凌",
+    "sector_name": "工业金属"
+  },
+  "920639": {
+    "stock_code": "920639",
+    "stock_name": "晨光电缆",
+    "sector_name": "电网设备"
+  },
+  "920640": {
+    "stock_code": "920640",
+    "stock_name": "富士达",
+    "sector_name": "通信设备"
+  },
+  "920642": {
+    "stock_code": "920642",
+    "stock_name": "通易航天",
+    "sector_name": "航空装备Ⅱ"
+  },
+  "920651": {
+    "stock_code": "920651",
+    "stock_name": "天罡股份",
+    "sector_name": "通用设备"
+  },
+  "920656": {
+    "stock_code": "920656",
+    "stock_name": "海昇药业",
+    "sector_name": "化学制药"
+  },
+  "920662": {
+    "stock_code": "920662",
+    "stock_name": "方盛股份",
+    "sector_name": "通用设备"
+  },
+  "920670": {
+    "stock_code": "920670",
+    "stock_name": "数字人",
+    "sector_name": "医疗服务"
+  },
+  "920679": {
+    "stock_code": "920679",
+    "stock_name": "前进科技",
+    "sector_name": "通用设备"
+  },
+  "920682": {
+    "stock_code": "920682",
+    "stock_name": "球冠电缆",
+    "sector_name": "电网设备"
+  },
+  "920685": {
+    "stock_code": "920685",
+    "stock_name": "新芝生物",
+    "sector_name": "通用设备"
+  },
+  "920693": {
+    "stock_code": "920693",
+    "stock_name": "阿为特",
+    "sector_name": "通用设备"
+  },
+  "920699": {
+    "stock_code": "920699",
+    "stock_name": "海达尔",
+    "sector_name": "家电零部件Ⅱ"
+  },
+  "920701": {
+    "stock_code": "920701",
+    "stock_name": "豪声电子",
+    "sector_name": "消费电子"
+  },
+  "920703": {
+    "stock_code": "920703",
+    "stock_name": "广厦环能",
+    "sector_name": "专用设备"
+  },
+  "920706": {
+    "stock_code": "920706",
+    "stock_name": "铁拓机械",
+    "sector_name": "工程机械"
+  },
+  "920718": {
+    "stock_code": "920718",
+    "stock_name": "合肥高科",
+    "sector_name": "家电零部件Ⅱ"
+  },
+  "920719": {
+    "stock_code": "920719",
+    "stock_name": "宁新新材",
+    "sector_name": "非金属材料Ⅱ"
+  },
+  "920725": {
+    "stock_code": "920725",
+    "stock_name": "惠丰钻石",
+    "sector_name": "通用设备"
+  },
+  "920729": {
+    "stock_code": "920729",
+    "stock_name": "永顺生物",
+    "sector_name": "动物保健Ⅱ"
+  },
+  "920735": {
+    "stock_code": "920735",
+    "stock_name": "德源药业",
+    "sector_name": "化学制药"
+  },
+  "920753": {
+    "stock_code": "920753",
+    "stock_name": "天纺标",
+    "sector_name": "专业服务"
+  },
+  "920765": {
+    "stock_code": "920765",
+    "stock_name": "美之高",
+    "sector_name": "家居用品"
+  },
+  "920770": {
+    "stock_code": "920770",
+    "stock_name": "艾能聚",
+    "sector_name": "光伏设备"
+  },
+  "920779": {
+    "stock_code": "920779",
+    "stock_name": "武汉蓝电",
+    "sector_name": "电池"
+  },
+  "920802": {
+    "stock_code": "920802",
+    "stock_name": "保丽洁",
+    "sector_name": "环境治理"
+  },
+  "920808": {
+    "stock_code": "920808",
+    "stock_name": "曙光数创",
+    "sector_name": "计算机设备"
+  },
+  "920809": {
+    "stock_code": "920809",
+    "stock_name": "安达科技",
+    "sector_name": "电池"
+  },
+  "920810": {
+    "stock_code": "920810",
+    "stock_name": "春光智能",
+    "sector_name": "专用设备"
+  },
+  "920832": {
+    "stock_code": "920832",
+    "stock_name": "齐鲁华信",
+    "sector_name": "非金属材料Ⅱ"
+  },
+  "920834": {
+    "stock_code": "920834",
+    "stock_name": "三维装备",
+    "sector_name": "橡胶"
+  },
+  "920855": {
+    "stock_code": "920855",
+    "stock_name": "浙江大农",
+    "sector_name": "专用设备"
+  },
+  "920866": {
+    "stock_code": "920866",
+    "stock_name": "绿亨科技",
+    "sector_name": "农化制品"
+  },
+  "920870": {
+    "stock_code": "920870",
+    "stock_name": "恒进感应",
+    "sector_name": "通用设备"
+  },
+  "920871": {
+    "stock_code": "920871",
+    "stock_name": "派特尔",
+    "sector_name": "汽车零部件"
+  },
+  "920879": {
+    "stock_code": "920879",
+    "stock_name": "基康技术",
+    "sector_name": "通用设备"
+  },
+  "920892": {
+    "stock_code": "920892",
+    "stock_name": "广咨国际",
+    "sector_name": "工程咨询服务Ⅱ"
+  },
+  "920895": {
+    "stock_code": "920895",
+    "stock_name": "花溪科技",
+    "sector_name": "专用设备"
+  },
+  "920914": {
+    "stock_code": "920914",
+    "stock_name": "远航精密",
+    "sector_name": "电池"
+  },
+  "920924": {
+    "stock_code": "920924",
+    "stock_name": "广脉科技",
+    "sector_name": "通信服务"
+  },
+  "920925": {
+    "stock_code": "920925",
+    "stock_name": "锦好医疗",
+    "sector_name": "医疗器械"
+  },
+  "920926": {
+    "stock_code": "920926",
+    "stock_name": "鸿智科技",
+    "sector_name": "小家电"
+  },
+  "920931": {
+    "stock_code": "920931",
+    "stock_name": "无锡鼎邦",
+    "sector_name": "专用设备"
+  },
+  "920942": {
+    "stock_code": "920942",
+    "stock_name": "恒立钻具",
+    "sector_name": "工程机械"
+  },
+  "920946": {
+    "stock_code": "920946",
+    "stock_name": "森萱医药",
+    "sector_name": "化学制药"
+  },
+  "920950": {
+    "stock_code": "920950",
+    "stock_name": "迅安科技",
+    "sector_name": "通用设备"
+  },
+  "920957": {
+    "stock_code": "920957",
+    "stock_name": "汉维科技",
+    "sector_name": "化学制品"
+  },
+  "920961": {
+    "stock_code": "920961",
+    "stock_name": "创远信科",
+    "sector_name": "通用设备"
+  },
+  "920964": {
+    "stock_code": "920964",
+    "stock_name": "润农节水",
+    "sector_name": "农业综合Ⅱ"
+  },
+  "920970": {
+    "stock_code": "920970",
+    "stock_name": "大禹生物",
+    "sector_name": "动物保健Ⅱ"
+  },
+  "920971": {
+    "stock_code": "920971",
+    "stock_name": "天马新材",
+    "sector_name": "非金属材料Ⅱ"
+  },
+  "920974": {
+    "stock_code": "920974",
+    "stock_name": "凯大催化",
+    "sector_name": "化学制品"
+  },
+  "920982": {
+    "stock_code": "920982",
+    "stock_name": "锦波生物",
+    "sector_name": "医疗美容"
+  },
+  "920985": {
+    "stock_code": "920985",
+    "stock_name": "海泰新能",
+    "sector_name": "光伏设备"
+  },
+  "920992": {
+    "stock_code": "920992",
+    "stock_name": "中科美菱",
+    "sector_name": "医疗器械"
+  }
+}

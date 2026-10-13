@@ -1,0 +1,6016 @@
+{
+  "version": "v2",
+  "source": "kaipanhong260508.json",
+  "primary_themes": [
+    "AI应用",
+    "一带一路",
+    "人工智能",
+    "传媒",
+    "低空经济",
+    "体育产业",
+    "储能",
+    "元宇宙",
+    "光伏",
+    "免税",
+    "军工",
+    "农业",
+    "化工",
+    "医美",
+    "医药",
+    "华为概念",
+    "卫星导航",
+    "发电机",
+    "商业航天",
+    "商贸零售",
+    "基础建设",
+    "多元金融",
+    "大飞机",
+    "天然气",
+    "央企国企改革",
+    "家居用品",
+    "家电",
+    "工程机械",
+    "建筑地产",
+    "教育",
+    "数字经济",
+    "新型工业化",
+    "新材料",
+    "新消费",
+    "旅游酒店",
+    "无人机",
+    "智能电网",
+    "智能驾驶",
+    "有色金属",
+    "服装家纺",
+    "机器人",
+    "核电",
+    "次新股",
+    "氟化工",
+    "氢能源",
+    "汽车充电",
+    "汽车整车",
+    "汽车零部件",
+    "海洋经济",
+    "消费电子",
+    "游戏",
+    "煤化工",
+    "煤炭",
+    "物流",
+    "环保",
+    "生育概念",
+    "电力",
+    "电商平台经济",
+    "电子元件",
+    "白酒",
+    "石油",
+    "磷化工",
+    "端侧AI",
+    "算力",
+    "网络安全",
+    "脑机接口",
+    "船舶航运",
+    "芯片",
+    "证券",
+    "轨道交通",
+    "软件服务",
+    "通信",
+    "造纸包装",
+    "量子科技",
+    "金融科技",
+    "钢铁",
+    "银行保险",
+    "锂电池",
+    "风电",
+    "食品饮料",
+    "航空运输"
+  ],
+  "plates": [
+    {
+      "plate_id": "801807",
+      "plate_name": "算力",
+      "primary_theme": "算力",
+      "stock_count": 21132,
+      "change_pct": 2.884,
+      "amount": 1111340964244
+    },
+    {
+      "plate_id": "801001",
+      "plate_name": "芯片",
+      "primary_theme": "芯片",
+      "stock_count": 20799,
+      "change_pct": 2.757,
+      "amount": 1328471842319
+    },
+    {
+      "plate_id": "801660",
+      "plate_name": "通信",
+      "primary_theme": "通信",
+      "stock_count": 8950,
+      "change_pct": 2.741,
+      "amount": 865741252608
+    },
+    {
+      "plate_id": "801004",
+      "plate_name": "锂电池",
+      "primary_theme": "锂电池",
+      "stock_count": 4467,
+      "change_pct": 2.16,
+      "amount": 612162664734
+    },
+    {
+      "plate_id": "803023",
+      "plate_name": "AI应用",
+      "primary_theme": "AI应用",
+      "stock_count": 4331,
+      "change_pct": 2.078,
+      "amount": 368750189364
+    },
+    {
+      "plate_id": "801120",
+      "plate_name": "电力",
+      "primary_theme": "电力",
+      "stock_count": 4238,
+      "change_pct": 1.819,
+      "amount": 217030015965
+    },
+    {
+      "plate_id": "801843",
+      "plate_name": "商业航天",
+      "primary_theme": "商业航天",
+      "stock_count": 3998,
+      "change_pct": 2.228,
+      "amount": 485348764683
+    },
+    {
+      "plate_id": "801159",
+      "plate_name": "机器人概念",
+      "primary_theme": "机器人",
+      "stock_count": 2722,
+      "change_pct": 1.669,
+      "amount": 773288047145
+    },
+    {
+      "plate_id": "801081",
+      "plate_name": "证券",
+      "primary_theme": "证券",
+      "stock_count": 1648,
+      "change_pct": 1.481,
+      "amount": 42047931725
+    },
+    {
+      "plate_id": "801580",
+      "plate_name": "发电机",
+      "primary_theme": "发电机",
+      "stock_count": 1501,
+      "change_pct": 2.011,
+      "amount": 24621928690
+    },
+    {
+      "plate_id": "801088",
+      "plate_name": "有色金属",
+      "primary_theme": "有色金属",
+      "stock_count": 1418,
+      "change_pct": 2.83,
+      "amount": 252567567652
+    },
+    {
+      "plate_id": "801178",
+      "plate_name": "储能",
+      "primary_theme": "储能",
+      "stock_count": 1355,
+      "change_pct": 2.195,
+      "amount": 650030821349
+    },
+    {
+      "plate_id": "801584",
+      "plate_name": "数字经济",
+      "primary_theme": "数字经济",
+      "stock_count": 1354,
+      "change_pct": 2.144,
+      "amount": 1005662908786
+    },
+    {
+      "plate_id": "801880",
+      "plate_name": "燃气轮机",
+      "primary_theme": "电力",
+      "stock_count": 1348,
+      "change_pct": 2.485,
+      "amount": 39025401744
+    },
+    {
+      "plate_id": "801313",
+      "plate_name": "金融概念",
+      "primary_theme": "多元金融",
+      "stock_count": 943,
+      "change_pct": 1.729,
+      "amount": 274348380523
+    },
+    {
+      "plate_id": "801346",
+      "plate_name": "智能电网",
+      "primary_theme": "智能电网",
+      "stock_count": 830,
+      "change_pct": 2.104,
+      "amount": 379429112040
+    },
+    {
+      "plate_id": "801074",
+      "plate_name": "核电",
+      "primary_theme": "核电",
+      "stock_count": 751,
+      "change_pct": 2.033,
+      "amount": 261207647624
+    },
+    {
+      "plate_id": "801445",
+      "plate_name": "元器件",
+      "primary_theme": "消费电子",
+      "stock_count": 728,
+      "change_pct": 3.322,
+      "amount": 70888403519
+    },
+    {
+      "plate_id": "801773",
+      "plate_name": "热力",
+      "primary_theme": "电力",
+      "stock_count": 711,
+      "change_pct": 2.443,
+      "amount": 9096959393
+    },
+    {
+      "plate_id": "801087",
+      "plate_name": "风电",
+      "primary_theme": "风电",
+      "stock_count": 674,
+      "change_pct": 2.305,
+      "amount": 236106287216
+    },
+    {
+      "plate_id": "801433",
+      "plate_name": "光学镜头",
+      "primary_theme": "消费电子",
+      "stock_count": 659,
+      "change_pct": 2.846,
+      "amount": 24591389126
+    },
+    {
+      "plate_id": "801374",
+      "plate_name": "造船",
+      "primary_theme": "船舶航运",
+      "stock_count": 615,
+      "change_pct": 1.151,
+      "amount": 19711869287
+    },
+    {
+      "plate_id": "801048",
+      "plate_name": "黄金",
+      "primary_theme": "有色金属",
+      "stock_count": 499,
+      "change_pct": 2.424,
+      "amount": 91488959743
+    },
+    {
+      "plate_id": "801301",
+      "plate_name": "体育产业",
+      "primary_theme": "体育产业",
+      "stock_count": 496,
+      "change_pct": 0.727,
+      "amount": 69220873233
+    },
+    {
+      "plate_id": "801330",
+      "plate_name": "旅游",
+      "primary_theme": "旅游酒店",
+      "stock_count": 477,
+      "change_pct": 0.026,
+      "amount": 37167517964
+    },
+    {
+      "plate_id": "801328",
+      "plate_name": "消费电子",
+      "primary_theme": "消费电子",
+      "stock_count": 477,
+      "change_pct": 2.337,
+      "amount": 758272745182
+    },
+    {
+      "plate_id": "801493",
+      "plate_name": "光储充一体化",
+      "primary_theme": "光伏",
+      "stock_count": 474,
+      "change_pct": 2.916,
+      "amount": 15636436680
+    },
+    {
+      "plate_id": "801019",
+      "plate_name": "物流",
+      "primary_theme": "物流",
+      "stock_count": 376,
+      "change_pct": 1.409,
+      "amount": 117113084346
+    },
+    {
+      "plate_id": "801451",
+      "plate_name": "wifi6/7",
+      "primary_theme": "通信",
+      "stock_count": 307,
+      "change_pct": 3.319,
+      "amount": 38433995510
+    },
+    {
+      "plate_id": "801235",
+      "plate_name": "化工",
+      "primary_theme": "化工",
+      "stock_count": 300,
+      "change_pct": 1.304,
+      "amount": 395873558146
+    },
+    {
+      "plate_id": "801642",
+      "plate_name": "石英材料",
+      "primary_theme": "新材料",
+      "stock_count": 266,
+      "change_pct": 2.667,
+      "amount": 11484110877
+    },
+    {
+      "plate_id": "801547",
+      "plate_name": "碳基材料",
+      "primary_theme": "新材料",
+      "stock_count": 265,
+      "change_pct": 2.653,
+      "amount": 7851119926
+    },
+    {
+      "plate_id": "801420",
+      "plate_name": "蓝宝石",
+      "primary_theme": "新材料",
+      "stock_count": 258,
+      "change_pct": 2.918,
+      "amount": 66858721487
+    },
+    {
+      "plate_id": "801422",
+      "plate_name": "小金属概念",
+      "primary_theme": "有色金属",
+      "stock_count": 258,
+      "change_pct": 2.902,
+      "amount": 249370846252
+    },
+    {
+      "plate_id": "801045",
+      "plate_name": "医药",
+      "primary_theme": "医药",
+      "stock_count": 2011,
+      "change_pct": 0.538,
+      "amount": 192798086761
+    },
+    {
+      "plate_id": "801085",
+      "plate_name": "人工智能",
+      "primary_theme": "人工智能",
+      "stock_count": 1673,
+      "change_pct": 1.974,
+      "amount": 1287451846225
+    },
+    {
+      "plate_id": "801046",
+      "plate_name": "医疗器械",
+      "primary_theme": "医药",
+      "stock_count": 1238,
+      "change_pct": 0.886,
+      "amount": 120533462138
+    },
+    {
+      "plate_id": "801052",
+      "plate_name": "环保",
+      "primary_theme": "环保",
+      "stock_count": 1025,
+      "change_pct": 1.013,
+      "amount": 140859913695
+    },
+    {
+      "plate_id": "801220",
+      "plate_name": "食品饮料",
+      "primary_theme": "食品饮料",
+      "stock_count": 774,
+      "change_pct": 0.43,
+      "amount": 55062117454
+    },
+    {
+      "plate_id": "801100",
+      "plate_name": "生育概念",
+      "primary_theme": "生育概念",
+      "stock_count": 717,
+      "change_pct": 0.526,
+      "amount": 54551399594
+    },
+    {
+      "plate_id": "801199",
+      "plate_name": "汽车零部件",
+      "primary_theme": "汽车零部件",
+      "stock_count": 617,
+      "change_pct": 1.962,
+      "amount": 808617211318
+    },
+    {
+      "plate_id": "801414",
+      "plate_name": "教育",
+      "primary_theme": "教育",
+      "stock_count": 582,
+      "change_pct": 1.426,
+      "amount": 66392769262
+    },
+    {
+      "plate_id": "801128",
+      "plate_name": "国产软件",
+      "primary_theme": "数字经济",
+      "stock_count": 538,
+      "change_pct": 1.919,
+      "amount": 111963904399
+    },
+    {
+      "plate_id": "801062",
+      "plate_name": "军工",
+      "primary_theme": "军工",
+      "stock_count": 530,
+      "change_pct": 2.145,
+      "amount": 488860891595
+    },
+    {
+      "plate_id": "801464",
+      "plate_name": "农业",
+      "primary_theme": "农业",
+      "stock_count": 519,
+      "change_pct": 0.446,
+      "amount": 130826769515
+    },
+    {
+      "plate_id": "801093",
+      "plate_name": "天然气",
+      "primary_theme": "天然气",
+      "stock_count": 505,
+      "change_pct": 0.557,
+      "amount": 59303669170
+    },
+    {
+      "plate_id": "801270",
+      "plate_name": "基础建设",
+      "primary_theme": "基础建设",
+      "stock_count": 481,
+      "change_pct": 1.177,
+      "amount": 197176825139
+    },
+    {
+      "plate_id": "801123",
+      "plate_name": "服装家纺",
+      "primary_theme": "服装家纺",
+      "stock_count": 475,
+      "change_pct": 0.569,
+      "amount": 24626369719
+    },
+    {
+      "plate_id": "801511",
+      "plate_name": "新型工业化",
+      "primary_theme": "新型工业化",
+      "stock_count": 429,
+      "change_pct": 1.776,
+      "amount": 349521017580
+    },
+    {
+      "plate_id": "801350",
+      "plate_name": "一带一路",
+      "primary_theme": "一带一路",
+      "stock_count": 389,
+      "change_pct": 1.331,
+      "amount": 398949729450
+    },
+    {
+      "plate_id": "801829",
+      "plate_name": "低空经济",
+      "primary_theme": "低空经济",
+      "stock_count": 349,
+      "change_pct": 1.751,
+      "amount": 259202766350
+    },
+    {
+      "plate_id": "801169",
+      "plate_name": "VR/AR/MR",
+      "primary_theme": "消费电子",
+      "stock_count": 317,
+      "change_pct": 1.561,
+      "amount": 206712867178
+    },
+    {
+      "plate_id": "801248",
+      "plate_name": "智能驾驶",
+      "primary_theme": "智能驾驶",
+      "stock_count": 315,
+      "change_pct": 2.353,
+      "amount": 522987553740
+    },
+    {
+      "plate_id": "801080",
+      "plate_name": "煤炭",
+      "primary_theme": "煤炭",
+      "stock_count": 262,
+      "change_pct": 0.574,
+      "amount": 32310386035
+    },
+    {
+      "plate_id": "801069",
+      "plate_name": "家电",
+      "primary_theme": "家电",
+      "stock_count": 201,
+      "change_pct": 1.192,
+      "amount": 104684316074
+    },
+    {
+      "plate_id": "801878",
+      "plate_name": "端侧AI",
+      "primary_theme": "端侧AI",
+      "stock_count": 192,
+      "change_pct": 2.145,
+      "amount": 398538772562
+    },
+    {
+      "plate_id": "801184",
+      "plate_name": "包装印刷",
+      "primary_theme": "造纸包装",
+      "stock_count": 191,
+      "change_pct": 0.943,
+      "amount": 23627170394
+    },
+    {
+      "plate_id": "801070",
+      "plate_name": "光伏",
+      "primary_theme": "光伏",
+      "stock_count": 178,
+      "change_pct": 1.983,
+      "amount": 561252839062
+    },
+    {
+      "plate_id": "801153",
+      "plate_name": "创投",
+      "primary_theme": "多元金融",
+      "stock_count": 144,
+      "change_pct": 1.396,
+      "amount": 147527413585
+    },
+    {
+      "plate_id": "801408",
+      "plate_name": "智能家居",
+      "primary_theme": "家电",
+      "stock_count": 132,
+      "change_pct": 1.486,
+      "amount": 109254707809
+    },
+    {
+      "plate_id": "801027",
+      "plate_name": "银行",
+      "primary_theme": "银行保险",
+      "stock_count": 77,
+      "change_pct": -0.773,
+      "amount": 33749048932
+    },
+    {
+      "plate_id": "801636",
+      "plate_name": "露营经济",
+      "primary_theme": "旅游酒店",
+      "stock_count": 74,
+      "change_pct": -0.744,
+      "amount": 6817799550
+    },
+    {
+      "plate_id": "801871",
+      "plate_name": "汽车充电",
+      "primary_theme": "汽车零部件",
+      "stock_count": 41,
+      "change_pct": 2.11,
+      "amount": 363518864498
+    },
+    {
+      "plate_id": "801471",
+      "plate_name": "免税",
+      "primary_theme": "免税",
+      "stock_count": 13,
+      "change_pct": -0.135,
+      "amount": 17581419983
+    },
+    {
+      "plate_id": "801053",
+      "plate_name": "零售",
+      "primary_theme": "商贸零售",
+      "stock_count": 7,
+      "change_pct": 0.949,
+      "amount": 89020814409
+    },
+    {
+      "plate_id": "801396",
+      "plate_name": "云游戏",
+      "primary_theme": "传媒游戏",
+      "stock_count": 240,
+      "change_pct": 3.245,
+      "amount": 24095989783
+    },
+    {
+      "plate_id": "801411",
+      "plate_name": "柔性屏",
+      "primary_theme": "消费电子",
+      "stock_count": 227,
+      "change_pct": 2.94,
+      "amount": 81247305676
+    },
+    {
+      "plate_id": "801190",
+      "plate_name": "卫星导航",
+      "primary_theme": "卫星导航",
+      "stock_count": 242,
+      "change_pct": 2.888,
+      "amount": 268410530796
+    },
+    {
+      "plate_id": "801920",
+      "plate_name": "硫化物",
+      "primary_theme": "新材料",
+      "stock_count": 171,
+      "change_pct": 2.715,
+      "amount": 67541295649
+    },
+    {
+      "plate_id": "801047",
+      "plate_name": "钠电池",
+      "primary_theme": "锂电池",
+      "stock_count": 238,
+      "change_pct": 2.627,
+      "amount": 173507081913
+    },
+    {
+      "plate_id": "801253",
+      "plate_name": "数字能源",
+      "primary_theme": "智能电网",
+      "stock_count": 198,
+      "change_pct": 2.506,
+      "amount": 45884010054
+    },
+    {
+      "plate_id": "801705",
+      "plate_name": "超导概念",
+      "primary_theme": "智能电网",
+      "stock_count": 215,
+      "change_pct": 2.395,
+      "amount": 39085918190
+    },
+    {
+      "plate_id": "801970",
+      "plate_name": "集装箱",
+      "primary_theme": "船舶航运",
+      "stock_count": 239,
+      "change_pct": 2.39,
+      "amount": 5802107541
+    },
+    {
+      "plate_id": "801075",
+      "plate_name": "自主可控",
+      "primary_theme": "数字经济",
+      "stock_count": 145,
+      "change_pct": 2.347,
+      "amount": 76460768742
+    },
+    {
+      "plate_id": "801375",
+      "plate_name": "新材料概念",
+      "primary_theme": "新材料",
+      "stock_count": 195,
+      "change_pct": 2.32,
+      "amount": 229050414815
+    },
+    {
+      "plate_id": "801443",
+      "plate_name": "转基因",
+      "primary_theme": "农业",
+      "stock_count": 2,
+      "change_pct": -0.027,
+      "amount": 3289381167
+    },
+    {
+      "plate_id": "801057",
+      "plate_name": "石油石化",
+      "primary_theme": "石油",
+      "stock_count": 176,
+      "change_pct": 0.006,
+      "amount": 38965044392
+    },
+    {
+      "plate_id": "801039",
+      "plate_name": "机场航空",
+      "primary_theme": "航运",
+      "stock_count": 43,
+      "change_pct": 0.433,
+      "amount": 7759337304
+    },
+    {
+      "plate_id": "801144",
+      "plate_name": "医美",
+      "primary_theme": "医美",
+      "stock_count": 53,
+      "change_pct": 0.532,
+      "amount": 38838748005
+    },
+    {
+      "plate_id": "801391",
+      "plate_name": "美容护理",
+      "primary_theme": "医美",
+      "stock_count": 35,
+      "change_pct": 0.58,
+      "amount": 9290524318
+    },
+    {
+      "plate_id": "801412",
+      "plate_name": "新零售",
+      "primary_theme": "商贸零售",
+      "stock_count": 35,
+      "change_pct": 0.604,
+      "amount": 57282332311
+    },
+    {
+      "plate_id": "801040",
+      "plate_name": "造纸",
+      "primary_theme": "造纸包装",
+      "stock_count": 28,
+      "change_pct": 0.612,
+      "amount": 7316783014
+    },
+    {
+      "plate_id": "801071",
+      "plate_name": "保险",
+      "primary_theme": "银行保险",
+      "stock_count": 63,
+      "change_pct": 0.636,
+      "amount": 11267419877
+    },
+    {
+      "plate_id": "801137",
+      "plate_name": "醋酸",
+      "primary_theme": "化工",
+      "stock_count": 68,
+      "change_pct": 0.682,
+      "amount": 2492166684
+    },
+    {
+      "plate_id": "801234",
+      "plate_name": "航运",
+      "primary_theme": "船舶航运",
+      "stock_count": 79,
+      "change_pct": 0.958,
+      "amount": 37279618259
+    },
+    {
+      "plate_id": "801676",
+      "plate_name": "地产链",
+      "primary_theme": "建筑地产",
+      "stock_count": 218,
+      "change_pct": 0.848,
+      "amount": 102748937781
+    },
+    {
+      "plate_id": "801067",
+      "plate_name": "面板",
+      "primary_theme": "消费电子",
+      "stock_count": 189,
+      "change_pct": 2.237,
+      "amount": 298368581718
+    },
+    {
+      "plate_id": "801657",
+      "plate_name": "减速器",
+      "primary_theme": "减速器",
+      "stock_count": 156,
+      "change_pct": 1.646,
+      "amount": 47208059961
+    },
+    {
+      "plate_id": "801371",
+      "plate_name": "垃圾分类",
+      "primary_theme": "环保",
+      "stock_count": 118,
+      "change_pct": 1.577,
+      "amount": 13710636176
+    },
+    {
+      "plate_id": "801578",
+      "plate_name": "铀矿",
+      "primary_theme": "有色金属",
+      "stock_count": 157,
+      "change_pct": 1.574,
+      "amount": 4264124302
+    },
+    {
+      "plate_id": "801656",
+      "plate_name": "热泵",
+      "primary_theme": "电力",
+      "stock_count": 120,
+      "change_pct": 1.693,
+      "amount": 8053415645
+    },
+    {
+      "plate_id": "801342",
+      "plate_name": "超高清视频",
+      "primary_theme": "通信",
+      "stock_count": 107,
+      "change_pct": 1.306,
+      "amount": 85040613768
+    },
+    {
+      "plate_id": "801165",
+      "plate_name": "氢能源",
+      "primary_theme": "氢能源",
+      "stock_count": 13,
+      "change_pct": 1.531,
+      "amount": 277688433895
+    },
+    {
+      "plate_id": "801553",
+      "plate_name": "元宇宙",
+      "primary_theme": "元宇宙",
+      "stock_count": 180,
+      "change_pct": 1.933,
+      "amount": 259035429225
+    },
+    {
+      "plate_id": "801177",
+      "plate_name": "无人机",
+      "primary_theme": "无人机",
+      "stock_count": 181,
+      "change_pct": 2.089,
+      "amount": 255440652014
+    },
+    {
+      "plate_id": "801246",
+      "plate_name": "水务",
+      "primary_theme": "环保",
+      "stock_count": 90,
+      "change_pct": 0.907,
+      "amount": 2921223153
+    },
+    {
+      "plate_id": "801117",
+      "plate_name": "港口",
+      "primary_theme": "船舶航运",
+      "stock_count": 81,
+      "change_pct": 0.813,
+      "amount": 3366867044
+    },
+    {
+      "plate_id": "801694",
+      "plate_name": "非金属材料",
+      "primary_theme": "化工",
+      "stock_count": 76,
+      "change_pct": 0.77,
+      "amount": 6788852979
+    },
+    {
+      "plate_id": "801662",
+      "plate_name": "火电灵活改造",
+      "primary_theme": "电力",
+      "stock_count": 128,
+      "change_pct": 1.282,
+      "amount": 8430953427
+    },
+    {
+      "plate_id": "801788",
+      "plate_name": "仪器仪表",
+      "primary_theme": "新型工业化",
+      "stock_count": 86,
+      "change_pct": 0.867,
+      "amount": 10271334472
+    },
+    {
+      "plate_id": "801016",
+      "plate_name": "稀土永磁",
+      "primary_theme": "有色金属",
+      "stock_count": 200,
+      "change_pct": 2.187,
+      "amount": 86210335010
+    },
+    {
+      "plate_id": "801031",
+      "plate_name": "文化传媒",
+      "primary_theme": "传媒游戏",
+      "stock_count": 90,
+      "change_pct": 1.895,
+      "amount": 133777299091
+    },
+    {
+      "plate_id": "801012",
+      "plate_name": "钢铁",
+      "primary_theme": "钢铁",
+      "stock_count": 119,
+      "change_pct": 1.267,
+      "amount": 24106931779
+    },
+    {
+      "plate_id": "801439",
+      "plate_name": "网红经济",
+      "primary_theme": "传媒游戏",
+      "stock_count": 79,
+      "change_pct": 1.082,
+      "amount": 104858017953
+    },
+    {
+      "plate_id": "801579",
+      "plate_name": "垃圾发电",
+      "primary_theme": "环保",
+      "stock_count": 116,
+      "change_pct": 1.715,
+      "amount": 14980510665
+    },
+    {
+      "plate_id": "801358",
+      "plate_name": "大飞机",
+      "primary_theme": "大飞机",
+      "stock_count": 170,
+      "change_pct": 1.771,
+      "amount": 111223880224
+    },
+    {
+      "plate_id": "801932",
+      "plate_name": "海洋经济",
+      "primary_theme": "海洋经济",
+      "stock_count": 167,
+      "change_pct": 2.11,
+      "amount": 229887689524
+    },
+    {
+      "plate_id": "801386",
+      "plate_name": "轨道交通",
+      "primary_theme": "轨道交通",
+      "stock_count": 150,
+      "change_pct": 1.595,
+      "amount": 97697952706
+    },
+    {
+      "plate_id": "801139",
+      "plate_name": "培育钻石",
+      "primary_theme": "新材料",
+      "stock_count": 112,
+      "change_pct": 1.349,
+      "amount": 15988808164
+    },
+    {
+      "plate_id": "881161",
+      "plate_name": "酒店及餐饮",
+      "primary_theme": "旅游酒店",
+      "stock_count": 245,
+      "change_pct": -2.451,
+      "amount": 1882208841
+    },
+    {
+      "plate_id": "881107",
+      "plate_name": "油气开采及服务",
+      "primary_theme": "天然气",
+      "stock_count": 236,
+      "change_pct": -2.89,
+      "amount": 10339210094
+    },
+    {
+      "plate_id": "881160",
+      "plate_name": "旅游及酒店",
+      "primary_theme": "旅游酒店",
+      "stock_count": 219,
+      "change_pct": -2.196,
+      "amount": 5946888374
+    },
+    {
+      "plate_id": "881273",
+      "plate_name": "白酒",
+      "primary_theme": "白酒",
+      "stock_count": 75,
+      "change_pct": -0.76,
+      "amount": 20096231513
+    },
+    {
+      "plate_id": "881141",
+      "plate_name": "中药",
+      "primary_theme": "医药",
+      "stock_count": 16,
+      "change_pct": -0.165,
+      "amount": 10702758988
+    },
+    {
+      "plate_id": "881106",
+      "plate_name": "石油矿业开采",
+      "primary_theme": "石油",
+      "stock_count": 7,
+      "change_pct": -0.076,
+      "amount": 10772301153
+    },
+    {
+      "plate_id": "881103",
+      "plate_name": "农产品加工",
+      "primary_theme": "农业",
+      "stock_count": 3,
+      "change_pct": 0.034,
+      "amount": 6897578681
+    },
+    {
+      "plate_id": "881133",
+      "plate_name": "饮料制造",
+      "primary_theme": "食品饮料",
+      "stock_count": 8,
+      "change_pct": -0.138,
+      "amount": 11407187226
+    },
+    {
+      "plate_id": "881146",
+      "plate_name": "燃气",
+      "primary_theme": "天然气",
+      "stock_count": 13,
+      "change_pct": 0.133,
+      "amount": 7683152978
+    },
+    {
+      "plate_id": "881151",
+      "plate_name": "机场航运",
+      "primary_theme": "航运",
+      "stock_count": 13,
+      "change_pct": 0.136,
+      "amount": 5626937888
+    },
+    {
+      "plate_id": "881101",
+      "plate_name": "种植业与林业",
+      "primary_theme": "农业",
+      "stock_count": 21,
+      "change_pct": 0.211,
+      "amount": 7325851594
+    },
+    {
+      "plate_id": "881135",
+      "plate_name": "纺织制造",
+      "primary_theme": "服装家纺",
+      "stock_count": 28,
+      "change_pct": 0.284,
+      "amount": 5108597192
+    },
+    {
+      "plate_id": "881125",
+      "plate_name": "汽车整车",
+      "primary_theme": "汽车整车",
+      "stock_count": 36,
+      "change_pct": 0.365,
+      "amount": 20788238506
+    },
+    {
+      "plate_id": "881173",
+      "plate_name": "小家电",
+      "primary_theme": "家电",
+      "stock_count": 47,
+      "change_pct": 0.472,
+      "amount": 4106736623
+    },
+    {
+      "plate_id": "881283",
+      "plate_name": "多元金融",
+      "primary_theme": "多元金融",
+      "stock_count": 48,
+      "change_pct": 0.481,
+      "amount": 10610909840
+    },
+    {
+      "plate_id": "881142",
+      "plate_name": "生物制品",
+      "primary_theme": "医药",
+      "stock_count": 50,
+      "change_pct": 0.307,
+      "amount": 11846968051
+    },
+    {
+      "plate_id": "881143",
+      "plate_name": "医药商业",
+      "primary_theme": "医药",
+      "stock_count": 58,
+      "change_pct": 0.583,
+      "amount": 4971839181
+    },
+    {
+      "plate_id": "881108",
+      "plate_name": "化学原料",
+      "primary_theme": "化工",
+      "stock_count": 61,
+      "change_pct": 0.446,
+      "amount": 22219448534
+    },
+    {
+      "plate_id": "881102",
+      "plate_name": "养殖业",
+      "primary_theme": "农业",
+      "stock_count": 65,
+      "change_pct": 0.658,
+      "amount": 8890821695
+    },
+    {
+      "plate_id": "881176",
+      "plate_name": "房地产服务",
+      "primary_theme": "建筑地产",
+      "stock_count": 72,
+      "change_pct": 0.73,
+      "amount": 1663485485
+    },
+    {
+      "plate_id": "881105",
+      "plate_name": "煤炭开采加工",
+      "primary_theme": "煤炭",
+      "stock_count": 76,
+      "change_pct": 0.765,
+      "amount": 18624093600
+    },
+    {
+      "plate_id": "881139",
+      "plate_name": "家居用品",
+      "primary_theme": "家居用品",
+      "stock_count": 84,
+      "change_pct": 0.421,
+      "amount": 14997903709
+    },
+    {
+      "plate_id": "881140",
+      "plate_name": "化学制药",
+      "primary_theme": "医药",
+      "stock_count": 85,
+      "change_pct": 0.783,
+      "amount": 48928820083
+    },
+    {
+      "plate_id": "881269",
+      "plate_name": "轨交设备",
+      "primary_theme": "轨道交通",
+      "stock_count": 100,
+      "change_pct": 1.004,
+      "amount": 6790157019
+    },
+    {
+      "plate_id": "881266",
+      "plate_name": "橡胶制品",
+      "primary_theme": "化工",
+      "stock_count": 103,
+      "change_pct": 1.04,
+      "amount": 3611225755
+    },
+    {
+      "plate_id": "881134",
+      "plate_name": "食品加工制造",
+      "primary_theme": "食品饮料",
+      "stock_count": 107,
+      "change_pct": 0.429,
+      "amount": 16096724753
+    },
+    {
+      "plate_id": "881268",
+      "plate_name": "工程机械",
+      "primary_theme": "工程机械",
+      "stock_count": 120,
+      "change_pct": 1.208,
+      "amount": 13777204752
+    },
+    {
+      "plate_id": "881118",
+      "plate_name": "专用设备",
+      "primary_theme": "新型工业化",
+      "stock_count": 127,
+      "change_pct": 0.823,
+      "amount": 60364662993
+    },
+    {
+      "plate_id": "881175",
+      "plate_name": "医疗服务",
+      "primary_theme": "医药",
+      "stock_count": 129,
+      "change_pct": 0.566,
+      "amount": 23241628221
+    },
+    {
+      "plate_id": "881132",
+      "plate_name": "黑色家电",
+      "primary_theme": "家电",
+      "stock_count": 130,
+      "change_pct": 1.308,
+      "amount": 3876191234
+    },
+    {
+      "plate_id": "885898",
+      "plate_name": "免税店",
+      "primary_theme": "免税",
+      "stock_count": 50,
+      "change_pct": -0.504,
+      "amount": 12762114843
+    },
+    {
+      "plate_id": "885433",
+      "plate_name": "节能照明",
+      "primary_theme": "环保",
+      "stock_count": 0,
+      "change_pct": 0,
+      "amount": 0
+    },
+    {
+      "plate_id": "885790",
+      "plate_name": "边缘计算",
+      "primary_theme": "算力",
+      "stock_count": 0,
+      "change_pct": 0,
+      "amount": 0
+    },
+    {
+      "plate_id": "885657",
+      "plate_name": "供应链金融",
+      "primary_theme": "多元金融",
+      "stock_count": 0,
+      "change_pct": 0,
+      "amount": 0
+    },
+    {
+      "plate_id": "885452",
+      "plate_name": "大数据",
+      "primary_theme": "数字经济",
+      "stock_count": 0,
+      "change_pct": 0,
+      "amount": 0
+    },
+    {
+      "plate_id": "885746",
+      "plate_name": "消费金融",
+      "primary_theme": "多元金融",
+      "stock_count": 4,
+      "change_pct": 0.048,
+      "amount": 6171232472
+    },
+    {
+      "plate_id": "885995",
+      "plate_name": "粮食概念",
+      "primary_theme": "农业",
+      "stock_count": 11,
+      "change_pct": 0.119,
+      "amount": 10866275081
+    },
+    {
+      "plate_id": "885403",
+      "plate_name": "生物医药",
+      "primary_theme": "医药",
+      "stock_count": 13,
+      "change_pct": 0.136,
+      "amount": 78032834
+    },
+    {
+      "plate_id": "885967",
+      "plate_name": "化肥",
+      "primary_theme": "农业",
+      "stock_count": 15,
+      "change_pct": 0.155,
+      "amount": 56051621760
+    },
+    {
+      "plate_id": "885748",
+      "plate_name": "可燃冰",
+      "primary_theme": "天然气",
+      "stock_count": 23,
+      "change_pct": 0.232,
+      "amount": 6937060676
+    },
+    {
+      "plate_id": "885573",
+      "plate_name": "猪肉",
+      "primary_theme": "农业",
+      "stock_count": 25,
+      "change_pct": 0.256,
+      "amount": 9974305694
+    },
+    {
+      "plate_id": "885462",
+      "plate_name": "乳业",
+      "primary_theme": "食品饮料",
+      "stock_count": 32,
+      "change_pct": 0.326,
+      "amount": 8413805805
+    },
+    {
+      "plate_id": "885640",
+      "plate_name": "草甘膦",
+      "primary_theme": "农业",
+      "stock_count": 33,
+      "change_pct": -0.188,
+      "amount": 5410550250
+    },
+    {
+      "plate_name": "集成电路概念",
+      "primary_theme": "芯片"
+    },
+    {
+      "plate_name": "次新股",
+      "primary_theme": "次新股"
+    },
+    {
+      "plate_name": "核准制次新股",
+      "primary_theme": "次新股"
+    },
+    {
+      "plate_name": "华为概念",
+      "primary_theme": "华为概念"
+    },
+    {
+      "plate_name": "华为海思",
+      "primary_theme": "华为概念"
+    },
+    {
+      "plate_id": "885362",
+      "plate_name": "云计算",
+      "primary_theme": "算力",
+      "stock_count": 232,
+      "change_pct": 1.029,
+      "amount": 206621767800
+    },
+    {
+      "plate_id": "886048",
+      "plate_name": "英伟达概念",
+      "primary_theme": "算力",
+      "stock_count": 139,
+      "change_pct": 0.88,
+      "amount": 158844659237
+    },
+    {
+      "plate_id": "885658",
+      "plate_name": "移动互联网",
+      "primary_theme": "数字经济",
+      "stock_count": 156,
+      "change_pct": 0.592,
+      "amount": 72280547230
+    },
+    {
+      "plate_id": "801530",
+      "plate_name": "中字头",
+      "primary_theme": "央企国企改革",
+      "stock_count": 62,
+      "change_pct": 0.738,
+      "amount": 124628891956
+    },
+    {
+      "plate_id": "885741",
+      "plate_name": "中字头股票",
+      "primary_theme": "央企国企改革",
+      "stock_count": 91,
+      "change_pct": 0.844,
+      "amount": 139256807495
+    },
+    {
+      "plate_id": "886101",
+      "plate_name": "兵装重组概念",
+      "primary_theme": "军工",
+      "stock_count": 214,
+      "change_pct": 2.148,
+      "amount": 2556090387
+    },
+    {
+      "plate_id": "881147",
+      "plate_name": "环保工程",
+      "primary_theme": "环保",
+      "stock_count": 78,
+      "change_pct": 0.662,
+      "amount": 22968387689
+    },
+    {
+      "plate_id": "881284",
+      "plate_name": "环保设备",
+      "primary_theme": "环保",
+      "stock_count": 167,
+      "change_pct": 1.308,
+      "amount": 11108434387
+    },
+    {
+      "plate_id": "881181",
+      "plate_name": "环境治理",
+      "primary_theme": "环保",
+      "stock_count": 112,
+      "change_pct": 0.761,
+      "amount": 23168179984
+    },
+    {
+      "plate_id": "885992",
+      "plate_name": "噪声防治",
+      "primary_theme": "环保",
+      "stock_count": 110,
+      "change_pct": 1.104,
+      "amount": 3730909004
+    },
+    {
+      "plate_id": "885555",
+      "plate_name": "PM2.5",
+      "primary_theme": "环保",
+      "stock_count": 149,
+      "change_pct": 1.206,
+      "amount": 12960979490
+    },
+    {
+      "plate_id": "885962",
+      "plate_name": "土壤修复",
+      "primary_theme": "环保",
+      "stock_count": 155,
+      "change_pct": 1.108,
+      "amount": 43974616151
+    },
+    {
+      "plate_id": "885986",
+      "plate_name": "碳交易",
+      "primary_theme": "环保",
+      "stock_count": 64,
+      "change_pct": 0.552,
+      "amount": 74473609576
+    },
+    {
+      "plate_id": "885304",
+      "plate_name": "生物质能",
+      "primary_theme": "电力",
+      "stock_count": 100,
+      "change_pct": 0.569,
+      "amount": 5721623539
+    },
+    {
+      "plate_id": "886005",
+      "plate_name": "生物质能发电",
+      "primary_theme": "电力",
+      "stock_count": 130,
+      "change_pct": 0.652,
+      "amount": 24171143080
+    },
+    {
+      "plate_id": "881154",
+      "plate_name": "园区开发",
+      "primary_theme": "建筑地产",
+      "stock_count": 129,
+      "change_pct": 1.292,
+      "amount": 1788330499
+    },
+    {
+      "plate_id": "885508",
+      "plate_name": "禽流感",
+      "primary_theme": "医药",
+      "stock_count": 341,
+      "change_pct": 1.817,
+      "amount": 6153819227
+    },
+    {
+      "plate_id": "885831",
+      "plate_name": "超级真菌",
+      "primary_theme": "医药",
+      "stock_count": 118,
+      "change_pct": 0.663,
+      "amount": 3890118119
+    },
+    {
+      "plate_id": "885882",
+      "plate_name": "消毒剂",
+      "primary_theme": "医药",
+      "stock_count": 34,
+      "change_pct": -0.345,
+      "amount": 26279009038
+    },
+    {
+      "plate_id": "885527",
+      "plate_name": "医疗改革",
+      "primary_theme": "医药",
+      "stock_count": 0,
+      "change_pct": 0.007,
+      "amount": 15967595477
+    },
+    {
+      "plate_id": "885879",
+      "plate_name": "流感",
+      "primary_theme": "医药",
+      "stock_count": 133,
+      "change_pct": 0.883,
+      "amount": 40261797315
+    },
+    {
+      "plate_id": "885917",
+      "plate_name": "新冠检测",
+      "primary_theme": "医药",
+      "stock_count": 139,
+      "change_pct": 1.01,
+      "amount": 31585509141
+    },
+    {
+      "plate_id": "885981",
+      "plate_name": "家庭医生",
+      "primary_theme": "医药",
+      "stock_count": 140,
+      "change_pct": 1.408,
+      "amount": 17275520847
+    },
+    {
+      "plate_id": "885805",
+      "plate_name": "芬太尼",
+      "primary_theme": "医药",
+      "stock_count": 82,
+      "change_pct": 0.829,
+      "amount": 1465836686
+    },
+    {
+      "plate_id": "885852",
+      "plate_name": "青蒿素",
+      "primary_theme": "医药",
+      "stock_count": 51,
+      "change_pct": 0.519,
+      "amount": 3580652084
+    },
+    {
+      "plate_id": "885927",
+      "plate_name": "CRO概念",
+      "primary_theme": "医药",
+      "stock_count": 47,
+      "change_pct": -0.085,
+      "amount": 26907255038
+    },
+    {
+      "plate_id": "885947",
+      "plate_name": "DRG/DIP",
+      "primary_theme": "医药",
+      "stock_count": 195,
+      "change_pct": 1.96,
+      "amount": 8163266781
+    },
+    {
+      "plate_id": "886015",
+      "plate_name": "创新药",
+      "primary_theme": "医药",
+      "stock_count": 19,
+      "change_pct": -0.031,
+      "amount": 72076017957
+    },
+    {
+      "plate_id": "885856",
+      "plate_name": "仿制药一致性评价",
+      "primary_theme": "医药",
+      "stock_count": 46,
+      "change_pct": 0.173,
+      "amount": 32521820967
+    },
+    {
+      "plate_id": "886051",
+      "plate_name": "减肥药",
+      "primary_theme": "医药",
+      "stock_count": 5,
+      "change_pct": -0.109,
+      "amount": 24604958255
+    },
+    {
+      "plate_id": "885845",
+      "plate_name": "生物疫苗",
+      "primary_theme": "医药",
+      "stock_count": 36,
+      "change_pct": 0.364,
+      "amount": 13700970628
+    },
+    {
+      "plate_id": "885578",
+      "plate_name": "基因测序",
+      "primary_theme": "医药",
+      "stock_count": 202,
+      "change_pct": 1.128,
+      "amount": 35007852603
+    },
+    {
+      "plate_id": "885955",
+      "plate_name": "重组蛋白",
+      "primary_theme": "医药",
+      "stock_count": 11,
+      "change_pct": -0.115,
+      "amount": 11757971019
+    },
+    {
+      "plate_id": "886018",
+      "plate_name": "高压氧舱",
+      "primary_theme": "医药",
+      "stock_count": 42,
+      "change_pct": 0.42,
+      "amount": 2587347419
+    },
+    {
+      "plate_id": "885900",
+      "plate_name": "NMN概念",
+      "primary_theme": "医药",
+      "stock_count": 174,
+      "change_pct": 1.332,
+      "amount": 5296523981
+    },
+    {
+      "plate_id": "886056",
+      "plate_name": "阿尔茨海默概念",
+      "primary_theme": "医药",
+      "stock_count": 56,
+      "change_pct": 0.328,
+      "amount": 16737121602
+    },
+    {
+      "plate_id": "885913",
+      "plate_name": "医美概念",
+      "primary_theme": "医药",
+      "stock_count": 91,
+      "change_pct": 0.801,
+      "amount": 29309741246
+    },
+    {
+      "plate_id": "801612",
+      "plate_name": "脑机接口",
+      "primary_theme": "脑机接口",
+      "stock_count": 692,
+      "change_pct": 0.29,
+      "amount": 58477309395
+    },
+    {
+      "plate_id": "885910",
+      "plate_name": "拼多多概念",
+      "primary_theme": "电商平台经济",
+      "stock_count": 58,
+      "change_pct": 0.324,
+      "amount": 22729587734
+    },
+    {
+      "plate_id": "885648",
+      "plate_name": "物流电商平台",
+      "primary_theme": "电商平台经济",
+      "stock_count": 47,
+      "change_pct": 0.475,
+      "amount": 6307422174
+    },
+    {
+      "plate_id": "881148",
+      "plate_name": "港口航运",
+      "primary_theme": "交通运输",
+      "stock_count": 232,
+      "change_pct": 2.038,
+      "amount": 17398518236
+    },
+    {
+      "plate_id": "881274",
+      "plate_name": "影视院线",
+      "primary_theme": "传媒",
+      "stock_count": 61,
+      "change_pct": 0.62,
+      "amount": 7695314532
+    },
+    {
+      "plate_id": "885428",
+      "plate_name": "特钢概念",
+      "primary_theme": "钢铁",
+      "stock_count": 205,
+      "change_pct": 1.098,
+      "amount": 15920974978
+    },
+    {
+      "plate_id": "881109",
+      "plate_name": "化学制品",
+      "primary_theme": "化工",
+      "stock_count": 92,
+      "change_pct": 0.681,
+      "amount": 48215606221
+    },
+    {
+      "plate_id": "881264",
+      "plate_name": "化学纤维",
+      "primary_theme": "化工",
+      "stock_count": 81,
+      "change_pct": 0.463,
+      "amount": 10878813635
+    },
+    {
+      "plate_id": "881110",
+      "plate_name": "化工合成材料",
+      "primary_theme": "化工",
+      "stock_count": 276,
+      "change_pct": 1.385,
+      "amount": 43403463241
+    },
+    {
+      "plate_id": "881111",
+      "plate_name": "化工新材料",
+      "primary_theme": "新材料",
+      "stock_count": 117,
+      "change_pct": 0.616,
+      "amount": 24757310462
+    },
+    {
+      "plate_id": "885829",
+      "plate_name": "丙烯酸",
+      "primary_theme": "化工",
+      "stock_count": 1,
+      "change_pct": 0.015,
+      "amount": 10681066761
+    },
+    {
+      "plate_id": "885551",
+      "plate_name": "氟化工概念",
+      "primary_theme": "化工",
+      "stock_count": 100,
+      "change_pct": -1.005,
+      "amount": 76763925266
+    },
+    {
+      "plate_id": "885862",
+      "plate_name": "氢氟酸",
+      "primary_theme": "化工",
+      "stock_count": 165,
+      "change_pct": -1.652,
+      "amount": 30260233603
+    },
+    {
+      "plate_id": "885912",
+      "plate_name": "有机硅概念",
+      "primary_theme": "化工",
+      "stock_count": 122,
+      "change_pct": -0.024,
+      "amount": 26098259417
+    },
+    {
+      "plate_id": "885903",
+      "plate_name": "环氧丙烷",
+      "primary_theme": "化工",
+      "stock_count": 4,
+      "change_pct": 0.043,
+      "amount": 15066160550
+    },
+    {
+      "plate_id": "885863",
+      "plate_name": "磷化工",
+      "primary_theme": "化工",
+      "stock_count": 5,
+      "change_pct": -0.207,
+      "amount": 61360592296
+    },
+    {
+      "plate_id": "885652",
+      "plate_name": "钛白粉概念",
+      "primary_theme": "化工",
+      "stock_count": 43,
+      "change_pct": -0.432,
+      "amount": 7079419205
+    },
+    {
+      "plate_id": "885633",
+      "plate_name": "染料",
+      "primary_theme": "化工",
+      "stock_count": 225,
+      "change_pct": 0.638,
+      "amount": 10786624400
+    },
+    {
+      "plate_id": "885901",
+      "plate_name": "可降解塑料",
+      "primary_theme": "化工",
+      "stock_count": 151,
+      "change_pct": 1.005,
+      "amount": 24450640387
+    },
+    {
+      "plate_id": "881265",
+      "plate_name": "塑料制品",
+      "primary_theme": "化工",
+      "stock_count": 247,
+      "change_pct": 1.661,
+      "amount": 35808894384
+    },
+    {
+      "plate_id": "885398",
+      "plate_name": "煤化工概念",
+      "primary_theme": "化工",
+      "stock_count": 27,
+      "change_pct": -0.095,
+      "amount": 60261649259
+    },
+    {
+      "plate_id": "885798",
+      "plate_name": "燃料乙醇",
+      "primary_theme": "化工",
+      "stock_count": 103,
+      "change_pct": 1.036,
+      "amount": 560264505
+    },
+    {
+      "plate_id": "801168",
+      "plate_name": "工业气体",
+      "primary_theme": "化工",
+      "stock_count": 151,
+      "change_pct": -1.513,
+      "amount": 11931460302
+    },
+    {
+      "plate_id": "885931",
+      "plate_name": "PVDF概念",
+      "primary_theme": "新材料",
+      "stock_count": 45,
+      "change_pct": -0.451,
+      "amount": 25244545238
+    },
+    {
+      "plate_id": "885781",
+      "plate_name": "石墨电极",
+      "primary_theme": "新材料",
+      "stock_count": 40,
+      "change_pct": -0.406,
+      "amount": 15930474252
+    },
+    {
+      "plate_id": "801379",
+      "plate_name": "碳纤维",
+      "primary_theme": "新材料",
+      "stock_count": 100,
+      "change_pct": 1.62,
+      "amount": 49908622815
+    },
+    {
+      "plate_id": "881114",
+      "plate_name": "金属新材料",
+      "primary_theme": "新材料",
+      "stock_count": 123,
+      "change_pct": 1.238,
+      "amount": 12290430681
+    },
+    {
+      "plate_id": "801377",
+      "plate_name": "金刚石概念",
+      "primary_theme": "新材料",
+      "stock_count": 189,
+      "change_pct": 1.893,
+      "amount": 11919069651
+    },
+    {
+      "plate_id": "885978",
+      "plate_name": "低辐射玻璃(Low-E)",
+      "primary_theme": "新材料",
+      "stock_count": 8,
+      "change_pct": 0.082,
+      "amount": 5067049951
+    },
+    {
+      "plate_id": "801576",
+      "plate_name": "石墨化",
+      "primary_theme": "新材料",
+      "stock_count": 0,
+      "change_pct": 0.095,
+      "amount": 84403518735
+    },
+    {
+      "plate_id": "885355",
+      "plate_name": "石墨烯",
+      "primary_theme": "新材料",
+      "stock_count": 34,
+      "change_pct": 0.209,
+      "amount": 50809058061
+    },
+    {
+      "plate_id": "886046",
+      "plate_name": "MR(混合现实)",
+      "primary_theme": "消费电子",
+      "stock_count": 226,
+      "change_pct": 1.379,
+      "amount": 76043036431
+    },
+    {
+      "plate_id": "885738",
+      "plate_name": "OLED",
+      "primary_theme": "消费电子",
+      "stock_count": 3,
+      "change_pct": -0.105,
+      "amount": 176377322196
+    },
+    {
+      "plate_id": "885809",
+      "plate_name": "柔性屏(折叠屏)",
+      "primary_theme": "消费电子",
+      "stock_count": 52,
+      "change_pct": 0.432,
+      "amount": 113706950657
+    },
+    {
+      "plate_id": "885800",
+      "plate_name": "消费电子概念",
+      "primary_theme": "消费电子",
+      "stock_count": 247,
+      "change_pct": 0.981,
+      "amount": 476019583828
+    },
+    {
+      "plate_id": "881270",
+      "plate_name": "元件",
+      "primary_theme": "消费电子",
+      "stock_count": 401,
+      "change_pct": 1.469,
+      "amount": 106167455261
+    },
+    {
+      "plate_id": "881122",
+      "plate_name": "光学光电子",
+      "primary_theme": "消费电子",
+      "stock_count": 177,
+      "change_pct": 1.386,
+      "amount": 65204917634
+    },
+    {
+      "plate_id": "885774",
+      "plate_name": "无线充电",
+      "primary_theme": "消费电子",
+      "stock_count": 121,
+      "change_pct": 1.035,
+      "amount": 58666446065
+    },
+    {
+      "plate_id": "885771",
+      "plate_name": "智能音箱",
+      "primary_theme": "消费电子",
+      "stock_count": 269,
+      "change_pct": 1.66,
+      "amount": 83579117086
+    },
+    {
+      "plate_id": "881123",
+      "plate_name": "其他电子",
+      "primary_theme": "消费电子",
+      "stock_count": 75,
+      "change_pct": 0.451,
+      "amount": 32835559801
+    },
+    {
+      "plate_id": "885732",
+      "plate_name": "电子信息",
+      "primary_theme": "消费电子",
+      "stock_count": 367,
+      "change_pct": 1.497,
+      "amount": 155368023414
+    },
+    {
+      "plate_id": "885975",
+      "plate_name": "电子身份证",
+      "primary_theme": "消费电子",
+      "stock_count": 290,
+      "change_pct": 1.88,
+      "amount": 15104280387
+    },
+    {
+      "plate_id": "881170",
+      "plate_name": "小金属",
+      "primary_theme": "有色金属",
+      "stock_count": 19,
+      "change_pct": -0.194,
+      "amount": 57958282389
+    },
+    {
+      "plate_id": "881168",
+      "plate_name": "工业金属",
+      "primary_theme": "有色金属",
+      "stock_count": 62,
+      "change_pct": 0.442,
+      "amount": 58924785300
+    },
+    {
+      "plate_id": "881113",
+      "plate_name": "有色冶炼加工",
+      "primary_theme": "有色金属",
+      "stock_count": 19,
+      "change_pct": 0.196,
+      "amount": 177170563721
+    },
+    {
+      "plate_id": "881169",
+      "plate_name": "贵金属",
+      "primary_theme": "有色金属",
+      "stock_count": 191,
+      "change_pct": 1.918,
+      "amount": 35702056983
+    },
+    {
+      "plate_id": "881267",
+      "plate_name": "能源金属",
+      "primary_theme": "有色金属",
+      "stock_count": 180,
+      "change_pct": -1.808,
+      "amount": 38189922294
+    },
+    {
+      "plate_id": "885970",
+      "plate_name": "金属锌",
+      "primary_theme": "有色金属",
+      "stock_count": 100,
+      "change_pct": 0.773,
+      "amount": 60722726918
+    },
+    {
+      "plate_id": "885530",
+      "plate_name": "黄金概念",
+      "primary_theme": "有色金属",
+      "stock_count": 185,
+      "change_pct": 1.109,
+      "amount": 92863793799
+    },
+    {
+      "plate_id": "881153",
+      "plate_name": "房地产",
+      "primary_theme": "建筑地产",
+      "stock_count": 412,
+      "change_pct": 1.715,
+      "amount": 24243726960
+    },
+    {
+      "plate_id": "881115",
+      "plate_name": "建筑材料",
+      "primary_theme": "建筑地产",
+      "stock_count": 85,
+      "change_pct": 0.711,
+      "amount": 28419816842
+    },
+    {
+      "plate_id": "881116",
+      "plate_name": "建筑装饰",
+      "primary_theme": "建筑地产",
+      "stock_count": 264,
+      "change_pct": 1.124,
+      "amount": 44756494249
+    },
+    {
+      "plate_id": "801632",
+      "plate_name": "新型城镇化",
+      "primary_theme": "建筑地产",
+      "stock_count": 96,
+      "change_pct": 1.137,
+      "amount": 64643861353
+    },
+    {
+      "plate_id": "886087",
+      "plate_name": "房屋检测",
+      "primary_theme": "建筑地产",
+      "stock_count": 148,
+      "change_pct": 1.244,
+      "amount": 7813999222
+    },
+    {
+      "plate_id": "885915",
+      "plate_name": "物业管理",
+      "primary_theme": "建筑地产",
+      "stock_count": 438,
+      "change_pct": 1.658,
+      "amount": 41689801714
+    },
+    {
+      "plate_id": "885782",
+      "plate_name": "水泥概念",
+      "primary_theme": "建筑地产",
+      "stock_count": 78,
+      "change_pct": 0.564,
+      "amount": 17347165140
+    },
+    {
+      "plate_id": "801086",
+      "plate_name": "玻璃",
+      "primary_theme": "建筑地产",
+      "stock_count": 34,
+      "change_pct": 1.048,
+      "amount": 12428220303
+    },
+    {
+      "plate_id": "886065",
+      "plate_name": "可控核聚变",
+      "primary_theme": "核电",
+      "stock_count": 107,
+      "change_pct": 0.977,
+      "amount": 117739704584
+    },
+    {
+      "plate_id": "886052",
+      "plate_name": "核污染防治",
+      "primary_theme": "核电",
+      "stock_count": 85,
+      "change_pct": 0.672,
+      "amount": 27559527625
+    },
+    {
+      "plate_id": "885914",
+      "plate_name": "煤炭概念",
+      "primary_theme": "煤炭",
+      "stock_count": 17,
+      "change_pct": -0.289,
+      "amount": 58184250930
+    },
+    {
+      "plate_id": "881180",
+      "plate_name": "石油加工贸易",
+      "primary_theme": "石油",
+      "stock_count": 159,
+      "change_pct": 1.227,
+      "amount": 10162571058
+    },
+    {
+      "plate_id": "885372",
+      "plate_name": "页岩气",
+      "primary_theme": "天然气",
+      "stock_count": 166,
+      "change_pct": 0.813,
+      "amount": 22552416637
+    },
+    {
+      "plate_id": "885808",
+      "plate_name": "养鸡",
+      "primary_theme": "农业",
+      "stock_count": 18,
+      "change_pct": -0.187,
+      "amount": 3252480992
+    },
+    {
+      "plate_id": "885406",
+      "plate_name": "食品安全",
+      "primary_theme": "食品饮料",
+      "stock_count": 138,
+      "change_pct": 1.252,
+      "amount": 22549298549
+    },
+    {
+      "plate_id": "886081",
+      "plate_name": "维生素",
+      "primary_theme": "医药",
+      "stock_count": 76,
+      "change_pct": 0.76,
+      "amount": 87568720218
+    },
+    {
+      "plate_id": "885525",
+      "plate_name": "白酒概念",
+      "primary_theme": "白酒",
+      "stock_count": 68,
+      "change_pct": 0.466,
+      "amount": 24427109224
+    },
+    {
+      "plate_id": "885951",
+      "plate_name": "预制菜",
+      "primary_theme": "食品饮料",
+      "stock_count": 21,
+      "change_pct": 0.219,
+      "amount": 14458447939
+    },
+    {
+      "plate_id": "885839",
+      "plate_name": "人造肉",
+      "primary_theme": "食品饮料",
+      "stock_count": 46,
+      "change_pct": 0.46,
+      "amount": 4821950188
+    },
+    {
+      "plate_id": "885904",
+      "plate_name": "代糖概念",
+      "primary_theme": "食品饮料",
+      "stock_count": 160,
+      "change_pct": 1.172,
+      "amount": 5799839792
+    },
+    {
+      "plate_id": "881174",
+      "plate_name": "厨卫电器",
+      "primary_theme": "家电",
+      "stock_count": 241,
+      "change_pct": 1.302,
+      "amount": 1008627791
+    },
+    {
+      "plate_id": "881131",
+      "plate_name": "白色家电",
+      "primary_theme": "家电",
+      "stock_count": 271,
+      "change_pct": 1.737,
+      "amount": 32988102126
+    },
+    {
+      "plate_id": "881177",
+      "plate_name": "互联网电商",
+      "primary_theme": "电商平台经济",
+      "stock_count": 99,
+      "change_pct": 0.999,
+      "amount": 8655357177
+    },
+    {
+      "plate_id": "885888",
+      "plate_name": "C2M概念",
+      "primary_theme": "电商平台经济",
+      "stock_count": 317,
+      "change_pct": 1.633,
+      "amount": 14342840764
+    },
+    {
+      "plate_id": "886097",
+      "plate_name": "2024年报预增",
+      "primary_theme": "",
+      "stock_count": 85,
+      "change_pct": 0.645,
+      "amount": 377269974392
+    },
+    {
+      "plate_id": "886103",
+      "plate_name": "2025一季报预增",
+      "primary_theme": "",
+      "stock_count": 82,
+      "change_pct": 0.328,
+      "amount": 325215068065
+    },
+    {
+      "plate_id": "886106",
+      "plate_name": "2025三季报预增",
+      "primary_theme": "",
+      "stock_count": 80,
+      "change_pct": 0.328,
+      "amount": 517916724546
+    },
+    {
+      "plate_id": "886104",
+      "plate_name": "2025中报预增",
+      "primary_theme": "",
+      "stock_count": 20,
+      "change_pct": -0.206,
+      "amount": 109597328978
+    },
+    {
+      "plate_id": "886107",
+      "plate_name": "2025年报预增",
+      "primary_theme": "",
+      "stock_count": 86,
+      "change_pct": 0.375,
+      "amount": 506877983165
+    },
+    {
+      "plate_id": "886109",
+      "plate_name": "2026一季报预增",
+      "primary_theme": "",
+      "stock_count": 109,
+      "change_pct": 0.306,
+      "amount": 624167505435
+    },
+    {
+      "plate_id": "886045",
+      "plate_name": "同花顺中特估100",
+      "primary_theme": "",
+      "stock_count": 10,
+      "change_pct": 0.108,
+      "amount": 136995146536
+    },
+    {
+      "plate_id": "886075",
+      "plate_name": "同花顺出海50",
+      "primary_theme": "",
+      "stock_count": 33,
+      "change_pct": -0.331,
+      "amount": 167756904245
+    },
+    {
+      "plate_id": "886096",
+      "plate_name": "同花顺新质50",
+      "primary_theme": "",
+      "stock_count": 107,
+      "change_pct": 0.879,
+      "amount": 161113129397
+    },
+    {
+      "plate_id": "886082",
+      "plate_name": "同花顺果指数",
+      "primary_theme": "",
+      "stock_count": 76,
+      "change_pct": 0.76,
+      "amount": 87568720218
+    },
+    {
+      "plate_id": "885916",
+      "plate_name": "同花顺漂亮100",
+      "primary_theme": "",
+      "stock_count": 57,
+      "change_pct": -0.578,
+      "amount": 281176057446
+    },
+    {
+      "plate_id": "885520",
+      "plate_name": "沪股通",
+      "primary_theme": "",
+      "stock_count": 132,
+      "change_pct": 0.589,
+      "amount": 1158705536167
+    },
+    {
+      "plate_id": "885694",
+      "plate_name": "深股通",
+      "primary_theme": "",
+      "stock_count": 163,
+      "change_pct": 0.726,
+      "amount": 1487391227900
+    },
+    {
+      "plate_id": "885853",
+      "plate_name": "沪伦通概念",
+      "primary_theme": "",
+      "stock_count": 113,
+      "change_pct": -1.138,
+      "amount": 1339439155
+    },
+    {
+      "plate_id": "885598",
+      "plate_name": "新股与次新股",
+      "primary_theme": "",
+      "stock_count": 462,
+      "change_pct": 2.576,
+      "amount": 52704719194
+    },
+    {
+      "plate_id": "885905",
+      "plate_name": "注册制次新股",
+      "primary_theme": "",
+      "stock_count": 496,
+      "change_pct": 2.743,
+      "amount": 52429325177
+    },
+    {
+      "plate_id": "885824",
+      "plate_name": "科创板IPO",
+      "primary_theme": "",
+      "stock_count": 108,
+      "change_pct": 0.476,
+      "amount": 100443769457
+    },
+    {
+      "plate_id": "885858",
+      "plate_name": "科创板公司",
+      "primary_theme": "",
+      "stock_count": 257,
+      "change_pct": 1.092,
+      "amount": 38052313828
+    },
+    {
+      "plate_id": "885817",
+      "plate_name": "科创板预期",
+      "primary_theme": "",
+      "stock_count": 193,
+      "change_pct": 0.606,
+      "amount": 35978319006
+    },
+    {
+      "plate_id": "885907",
+      "plate_name": "科创次新股",
+      "primary_theme": "",
+      "stock_count": 455,
+      "change_pct": 2.814,
+      "amount": 27266563278
+    },
+    {
+      "plate_id": "885587",
+      "plate_name": "举牌",
+      "primary_theme": "",
+      "stock_count": 29,
+      "change_pct": 0.29,
+      "amount": 3815275525
+    },
+    {
+      "plate_id": "801452",
+      "plate_name": "再融资",
+      "primary_theme": "",
+      "stock_count": 37,
+      "change_pct": 0.993,
+      "amount": 171764512810
+    },
+    {
+      "plate_id": "885338",
+      "plate_name": "融资融券",
+      "primary_theme": "",
+      "stock_count": 164,
+      "change_pct": 0.774,
+      "amount": 2659728142018
+    },
+    {
+      "plate_id": "885663",
+      "plate_name": "证金持股",
+      "primary_theme": "",
+      "stock_count": 31,
+      "change_pct": 0.262,
+      "amount": 210169663910
+    },
+    {
+      "plate_id": "885742",
+      "plate_name": "摘帽",
+      "primary_theme": "",
+      "stock_count": 381,
+      "change_pct": 2.075,
+      "amount": 34417920086
+    },
+    {
+      "plate_id": "886089",
+      "plate_name": "回购增持再贷款概念",
+      "primary_theme": "",
+      "stock_count": 115,
+      "change_pct": 0.592,
+      "amount": 372583340812
+    },
+    {
+      "plate_id": "801787",
+      "plate_name": "实控人变更",
+      "primary_theme": "",
+      "stock_count": 1312,
+      "change_pct": 1.59,
+      "amount": 76694543881
+    },
+    {
+      "plate_id": "885739",
+      "plate_name": "股权转让(并购重组)",
+      "primary_theme": "",
+      "stock_count": 307,
+      "change_pct": 1.275,
+      "amount": 228558351683
+    },
+    {
+      "plate_id": "885745",
+      "plate_name": "MSCI概念",
+      "primary_theme": "",
+      "stock_count": 39,
+      "change_pct": 0.07,
+      "amount": 889660026257
+    },
+    {
+      "plate_id": "885848",
+      "plate_name": "富时罗素概念股",
+      "primary_theme": "",
+      "stock_count": 122,
+      "change_pct": 0.407,
+      "amount": 1315253838961
+    },
+    {
+      "plate_id": "885794",
+      "plate_name": "空铁WIFI",
+      "primary_theme": "",
+      "stock_count": 173,
+      "change_pct": 1.735,
+      "amount": 5103786989
+    },
+    {
+      "plate_id": "885395",
+      "plate_name": "宽带中国",
+      "primary_theme": "",
+      "stock_count": 558,
+      "change_pct": 2.724,
+      "amount": 104016809364
+    },
+    {
+      "plate_id": "885855",
+      "plate_name": "创业板重组松绑",
+      "primary_theme": "",
+      "stock_count": 230,
+      "change_pct": 1.399,
+      "amount": 54328897381
+    },
+    {
+      "plate_id": "885381",
+      "plate_name": "美丽中国",
+      "primary_theme": "",
+      "stock_count": 145,
+      "change_pct": 0.749,
+      "amount": 16784103605
+    },
+    {
+      "plate_id": "885768",
+      "plate_name": "无人零售",
+      "primary_theme": "",
+      "stock_count": 168,
+      "change_pct": 1.271,
+      "amount": 5841274646
+    },
+    {
+      "plate_id": "885647",
+      "plate_name": "互联网彩票",
+      "primary_theme": "",
+      "stock_count": 119,
+      "change_pct": 1.19,
+      "amount": 6140670195
+    },
+    {
+      "plate_id": "885754",
+      "plate_name": "微信小程序",
+      "primary_theme": "",
+      "stock_count": 69,
+      "change_pct": 0.691,
+      "amount": 4247035735
+    },
+    {
+      "plate_id": "801193",
+      "plate_name": "知识产权",
+      "primary_theme": "",
+      "stock_count": 14,
+      "change_pct": 0.346,
+      "amount": 22785807313
+    },
+    {
+      "plate_id": "885735",
+      "plate_name": "二维码识别",
+      "primary_theme": "",
+      "stock_count": 252,
+      "change_pct": 2.525,
+      "amount": 2286542091
+    },
+    {
+      "plate_id": "881165",
+      "plate_name": "综合",
+      "primary_theme": "",
+      "stock_count": 45,
+      "change_pct": -0.45,
+      "amount": 16950285122
+    },
+    {
+      "plate_id": "883436",
+      "plate_name": "周期",
+      "primary_theme": "",
+      "stock_count": 257,
+      "change_pct": 1.469,
+      "amount": 39416932711
+    },
+    {
+      "plate_id": "885988",
+      "plate_name": "统一大市场",
+      "primary_theme": "",
+      "stock_count": 149,
+      "change_pct": 1.146,
+      "amount": 26410443260
+    },
+    {
+      "plate_id": "885764",
+      "plate_name": "自由贸易港",
+      "primary_theme": "",
+      "stock_count": 169,
+      "change_pct": 1.472,
+      "amount": 12266087364
+    },
+    {
+      "plate_id": "885832",
+      "plate_name": "长三角一体化",
+      "primary_theme": "",
+      "stock_count": 304,
+      "change_pct": 1.408,
+      "amount": 125131824531
+    },
+    {
+      "plate_id": "885891",
+      "plate_name": "新三板精选层概念",
+      "primary_theme": "",
+      "stock_count": 350,
+      "change_pct": 1.403,
+      "amount": 11958575006
+    },
+    {
+      "plate_id": "886016",
+      "plate_name": "供销社",
+      "primary_theme": "",
+      "stock_count": 24,
+      "change_pct": 0.243,
+      "amount": 2858417929
+    },
+    {
+      "plate_id": "885747",
+      "plate_name": "共享单车",
+      "primary_theme": "",
+      "stock_count": 55,
+      "change_pct": 0.559,
+      "amount": 4145300526
+    },
+    {
+      "plate_id": "885762",
+      "plate_name": "参股360",
+      "primary_theme": "",
+      "stock_count": 81,
+      "change_pct": 0.814,
+      "amount": 5546394613
+    },
+    {
+      "plate_id": "885751",
+      "plate_name": "参股万达商业",
+      "primary_theme": "",
+      "stock_count": 15,
+      "change_pct": 0.154,
+      "amount": 11636087234
+    },
+    {
+      "plate_id": "885623",
+      "plate_name": "参股保险",
+      "primary_theme": "",
+      "stock_count": 87,
+      "change_pct": 0.697,
+      "amount": 35018670248
+    },
+    {
+      "plate_id": "885984",
+      "plate_name": "恒大概念",
+      "primary_theme": "",
+      "stock_count": 153,
+      "change_pct": 1.301,
+      "amount": 17520218844
+    },
+    {
+      "plate_id": "885752",
+      "plate_name": "王者荣耀",
+      "primary_theme": "",
+      "stock_count": 27,
+      "change_pct": -0.273,
+      "amount": 7308903599
+    },
+    {
+      "plate_id": "885792",
+      "plate_name": "赛马概念",
+      "primary_theme": "",
+      "stock_count": 447,
+      "change_pct": 1.977,
+      "amount": 2529874697
+    },
+    {
+      "plate_id": "885761",
+      "plate_name": "超级品牌",
+      "primary_theme": "",
+      "stock_count": 6,
+      "change_pct": 0.067,
+      "amount": 35642937723
+    },
+    {
+      "plate_id": "885830",
+      "plate_name": "透明工厂",
+      "primary_theme": "",
+      "stock_count": 9,
+      "change_pct": -0.095,
+      "amount": 13774053452
+    },
+    {
+      "plate_id": "885516",
+      "plate_name": "马云概念",
+      "primary_theme": "",
+      "stock_count": 364,
+      "change_pct": 1.647,
+      "amount": 8244252213
+    },
+    {
+      "plate_id": "885833",
+      "plate_name": "黑洞概念",
+      "primary_theme": "",
+      "stock_count": 850,
+      "change_pct": 3.503,
+      "amount": 11503541637
+    },
+    {
+      "plate_id": "885617",
+      "plate_name": "福建自贸区",
+      "primary_theme": "",
+      "stock_count": 241,
+      "change_pct": 1.22,
+      "amount": 90195844175
+    },
+    {
+      "plate_id": "885734",
+      "plate_name": "广东自贸区",
+      "primary_theme": "",
+      "stock_count": 65,
+      "change_pct": 0.66,
+      "amount": 6248841159
+    },
+    {
+      "plate_id": "885472",
+      "plate_name": "上海自贸区",
+      "primary_theme": "",
+      "stock_count": 95,
+      "change_pct": 0.782,
+      "amount": 42165982584
+    },
+    {
+      "plate_id": "885704",
+      "plate_name": "东盟自贸区",
+      "primary_theme": "",
+      "stock_count": 432,
+      "change_pct": 1.718,
+      "amount": 9808426402
+    },
+    {
+      "plate_id": "885827",
+      "plate_name": "横琴新区",
+      "primary_theme": "",
+      "stock_count": 128,
+      "change_pct": 1.037,
+      "amount": 16235453699
+    },
+    {
+      "plate_id": "885521",
+      "plate_name": "粤港澳大湾区",
+      "primary_theme": "",
+      "stock_count": 181,
+      "change_pct": 0.95,
+      "amount": 348921147777
+    },
+    {
+      "plate_id": "886100",
+      "plate_name": "DeepSeek概念",
+      "primary_theme": "人工智能",
+      "stock_count": 207,
+      "change_pct": 0.845,
+      "amount": 543933221267
+    },
+    {
+      "plate_id": "886068",
+      "plate_name": "Sora概念(文生视频)",
+      "primary_theme": "AI应用",
+      "stock_count": 17,
+      "change_pct": -0.176,
+      "amount": 40788215174
+    },
+    {
+      "plate_id": "886090",
+      "plate_name": "智谱AI",
+      "primary_theme": "人工智能",
+      "stock_count": 107,
+      "change_pct": 0.193,
+      "amount": 72259934570
+    },
+    {
+      "plate_id": "886102",
+      "plate_name": "中国AI 50",
+      "primary_theme": "人工智能",
+      "stock_count": 91,
+      "change_pct": 0.113,
+      "amount": 203529090533
+    },
+    {
+      "plate_id": "886071",
+      "plate_name": "AI PC",
+      "primary_theme": "端侧AI",
+      "stock_count": 86,
+      "change_pct": 0.653,
+      "amount": 118230254726
+    },
+    {
+      "plate_id": "886049",
+      "plate_name": "空间计算",
+      "primary_theme": "消费电子",
+      "stock_count": 285,
+      "change_pct": 1.838,
+      "amount": 23973123939
+    },
+    {
+      "plate_id": "885957",
+      "plate_name": "东数西算(算力)",
+      "primary_theme": "算力",
+      "stock_count": 227,
+      "change_pct": 0.75,
+      "amount": 526298027782
+    },
+    {
+      "plate_id": "886044",
+      "plate_name": "液冷服务器",
+      "primary_theme": "算力",
+      "stock_count": 201,
+      "change_pct": 0.757,
+      "amount": 326130505431
+    },
+    {
+      "plate_id": "885887",
+      "plate_name": "数据中心",
+      "primary_theme": "算力",
+      "stock_count": 246,
+      "change_pct": 0.948,
+      "amount": 825902097586
+    },
+    {
+      "plate_id": "886073",
+      "plate_name": "铜缆高速连接",
+      "primary_theme": "通信",
+      "stock_count": 284,
+      "change_pct": 1.485,
+      "amount": 97233541375
+    },
+    {
+      "plate_id": "885881",
+      "plate_name": "云办公",
+      "primary_theme": "AI应用",
+      "stock_count": 225,
+      "change_pct": 0.555,
+      "amount": 26422723784
+    },
+    {
+      "plate_id": "801399",
+      "plate_name": "智慧城市",
+      "primary_theme": "数字经济",
+      "stock_count": 108,
+      "change_pct": 1.439,
+      "amount": 159299216652
+    },
+    {
+      "plate_id": "885956",
+      "plate_name": "智慧政务",
+      "primary_theme": "数字经济",
+      "stock_count": 362,
+      "change_pct": 1.146,
+      "amount": 115256734113
+    },
+    {
+      "plate_id": "886013",
+      "plate_name": "信创",
+      "primary_theme": "数字经济",
+      "stock_count": 281,
+      "change_pct": 1.133,
+      "amount": 228889738699
+    },
+    {
+      "plate_id": "885844",
+      "plate_name": "国产操作系统",
+      "primary_theme": "软件服务",
+      "stock_count": 170,
+      "change_pct": 0.8,
+      "amount": 105917218232
+    },
+    {
+      "plate_id": "801210",
+      "plate_name": "操作系统",
+      "primary_theme": "软件服务",
+      "stock_count": 57,
+      "change_pct": 1.118,
+      "amount": 73246159401
+    },
+    {
+      "plate_id": "886039",
+      "plate_name": "ERP概念",
+      "primary_theme": "软件服务",
+      "stock_count": 57,
+      "change_pct": 0.574,
+      "amount": 21500216786
+    },
+    {
+      "plate_id": "881271",
+      "plate_name": "IT服务",
+      "primary_theme": "软件服务",
+      "stock_count": 385,
+      "change_pct": 1.57,
+      "amount": 84072998691
+    },
+    {
+      "plate_id": "881272",
+      "plate_name": "软件开发",
+      "primary_theme": "软件服务",
+      "stock_count": 99,
+      "change_pct": 0.922,
+      "amount": 63858325324
+    },
+    {
+      "plate_id": "881163",
+      "plate_name": "计算机应用",
+      "primary_theme": "软件服务",
+      "stock_count": 224,
+      "change_pct": 1.112,
+      "amount": 134722932279
+    },
+    {
+      "plate_id": "881130",
+      "plate_name": "计算机设备",
+      "primary_theme": "数字经济",
+      "stock_count": 122,
+      "change_pct": 1.097,
+      "amount": 65366355093
+    },
+    {
+      "plate_id": "885942",
+      "plate_name": "数据安全",
+      "primary_theme": "网络安全",
+      "stock_count": 355,
+      "change_pct": 1.204,
+      "amount": 160750319096
+    },
+    {
+      "plate_id": "886041",
+      "plate_name": "数据要素",
+      "primary_theme": "数字经济",
+      "stock_count": 224,
+      "change_pct": 1.071,
+      "amount": 218286405103
+    },
+    {
+      "plate_id": "885977",
+      "plate_name": "国资云",
+      "primary_theme": "数字经济",
+      "stock_count": 298,
+      "change_pct": 1.503,
+      "amount": 52718914984
+    },
+    {
+      "plate_id": "885459",
+      "plate_name": "网络安全",
+      "primary_theme": "网络安全",
+      "stock_count": 274,
+      "change_pct": 1.322,
+      "amount": 166282431307
+    },
+    {
+      "plate_id": "885783",
+      "plate_name": "工业互联网",
+      "primary_theme": "新型工业化",
+      "stock_count": 145,
+      "change_pct": 0.807,
+      "amount": 323256348896
+    },
+    {
+      "plate_id": "885312",
+      "plate_name": "物联网",
+      "primary_theme": "数字经济",
+      "stock_count": 152,
+      "change_pct": 0.972,
+      "amount": 356901985524
+    },
+    {
+      "plate_id": "885756",
+      "plate_name": "芯片概念",
+      "primary_theme": "芯片",
+      "stock_count": 161,
+      "change_pct": 0.661,
+      "amount": 1125683001609
+    },
+    {
+      "plate_id": "881121",
+      "plate_name": "半导体",
+      "primary_theme": "芯片",
+      "stock_count": 132,
+      "change_pct": -0.058,
+      "amount": 324006292306
+    },
+    {
+      "plate_id": "885897",
+      "plate_name": "中芯国际概念",
+      "primary_theme": "芯片",
+      "stock_count": 0,
+      "change_pct": -0.456,
+      "amount": 142718664077
+    },
+    {
+      "plate_id": "886042",
+      "plate_name": "存储芯片",
+      "primary_theme": "芯片",
+      "stock_count": 127,
+      "change_pct": 0.1,
+      "amount": 349053238194
+    },
+    {
+      "plate_id": "886054",
+      "plate_name": "光刻机",
+      "primary_theme": "光刻机",
+      "stock_count": 79,
+      "change_pct": 0.591,
+      "amount": 49147944698
+    },
+    {
+      "plate_id": "885864",
+      "plate_name": "光刻胶",
+      "primary_theme": "光刻机",
+      "stock_count": 59,
+      "change_pct": -0.596,
+      "amount": 51990348530
+    },
+    {
+      "plate_id": "886009",
+      "plate_name": "先进封装",
+      "primary_theme": "芯片",
+      "stock_count": 16,
+      "change_pct": 0.1,
+      "amount": 260261852273
+    },
+    {
+      "plate_id": "885885",
+      "plate_name": "氮化镓",
+      "primary_theme": "芯片",
+      "stock_count": 185,
+      "change_pct": 0.769,
+      "amount": 52474677474
+    },
+    {
+      "plate_id": "881172",
+      "plate_name": "电子化学品",
+      "primary_theme": "芯片",
+      "stock_count": 38,
+      "change_pct": -0.386,
+      "amount": 42297856357
+    },
+    {
+      "plate_id": "885945",
+      "plate_name": "汽车芯片",
+      "primary_theme": "芯片",
+      "stock_count": 218,
+      "change_pct": 0.655,
+      "amount": 216939921919
+    },
+    {
+      "plate_id": "885556",
+      "plate_name": "5G",
+      "primary_theme": "通信",
+      "stock_count": 319,
+      "change_pct": 1.269,
+      "amount": 614545779555
+    },
+    {
+      "plate_id": "886037",
+      "plate_name": "6G概念",
+      "primary_theme": "通信",
+      "stock_count": 283,
+      "change_pct": 1.951,
+      "amount": 191370533786
+    },
+    {
+      "plate_id": "885998",
+      "plate_name": "F5G概念",
+      "primary_theme": "通信",
+      "stock_count": 535,
+      "change_pct": 3.129,
+      "amount": 118101300687
+    },
+    {
+      "plate_id": "885940",
+      "plate_name": "WiFi6",
+      "primary_theme": "通信",
+      "stock_count": 302,
+      "change_pct": 1.957,
+      "amount": 72049146772
+    },
+    {
+      "plate_id": "886084",
+      "plate_name": "光纤概念",
+      "primary_theme": "通信",
+      "stock_count": 527,
+      "change_pct": 2.376,
+      "amount": 249983387243
+    },
+    {
+      "plate_id": "886033",
+      "plate_name": "共封装光学(CPO)",
+      "primary_theme": "通信",
+      "stock_count": 436,
+      "change_pct": 1.777,
+      "amount": 477475430508
+    },
+    {
+      "plate_id": "886055",
+      "plate_name": "星闪概念",
+      "primary_theme": "华为概念",
+      "stock_count": 211,
+      "change_pct": 1.259,
+      "amount": 47480197298
+    },
+    {
+      "plate_id": "881162",
+      "plate_name": "通信服务",
+      "primary_theme": "通信",
+      "stock_count": 232,
+      "change_pct": 0.96,
+      "amount": 37389438865
+    },
+    {
+      "plate_id": "881129",
+      "plate_name": "通信设备",
+      "primary_theme": "通信",
+      "stock_count": 416,
+      "change_pct": 2.068,
+      "amount": 194434181353
+    },
+    {
+      "plate_id": "886069",
+      "plate_name": "人形机器人",
+      "primary_theme": "机器人",
+      "stock_count": 412,
+      "change_pct": 2.024,
+      "amount": 430066683852
+    },
+    {
+      "plate_id": "886002",
+      "plate_name": "机器视觉",
+      "primary_theme": "机器人",
+      "stock_count": 164,
+      "change_pct": 1.469,
+      "amount": 161002302214
+    },
+    {
+      "plate_id": "881171",
+      "plate_name": "自动化设备",
+      "primary_theme": "新型工业化",
+      "stock_count": 162,
+      "change_pct": 1.149,
+      "amount": 67153215104
+    },
+    {
+      "plate_id": "885619",
+      "plate_name": "工业4.0",
+      "primary_theme": "新型工业化",
+      "stock_count": 12,
+      "change_pct": 0.126,
+      "amount": 114655411
+    },
+    {
+      "plate_id": "885930",
+      "plate_name": "工业母机",
+      "primary_theme": "新型工业化",
+      "stock_count": 280,
+      "change_pct": 2.048,
+      "amount": 90993983099
+    },
+    {
+      "plate_id": "885736",
+      "plate_name": "无人驾驶",
+      "primary_theme": "智能驾驶",
+      "stock_count": 270,
+      "change_pct": 1.325,
+      "amount": 348481013980
+    },
+    {
+      "plate_id": "886035",
+      "plate_name": "毫米波雷达",
+      "primary_theme": "智能驾驶",
+      "stock_count": 180,
+      "change_pct": 1.467,
+      "amount": 137465995438
+    },
+    {
+      "plate_id": "885871",
+      "plate_name": "胎压监测",
+      "primary_theme": "智能驾驶",
+      "stock_count": 157,
+      "change_pct": 1.578,
+      "amount": 16150392934
+    },
+    {
+      "plate_id": "886059",
+      "plate_name": "智能座舱",
+      "primary_theme": "智能驾驶",
+      "stock_count": 172,
+      "change_pct": 1.246,
+      "amount": 172405332910
+    },
+    {
+      "plate_id": "885431",
+      "plate_name": "新能源汽车",
+      "primary_theme": "汽车整车",
+      "stock_count": 229,
+      "change_pct": 1.204,
+      "amount": 812149057275
+    },
+    {
+      "plate_id": "886000",
+      "plate_name": "一体化压铸",
+      "primary_theme": "汽车零部件",
+      "stock_count": 248,
+      "change_pct": 1.729,
+      "amount": 29053238745
+    },
+    {
+      "plate_id": "885999",
+      "plate_name": "汽车热管理",
+      "primary_theme": "汽车零部件",
+      "stock_count": 315,
+      "change_pct": 2.006,
+      "amount": 93587974364
+    },
+    {
+      "plate_id": "885545",
+      "plate_name": "汽车电子",
+      "primary_theme": "汽车零部件",
+      "stock_count": 294,
+      "change_pct": 1.427,
+      "amount": 442191345423
+    },
+    {
+      "plate_id": "885902",
+      "plate_name": "汽车拆解概念",
+      "primary_theme": "汽车零部件",
+      "stock_count": 128,
+      "change_pct": 0.832,
+      "amount": 17133642303
+    },
+    {
+      "plate_id": "886001",
+      "plate_name": "高压快充",
+      "primary_theme": "汽车零部件",
+      "stock_count": 8,
+      "change_pct": 0.087,
+      "amount": 99393465604
+    },
+    {
+      "plate_id": "885997",
+      "plate_name": "比亚迪概念",
+      "primary_theme": "汽车整车",
+      "stock_count": 194,
+      "change_pct": 1.072,
+      "amount": 517052424675
+    },
+    {
+      "plate_id": "885467",
+      "plate_name": "特斯拉概念",
+      "primary_theme": "汽车整车",
+      "stock_count": 205,
+      "change_pct": 1.175,
+      "amount": 306598679185
+    },
+    {
+      "plate_id": "885799",
+      "plate_name": "北汽新能源",
+      "primary_theme": "汽车整车",
+      "stock_count": 206,
+      "change_pct": 1.72,
+      "amount": 23204153216
+    },
+    {
+      "plate_id": "885789",
+      "plate_name": "宁德时代概念",
+      "primary_theme": "锂电池",
+      "stock_count": 93,
+      "change_pct": 0.272,
+      "amount": 308521875397
+    },
+    {
+      "plate_id": "885710",
+      "plate_name": "锂电池概念",
+      "primary_theme": "锂电池",
+      "stock_count": 158,
+      "change_pct": 0.311,
+      "amount": 575616100196
+    },
+    {
+      "plate_id": "885928",
+      "plate_name": "钠离子电池",
+      "primary_theme": "锂电池",
+      "stock_count": 22,
+      "change_pct": -0.679,
+      "amount": 164438928818
+    },
+    {
+      "plate_id": "886032",
+      "plate_name": "固态电池",
+      "primary_theme": "锂电池",
+      "stock_count": 95,
+      "change_pct": -0.017,
+      "amount": 321724719127
+    },
+    {
+      "plate_id": "885944",
+      "plate_name": "动力电池回收",
+      "primary_theme": "锂电池",
+      "stock_count": 29,
+      "change_pct": -0.369,
+      "amount": 128189167721
+    },
+    {
+      "plate_id": "881281",
+      "plate_name": "电池",
+      "primary_theme": "锂电池",
+      "stock_count": 117,
+      "change_pct": -1.281,
+      "amount": 148370859845
+    },
+    {
+      "plate_id": "885935",
+      "plate_name": "抽水蓄能",
+      "primary_theme": "储能",
+      "stock_count": 0,
+      "change_pct": -0.143,
+      "amount": 78779962728
+    },
+    {
+      "plate_id": "885775",
+      "plate_name": "燃料电池",
+      "primary_theme": "氢能源",
+      "stock_count": 100,
+      "change_pct": 0.607,
+      "amount": 161991551853
+    },
+    {
+      "plate_id": "885531",
+      "plate_name": "光伏概念",
+      "primary_theme": "光伏",
+      "stock_count": 202,
+      "change_pct": 0.749,
+      "amount": 465673387841
+    },
+    {
+      "plate_id": "881279",
+      "plate_name": "光伏设备",
+      "primary_theme": "光伏",
+      "stock_count": 171,
+      "change_pct": 0.857,
+      "amount": 56657238956
+    },
+    {
+      "plate_id": "886007",
+      "plate_name": "TOPCON电池",
+      "primary_theme": "光伏",
+      "stock_count": 338,
+      "change_pct": 1.483,
+      "amount": 68935575625
+    },
+    {
+      "plate_id": "886011",
+      "plate_name": "光热发电",
+      "primary_theme": "光伏",
+      "stock_count": 26,
+      "change_pct": 0.056,
+      "amount": 28517896446
+    },
+    {
+      "plate_id": "881280",
+      "plate_name": "风电设备",
+      "primary_theme": "风电",
+      "stock_count": 16,
+      "change_pct": 0.165,
+      "amount": 22485916672
+    },
+    {
+      "plate_id": "885588",
+      "plate_name": "电力改革",
+      "primary_theme": "电力",
+      "stock_count": 97,
+      "change_pct": 0.205,
+      "amount": 41200655085
+    },
+    {
+      "plate_id": "881120",
+      "plate_name": "电力设备",
+      "primary_theme": "电力",
+      "stock_count": 56,
+      "change_pct": -0.035,
+      "amount": 310267115810
+    },
+    {
+      "plate_id": "881278",
+      "plate_name": "电网设备",
+      "primary_theme": "智能电网",
+      "stock_count": 89,
+      "change_pct": 0.27,
+      "amount": 63380572474
+    },
+    {
+      "plate_id": "885425",
+      "plate_name": "特高压",
+      "primary_theme": "智能电网",
+      "stock_count": 111,
+      "change_pct": 0.614,
+      "amount": 140360823552
+    },
+    {
+      "plate_id": "885948",
+      "plate_name": "柔性直流输电",
+      "primary_theme": "智能电网",
+      "stock_count": 52,
+      "change_pct": 0.529,
+      "amount": 77137815441
+    },
+    {
+      "plate_id": "885996",
+      "plate_name": "超超临界发电",
+      "primary_theme": "智能电网",
+      "stock_count": 11,
+      "change_pct": -0.004,
+      "amount": 62497600418
+    },
+    {
+      "plate_id": "885936",
+      "plate_name": "绿色电力",
+      "primary_theme": "电力",
+      "stock_count": 89,
+      "change_pct": 0.388,
+      "amount": 263974705894
+    },
+    {
+      "plate_id": "885559",
+      "plate_name": "超导",
+      "primary_theme": "智能电网",
+      "stock_count": 6,
+      "change_pct": 0.067,
+      "amount": 39056363846
+    },
+    {
+      "plate_id": "881277",
+      "plate_name": "电机",
+      "primary_theme": "机器人",
+      "stock_count": 192,
+      "change_pct": 1.93,
+      "amount": 15139852897
+    },
+    {
+      "plate_id": "801589",
+      "plate_name": "电机电控",
+      "primary_theme": "汽车整车",
+      "stock_count": 128,
+      "change_pct": 1.606,
+      "amount": 32996175077
+    },
+    {
+      "plate_id": "886076",
+      "plate_name": "军工信息化",
+      "primary_theme": "军工",
+      "stock_count": 366,
+      "change_pct": 2.281,
+      "amount": 72433611553
+    },
+    {
+      "plate_id": "881276",
+      "plate_name": "军工电子",
+      "primary_theme": "军工",
+      "stock_count": 333,
+      "change_pct": 2.38,
+      "amount": 44916121952
+    },
+    {
+      "plate_id": "881166",
+      "plate_name": "军工装备",
+      "primary_theme": "军工",
+      "stock_count": 434,
+      "change_pct": 3.329,
+      "amount": 87595522843
+    },
+    {
+      "plate_id": "885743",
+      "plate_name": "军民融合",
+      "primary_theme": "军工",
+      "stock_count": 312,
+      "change_pct": 2.085,
+      "amount": 182850858967
+    },
+    {
+      "plate_id": "885795",
+      "plate_name": "国产航母",
+      "primary_theme": "军工",
+      "stock_count": 320,
+      "change_pct": 2.058,
+      "amount": 41754679115
+    },
+    {
+      "plate_id": "885884",
+      "plate_name": "航空发动机",
+      "primary_theme": "军工",
+      "stock_count": 446,
+      "change_pct": 2.507,
+      "amount": 95369358158
+    },
+    {
+      "plate_id": "886030",
+      "plate_name": "成飞概念",
+      "primary_theme": "军工",
+      "stock_count": 398,
+      "change_pct": 2.523,
+      "amount": 26229665964
+    },
+    {
+      "plate_id": "885822",
+      "plate_name": "太空互联网",
+      "primary_theme": "商业航天",
+      "stock_count": 438,
+      "change_pct": 3.479,
+      "amount": 32308715965
+    },
+    {
+      "plate_id": "885500",
+      "plate_name": "通用航空",
+      "primary_theme": "低空经济",
+      "stock_count": 296,
+      "change_pct": 2.309,
+      "amount": 39145181971
+    },
+    {
+      "plate_id": "888801",
+      "plate_name": "PCB",
+      "primary_theme": "通信",
+      "stock_count": 198,
+      "change_pct": 0,
+      "amount": 0,
+      "source": "同花顺概念映射",
+      "stocks": [
+        {
+          "code": "000016",
+          "name": "深康佳Ａ"
+        },
+        {
+          "code": "000630",
+          "name": "铜陵有色"
+        },
+        {
+          "code": "000657",
+          "name": "中钨高新"
+        },
+        {
+          "code": "000727",
+          "name": "冠捷科技"
+        },
+        {
+          "code": "000737",
+          "name": "北方铜业"
+        },
+        {
+          "code": "000801",
+          "name": "四川九洲"
+        },
+        {
+          "code": "000823",
+          "name": "超声电子"
+        },
+        {
+          "code": "000988",
+          "name": "华工科技"
+        },
+        {
+          "code": "001266",
+          "name": "宏英智能"
+        },
+        {
+          "code": "001314",
+          "name": "亿道信息"
+        },
+        {
+          "code": "001359",
+          "name": "平安电工"
+        },
+        {
+          "code": "001387",
+          "name": "雪祺电气"
+        },
+        {
+          "code": "001388",
+          "name": "信通电子"
+        },
+        {
+          "code": "001389",
+          "name": "广合科技"
+        },
+        {
+          "code": "002008",
+          "name": "大族激光"
+        },
+        {
+          "code": "002045",
+          "name": "国光电器"
+        },
+        {
+          "code": "002080",
+          "name": "中材科技"
+        },
+        {
+          "code": "002134",
+          "name": "天津普林"
+        },
+        {
+          "code": "002138",
+          "name": "顺络电子"
+        },
+        {
+          "code": "002141",
+          "name": "贤丰控股"
+        },
+        {
+          "code": "002171",
+          "name": "楚江新材"
+        },
+        {
+          "code": "002213",
+          "name": "大为股份"
+        },
+        {
+          "code": "002217",
+          "name": "合力泰"
+        },
+        {
+          "code": "002376",
+          "name": "新北洋"
+        },
+        {
+          "code": "002384",
+          "name": "东山精密"
+        },
+        {
+          "code": "002429",
+          "name": "兆驰股份"
+        },
+        {
+          "code": "002436",
+          "name": "兴森科技"
+        },
+        {
+          "code": "002463",
+          "name": "沪电股份"
+        },
+        {
+          "code": "002544",
+          "name": "普天科技"
+        },
+        {
+          "code": "002552",
+          "name": "宝鼎科技"
+        },
+        {
+          "code": "002579",
+          "name": "中京电子"
+        },
+        {
+          "code": "002584",
+          "name": "西陇科学"
+        },
+        {
+          "code": "002636",
+          "name": "金安国纪"
+        },
+        {
+          "code": "002669",
+          "name": "康达新材"
+        },
+        {
+          "code": "002708",
+          "name": "光洋股份"
+        },
+        {
+          "code": "002741",
+          "name": "光华科技"
+        },
+        {
+          "code": "002745",
+          "name": "木林森"
+        },
+        {
+          "code": "002815",
+          "name": "崇达技术"
+        },
+        {
+          "code": "002866",
+          "name": "传艺科技"
+        },
+        {
+          "code": "002886",
+          "name": "沃特股份"
+        },
+        {
+          "code": "002913",
+          "name": "奥士康"
+        },
+        {
+          "code": "002916",
+          "name": "深南电路"
+        },
+        {
+          "code": "002927",
+          "name": "泰永长征"
+        },
+        {
+          "code": "002938",
+          "name": "鹏鼎控股"
+        },
+        {
+          "code": "002975",
+          "name": "博杰股份"
+        },
+        {
+          "code": "300012",
+          "name": "华测检测"
+        },
+        {
+          "code": "300035",
+          "name": "中科电气"
+        },
+        {
+          "code": "300184",
+          "name": "力源信息"
+        },
+        {
+          "code": "300196",
+          "name": "长海股份"
+        },
+        {
+          "code": "300221",
+          "name": "银禧科技"
+        },
+        {
+          "code": "300227",
+          "name": "光韵达"
+        },
+        {
+          "code": "300243",
+          "name": "瑞丰高材"
+        },
+        {
+          "code": "300252",
+          "name": "金信诺"
+        },
+        {
+          "code": "300283",
+          "name": "温州宏丰"
+        },
+        {
+          "code": "300395",
+          "name": "菲利华"
+        },
+        {
+          "code": "300400",
+          "name": "劲拓股份"
+        },
+        {
+          "code": "300410",
+          "name": "正业科技"
+        },
+        {
+          "code": "300429",
+          "name": "强力新材"
+        },
+        {
+          "code": "300446",
+          "name": "航天智造"
+        },
+        {
+          "code": "300450",
+          "name": "先导智能"
+        },
+        {
+          "code": "300476",
+          "name": "胜宏科技"
+        },
+        {
+          "code": "300503",
+          "name": "昊志机电"
+        },
+        {
+          "code": "300522",
+          "name": "世名科技"
+        },
+        {
+          "code": "300537",
+          "name": "广信材料"
+        },
+        {
+          "code": "300538",
+          "name": "同益股份"
+        },
+        {
+          "code": "300576",
+          "name": "容大感光"
+        },
+        {
+          "code": "300586",
+          "name": "美联新材"
+        },
+        {
+          "code": "300606",
+          "name": "金太阳"
+        },
+        {
+          "code": "300632",
+          "name": "光莆股份"
+        },
+        {
+          "code": "300637",
+          "name": "扬帆新材"
+        },
+        {
+          "code": "300657",
+          "name": "弘信电子"
+        },
+        {
+          "code": "300679",
+          "name": "电连技术"
+        },
+        {
+          "code": "300687",
+          "name": "赛意信息"
+        },
+        {
+          "code": "300713",
+          "name": "英可瑞"
+        },
+        {
+          "code": "300724",
+          "name": "捷佳伟创"
+        },
+        {
+          "code": "300739",
+          "name": "明阳电路"
+        },
+        {
+          "code": "300747",
+          "name": "锐科激光"
+        },
+        {
+          "code": "300776",
+          "name": "帝尔激光"
+        },
+        {
+          "code": "300801",
+          "name": "泰和科技"
+        },
+        {
+          "code": "300802",
+          "name": "矩子科技"
+        },
+        {
+          "code": "300806",
+          "name": "斯迪克"
+        },
+        {
+          "code": "300814",
+          "name": "中富电路"
+        },
+        {
+          "code": "300819",
+          "name": "聚杰微纤"
+        },
+        {
+          "code": "300836",
+          "name": "佰奥智能"
+        },
+        {
+          "code": "300852",
+          "name": "四会富仕"
+        },
+        {
+          "code": "300903",
+          "name": "科翔股份"
+        },
+        {
+          "code": "300936",
+          "name": "中英科技"
+        },
+        {
+          "code": "300964",
+          "name": "本川智能"
+        },
+        {
+          "code": "301013",
+          "name": "利和兴"
+        },
+        {
+          "code": "301021",
+          "name": "英诺激光"
+        },
+        {
+          "code": "301029",
+          "name": "怡合达"
+        },
+        {
+          "code": "301041",
+          "name": "金百泽"
+        },
+        {
+          "code": "301106",
+          "name": "骏成科技"
+        },
+        {
+          "code": "301123",
+          "name": "奕东电子"
+        },
+        {
+          "code": "301128",
+          "name": "强瑞技术"
+        },
+        {
+          "code": "301132",
+          "name": "满坤科技"
+        },
+        {
+          "code": "301135",
+          "name": "瑞德智能"
+        },
+        {
+          "code": "301150",
+          "name": "中一科技"
+        },
+        {
+          "code": "301176",
+          "name": "逸豪新材"
+        },
+        {
+          "code": "301200",
+          "name": "大族数控"
+        },
+        {
+          "code": "301217",
+          "name": "铜冠铜箔"
+        },
+        {
+          "code": "301251",
+          "name": "威尔高"
+        },
+        {
+          "code": "301282",
+          "name": "金禄电子"
+        },
+        {
+          "code": "301320",
+          "name": "豪江智能"
+        },
+        {
+          "code": "301338",
+          "name": "凯格精机"
+        },
+        {
+          "code": "301362",
+          "name": "民爆光电"
+        },
+        {
+          "code": "301366",
+          "name": "一博科技"
+        },
+        {
+          "code": "301377",
+          "name": "鼎泰高科"
+        },
+        {
+          "code": "301379",
+          "name": "天山电子"
+        },
+        {
+          "code": "301421",
+          "name": "波长光电"
+        },
+        {
+          "code": "301499",
+          "name": "维科精密"
+        },
+        {
+          "code": "301511",
+          "name": "德福科技"
+        },
+        {
+          "code": "301512",
+          "name": "智信精密"
+        },
+        {
+          "code": "301526",
+          "name": "国际复材"
+        },
+        {
+          "code": "301555",
+          "name": "惠柏新材"
+        },
+        {
+          "code": "301563",
+          "name": "云汉芯城"
+        },
+        {
+          "code": "301568",
+          "name": "思泰克"
+        },
+        {
+          "code": "301591",
+          "name": "肯特股份"
+        },
+        {
+          "code": "301603",
+          "name": "乔锋智能"
+        },
+        {
+          "code": "301628",
+          "name": "强达电路"
+        },
+        {
+          "code": "301630",
+          "name": "同宇新材"
+        },
+        {
+          "code": "301687",
+          "name": "新广益"
+        },
+        {
+          "code": "600110",
+          "name": "诺德股份"
+        },
+        {
+          "code": "600176",
+          "name": "中国巨石"
+        },
+        {
+          "code": "600183",
+          "name": "生益科技"
+        },
+        {
+          "code": "600226",
+          "name": "亨通股份"
+        },
+        {
+          "code": "600330",
+          "name": "天通股份"
+        },
+        {
+          "code": "600378",
+          "name": "昊华科技"
+        },
+        {
+          "code": "600552",
+          "name": "凯盛科技"
+        },
+        {
+          "code": "600601",
+          "name": "方正科技"
+        },
+        {
+          "code": "600990",
+          "name": "四创电子"
+        },
+        {
+          "code": "601208",
+          "name": "东材科技"
+        },
+        {
+          "code": "603002",
+          "name": "宏昌电子"
+        },
+        {
+          "code": "603011",
+          "name": "合锻智能"
+        },
+        {
+          "code": "603110",
+          "name": "东方材料"
+        },
+        {
+          "code": "603118",
+          "name": "共进股份"
+        },
+        {
+          "code": "603124",
+          "name": "江南新材"
+        },
+        {
+          "code": "603150",
+          "name": "万朗磁塑"
+        },
+        {
+          "code": "603175",
+          "name": "超颖电子"
+        },
+        {
+          "code": "603186",
+          "name": "华正新材"
+        },
+        {
+          "code": "603203",
+          "name": "快克智能"
+        },
+        {
+          "code": "603219",
+          "name": "富佳股份"
+        },
+        {
+          "code": "603228",
+          "name": "景旺电子"
+        },
+        {
+          "code": "603256",
+          "name": "宏和科技"
+        },
+        {
+          "code": "603271",
+          "name": "永杰新材"
+        },
+        {
+          "code": "603283",
+          "name": "赛腾股份"
+        },
+        {
+          "code": "603328",
+          "name": "依顿电子"
+        },
+        {
+          "code": "603341",
+          "name": "龙旗科技"
+        },
+        {
+          "code": "603386",
+          "name": "骏亚科技"
+        },
+        {
+          "code": "603459",
+          "name": "红板科技"
+        },
+        {
+          "code": "603685",
+          "name": "晨丰科技"
+        },
+        {
+          "code": "603806",
+          "name": "福斯特"
+        },
+        {
+          "code": "603920",
+          "name": "世运电路"
+        },
+        {
+          "code": "603936",
+          "name": "博敏电子"
+        },
+        {
+          "code": "605006",
+          "name": "山东玻纤"
+        },
+        {
+          "code": "605058",
+          "name": "澳弘电子"
+        },
+        {
+          "code": "605258",
+          "name": "协和电子"
+        },
+        {
+          "code": "605589",
+          "name": "圣泉集团"
+        },
+        {
+          "code": "688003",
+          "name": "天准科技"
+        },
+        {
+          "code": "688020",
+          "name": "方邦股份"
+        },
+        {
+          "code": "688022",
+          "name": "瀚川智能"
+        },
+        {
+          "code": "688025",
+          "name": "杰普特"
+        },
+        {
+          "code": "688035",
+          "name": "德邦科技"
+        },
+        {
+          "code": "688150",
+          "name": "莱特光电"
+        },
+        {
+          "code": "688157",
+          "name": "松井股份"
+        },
+        {
+          "code": "688170",
+          "name": "德龙激光"
+        },
+        {
+          "code": "688183",
+          "name": "生益电子"
+        },
+        {
+          "code": "688199",
+          "name": "久日新材"
+        },
+        {
+          "code": "688257",
+          "name": "新锐股份"
+        },
+        {
+          "code": "688300",
+          "name": "联瑞新材"
+        },
+        {
+          "code": "688308",
+          "name": "欧科亿"
+        },
+        {
+          "code": "688312",
+          "name": "燕麦科技"
+        },
+        {
+          "code": "688323",
+          "name": "瑞华泰"
+        },
+        {
+          "code": "688359",
+          "name": "三孚新科"
+        },
+        {
+          "code": "688388",
+          "name": "嘉元科技"
+        },
+        {
+          "code": "688401",
+          "name": "路维光电"
+        },
+        {
+          "code": "688456",
+          "name": "有研粉材"
+        },
+        {
+          "code": "688519",
+          "name": "南亚新材"
+        },
+        {
+          "code": "688531",
+          "name": "日联科技"
+        },
+        {
+          "code": "688559",
+          "name": "海目星"
+        },
+        {
+          "code": "688571",
+          "name": "杭华股份"
+        },
+        {
+          "code": "688603",
+          "name": "天承科技"
+        },
+        {
+          "code": "688610",
+          "name": "埃科光电"
+        },
+        {
+          "code": "688630",
+          "name": "XD芯碁微"
+        },
+        {
+          "code": "688655",
+          "name": "迅捷兴"
+        },
+        {
+          "code": "688662",
+          "name": "富信科技"
+        },
+        {
+          "code": "688700",
+          "name": "东威科技"
+        },
+        {
+          "code": "688720",
+          "name": "艾森股份"
+        },
+        {
+          "code": "688733",
+          "name": "壹石通"
+        },
+        {
+          "code": "688813",
+          "name": "泰金新能"
+        },
+        {
+          "code": "920060",
+          "name": "万源通"
+        },
+        {
+          "code": "920130",
+          "name": "立方控股"
+        },
+        {
+          "code": "920223",
+          "name": "荣亿精密"
+        },
+        {
+          "code": "920346",
+          "name": "威贸电子"
+        },
+        {
+          "code": "920357",
+          "name": "雅葆轩"
+        },
+        {
+          "code": "920526",
+          "name": "凯华材料"
+        },
+        {
+          "code": "920665",
+          "name": "科强股份"
+        },
+        {
+          "code": "920821",
+          "name": "则成电子"
+        }
+      ]
+    },
+    "AI眼镜",
+    "首发经济"
+  ],
+  "plate_to_theme": {
+    "算力": "算力",
+    "芯片": "芯片",
+    "通信": "通信",
+    "锂电池": "锂电池",
+    "AI应用": "AI应用",
+    "电力": "电力",
+    "商业航天": "商业航天",
+    "机器人概念": "机器人",
+    "证券": "证券",
+    "发电机": "发电机",
+    "有色金属": "有色金属",
+    "储能": "储能",
+    "数字经济": "数字经济",
+    "燃气轮机": "电力",
+    "金融概念": "多元金融",
+    "智能电网": "智能电网",
+    "核电": "核电",
+    "热力": "电力",
+    "风电": "风电",
+    "光学镜头": "消费电子",
+    "造船": "船舶航运",
+    "黄金": "有色金属",
+    "体育产业": "体育产业",
+    "旅游": "旅游酒店",
+    "消费电子": "消费电子",
+    "物流": "物流",
+    "wifi6/7": "通信",
+    "化工": "化工",
+    "石英材料": "新材料",
+    "蓝宝石": "新材料",
+    "小金属概念": "有色金属",
+    "医药": "医药",
+    "人工智能": "人工智能",
+    "医疗器械": "医药",
+    "环保": "环保",
+    "食品饮料": "食品饮料",
+    "生育概念": "生育概念",
+    "汽车零部件": "汽车零部件",
+    "教育": "教育",
+    "国产软件": "数字经济",
+    "军工": "军工",
+    "农业": "农业",
+    "天然气": "天然气",
+    "基础建设": "基础建设",
+    "服装家纺": "服装家纺",
+    "新型工业化": "新型工业化",
+    "一带一路": "一带一路",
+    "低空经济": "低空经济",
+    "VR/AR/MR": "消费电子",
+    "智能驾驶": "智能驾驶",
+    "煤炭": "煤炭",
+    "家电": "家电",
+    "端侧AI": "端侧AI",
+    "包装印刷": "造纸包装",
+    "光伏": "光伏",
+    "创投": "多元金融",
+    "智能家居": "家电",
+    "银行": "银行保险",
+    "露营经济": "旅游酒店",
+    "汽车充电": "汽车充电",
+    "免税": "免税",
+    "零售": "商贸零售",
+    "云游戏": "游戏",
+    "柔性屏": "消费电子",
+    "卫星导航": "卫星导航",
+    "集装箱": "船舶航运",
+    "自主可控": "数字经济",
+    "新材料概念": "新材料",
+    "转基因": "农业",
+    "石油石化": "石油",
+    "机场航空": "航空运输",
+    "医美": "医美",
+    "美容护理": "医美",
+    "新零售": "商贸零售",
+    "造纸": "造纸包装",
+    "保险": "银行保险",
+    "醋酸": "化工",
+    "航运": "船舶航运",
+    "地产链": "建筑地产",
+    "面板": "消费电子",
+    "减速器": "机器人",
+    "垃圾分类": "环保",
+    "铀矿": "核电",
+    "热泵": "电力",
+    "超高清视频": "传媒",
+    "氢能源": "氢能源",
+    "元宇宙": "元宇宙",
+    "无人机": "无人机",
+    "水务": "环保",
+    "港口": "船舶航运",
+    "非金属材料": "化工",
+    "仪器仪表": "新型工业化",
+    "稀土永磁": "有色金属",
+    "文化传媒": "传媒",
+    "钢铁": "钢铁",
+    "网红经济": "新消费",
+    "垃圾发电": "环保",
+    "大飞机": "大飞机",
+    "海洋经济": "海洋经济",
+    "轨道交通": "轨道交通",
+    "培育钻石": "新材料",
+    "酒店及餐饮": "旅游酒店",
+    "油气开采及服务": "天然气",
+    "旅游及酒店": "旅游酒店",
+    "白酒": "白酒",
+    "中药": "医药",
+    "石油矿业开采": "石油",
+    "农产品加工": "农业",
+    "饮料制造": "食品饮料",
+    "燃气": "天然气",
+    "机场航运": "航空运输",
+    "纺织制造": "服装家纺",
+    "汽车整车": "汽车整车",
+    "小家电": "家电",
+    "多元金融": "多元金融",
+    "生物制品": "医药",
+    "医药商业": "医药",
+    "化学原料": "化工",
+    "养殖业": "农业",
+    "房地产服务": "建筑地产",
+    "煤炭开采加工": "煤炭",
+    "家居用品": "家居用品",
+    "化学制药": "医药",
+    "轨交设备": "轨道交通",
+    "橡胶制品": "化工",
+    "食品加工制造": "食品饮料",
+    "工程机械": "工程机械",
+    "专用设备": "新型工业化",
+    "医疗服务": "医药",
+    "黑色家电": "家电",
+    "免税店": "免税",
+    "边缘计算": "算力",
+    "供应链金融": "多元金融",
+    "大数据": "数字经济",
+    "消费金融": "多元金融",
+    "粮食概念": "农业",
+    "生物医药": "医药",
+    "化肥": "农业",
+    "可燃冰": "天然气",
+    "猪肉": "农业",
+    "乳业": "食品饮料",
+    "草甘膦": "农业",
+    "集成电路概念": "芯片",
+    "次新股": "次新股",
+    "核准制次新股": "次新股",
+    "华为概念": "华为概念",
+    "华为海思": "华为概念",
+    "云计算": "算力",
+    "英伟达概念": "算力",
+    "中字头": "央企国企改革",
+    "中字头股票": "央企国企改革",
+    "兵装重组概念": "军工",
+    "环保设备": "环保",
+    "土壤修复": "环保",
+    "碳交易": "环保",
+    "生物质能": "电力",
+    "园区开发": "建筑地产",
+    "禽流感": "医药",
+    "超级真菌": "医药",
+    "消毒剂": "医药",
+    "医疗改革": "医药",
+    "流感": "医药",
+    "新冠检测": "医药",
+    "家庭医生": "医药",
+    "芬太尼": "医药",
+    "青蒿素": "医药",
+    "CRO概念": "医药",
+    "DRG/DIP": "医药",
+    "创新药": "医药",
+    "仿制药一致性评价": "医药",
+    "减肥药": "医药",
+    "生物疫苗": "医药",
+    "基因测序": "医药",
+    "重组蛋白": "医药",
+    "高压氧舱": "医药",
+    "NMN概念": "医药",
+    "阿尔茨海默概念": "医药",
+    "医美概念": "医美",
+    "脑机接口": "脑机接口",
+    "拼多多概念": "电商平台经济",
+    "物流电商平台": "电商平台经济",
+    "港口航运": "船舶航运",
+    "影视院线": "传媒",
+    "特钢概念": "钢铁",
+    "化学制品": "化工",
+    "化学纤维": "化工",
+    "化工合成材料": "化工",
+    "化工新材料": "新材料",
+    "丙烯酸": "化工",
+    "氟化工概念": "氟化工",
+    "氢氟酸": "氟化工",
+    "有机硅概念": "化工",
+    "环氧丙烷": "化工",
+    "磷化工": "磷化工",
+    "钛白粉概念": "化工",
+    "染料": "化工",
+    "可降解塑料": "化工",
+    "塑料制品": "化工",
+    "煤化工概念": "煤化工",
+    "燃料乙醇": "化工",
+    "工业气体": "化工",
+    "PVDF概念": "新材料",
+    "石墨电极": "新材料",
+    "碳纤维": "新材料",
+    "金属新材料": "新材料",
+    "金刚石概念": "新材料",
+    "石墨烯": "新材料",
+    "OLED": "消费电子",
+    "柔性屏(折叠屏)": "消费电子",
+    "消费电子概念": "消费电子",
+    "元件": "消费电子",
+    "光学光电子": "消费电子",
+    "无线充电": "消费电子",
+    "智能音箱": "消费电子",
+    "电子身份证": "数字经济",
+    "工业金属": "有色金属",
+    "能源金属": "有色金属",
+    "金属锌": "有色金属",
+    "房地产": "建筑地产",
+    "建筑装饰": "建筑地产",
+    "房屋检测": "建筑地产",
+    "玻璃": "建筑地产",
+    "可控核聚变": "核电",
+    "核污染防治": "核电",
+    "煤炭概念": "煤炭",
+    "石油加工贸易": "石油",
+    "页岩气": "天然气",
+    "养鸡": "农业",
+    "维生素": "医药",
+    "白酒概念": "白酒",
+    "预制菜": "食品饮料",
+    "人造肉": "食品饮料",
+    "代糖概念": "食品饮料",
+    "厨卫电器": "家电",
+    "白色家电": "家电",
+    "互联网电商": "电商平台经济",
+    "C2M概念": "电商平台经济",
+    "DeepSeek概念": "人工智能",
+    "Sora概念(文生视频)": "AI应用",
+    "智谱AI": "人工智能",
+    "中国AI 50": "人工智能",
+    "AI PC": "端侧AI",
+    "空间计算": "消费电子",
+    "东数西算(算力)": "算力",
+    "液冷服务器": "算力",
+    "数据中心": "算力",
+    "铜缆高速连接": "通信",
+    "云办公": "数字经济",
+    "智慧城市": "数字经济",
+    "智慧政务": "数字经济",
+    "信创": "数字经济",
+    "国产操作系统": "软件服务",
+    "操作系统": "软件服务",
+    "ERP概念": "软件服务",
+    "IT服务": "软件服务",
+    "软件开发": "软件服务",
+    "计算机应用": "软件服务",
+    "数据安全": "网络安全",
+    "数据要素": "数字经济",
+    "国资云": "数字经济",
+    "网络安全": "网络安全",
+    "工业互联网": "新型工业化",
+    "物联网": "数字经济",
+    "区块链": "数字经济",
+    "芯片概念": "芯片",
+    "半导体": "芯片",
+    "中芯国际概念": "芯片",
+    "存储芯片": "芯片",
+    "光刻机": "芯片",
+    "光刻胶": "芯片",
+    "先进封装": "芯片",
+    "氮化镓": "芯片",
+    "电子化学品": "芯片",
+    "汽车芯片": "芯片",
+    "5G": "通信",
+    "6G概念": "通信",
+    "F5G概念": "通信",
+    "WiFi6": "通信",
+    "光纤概念": "通信",
+    "共封装光学(CPO)": "通信",
+    "星闪概念": "华为概念",
+    "通信服务": "通信",
+    "通信设备": "通信",
+    "人形机器人": "机器人",
+    "机器视觉": "机器人",
+    "自动化设备": "新型工业化",
+    "工业4.0": "新型工业化",
+    "工业母机": "新型工业化",
+    "毫米波雷达": "智能驾驶",
+    "胎压监测": "智能驾驶",
+    "智能座舱": "智能驾驶",
+    "新能源汽车": "汽车整车",
+    "一体化压铸": "汽车零部件",
+    "汽车热管理": "汽车零部件",
+    "汽车电子": "汽车零部件",
+    "汽车拆解概念": "环保",
+    "高压快充": "汽车充电",
+    "比亚迪概念": "汽车整车",
+    "特斯拉概念": "汽车整车",
+    "北汽新能源": "汽车整车",
+    "锂电池概念": "锂电池",
+    "钠离子电池": "锂电池",
+    "固态电池": "锂电池",
+    "动力电池回收": "锂电池",
+    "电池": "锂电池",
+    "抽水蓄能": "储能",
+    "燃料电池": "氢能源",
+    "光伏概念": "光伏",
+    "光伏设备": "光伏",
+    "TOPCON电池": "光伏",
+    "风电设备": "风电",
+    "电力设备": "智能电网",
+    "电网设备": "智能电网",
+    "特高压": "智能电网",
+    "绿色电力": "电力",
+    "超导": "智能电网",
+    "电机": "机器人",
+    "电机电控": "汽车整车",
+    "军工信息化": "军工",
+    "军工电子": "军工",
+    "军工装备": "军工",
+    "军民融合": "军工",
+    "国产航母": "军工",
+    "航空发动机": "军工",
+    "成飞概念": "军工",
+    "太空互联网": "商业航天",
+    "通用航空": "低空经济",
+    "游戏": "游戏",
+    "虚拟现实": "游戏",
+    "融媒体": "传媒",
+    "信托概念": "多元金融",
+    "期货概念": "多元金融",
+    "国企改革": "央企国企改革",
+    "央企国企改革": "央企国企改革",
+    "深圳国企改革": "央企国企改革",
+    "华为手机": "华为概念",
+    "华为欧拉": "华为概念",
+    "华为汽车": "华为概念",
+    "华为盘古": "华为概念",
+    "华为鲲鹏": "华为概念",
+    "通用设备": "新型工业化",
+    "PCB": "通信",
+    "AI眼镜": "消费电子",
+    "病毒防治": "医药",
+    "AI智能体": "AI应用",
+    "电气设备": "智能电网",
+    "装修家具": "建筑地产",
+    "光模块": "通信",
+    "AI医疗": "AI应用",
+    "CPO/MPO": "通信",
+    "保健品": "医药",
+    "农药": "农业",
+    "锂矿": "锂电池",
+    "变压器": "智能电网",
+    "Mini/Micro": "消费电子",
+    "宇树机器人": "机器人",
+    "AI视频": "AI应用",
+    "充电桩": "汽车充电",
+    "水利": "基础建设",
+    "AI营销": "AI应用",
+    "新冠药概念": "医药",
+    "复合集流体": "锂电池",
+    "高铁": "轨道交通",
+    "3D打印": "新型工业化",
+    "宠物经济": "服装家纺",
+    "甲醇": "化工",
+    "金属铜": "有色金属",
+    "AIGC": "AI应用",
+    "传感器": "新型工业化",
+    "盐湖提锂": "锂电池",
+    "谷子经济": "新消费",
+    "电子商务": "电商平台经济",
+    "金属铝": "有色金属",
+    "PEEK": "氟化工",
+    "固态变压器": "智能电网",
+    "文创产品": "新消费",
+    "洁净室": "芯片",
+    "电子气体": "芯片",
+    "疫苗概念": "医药",
+    "碳化硅": "芯片",
+    "合成生物": "医药",
+    "锂电设备": "锂电池",
+    "鸿蒙概念": "华为概念",
+    "AI安全": "网络安全",
+    "水产品": "食品饮料",
+    "IGBT": "芯片",
+    "POE胶膜": "光伏",
+    "农机": "农业",
+    "啤酒": "食品饮料",
+    "基因疗法": "医药",
+    "智元机器人": "机器人",
+    "足球概念": "体育产业",
+    "轮胎": "汽车零部件",
+    "逆变器": "智能电网",
+    "AI政务": "AI应用",
+    "AI电商": "电商平台经济",
+    "GPU": "芯片",
+    "华为昇腾": "算力",
+    "原料药": "医药",
+    "玻纤": "化工",
+    "电梯概念": "建筑地产",
+    "磷酸铁锂": "锂电池",
+    "负极": "锂电池",
+    "AI审核": "AI应用",
+    "ChatGPT": "人工智能",
+    "OCS交换机": "通信",
+    "RISC-V": "芯片",
+    "兽药": "医药",
+    "广电网": "数字经济",
+    "网络直播": "电商平台经济",
+    "金属钨": "有色金属",
+    "铁矿石": "钢铁",
+    "锂电铜箔": "锂电池",
+    "隔膜": "锂电池",
+    "飞行汽车": "低空经济",
+    "饲料": "农业",
+    "CPU": "芯片",
+    "再生医学": "医药",
+    "军用雷达": "军工",
+    "可降解概念": "化工",
+    "抗原检测": "医药",
+    "灵巧手": "机器人",
+    "焦炭": "煤炭",
+    "眼科医疗": "医药",
+    "短剧": "传媒",
+    "硅料": "光伏",
+    "虚拟电厂": "智能电网",
+    "车路云": "智能驾驶",
+    "金属锗": "有色金属",
+    "EDA": "芯片",
+    "HBM": "芯片",
+    "PCS设备": "储能",
+    "交换机": "通信",
+    "内外饰": "汽车零部件",
+    "军贸": "军工",
+    "动力煤": "煤炭",
+    "外骨骼机器人": "机器人",
+    "建材": "建筑地产",
+    "数据确权": "数字经济",
+    "止咳药": "医药",
+    "氯化亚砜": "化工",
+    "水电": "电力",
+    "滤波器": "芯片",
+    "版权": "传媒",
+    "白银": "有色金属",
+    "磷化铟": "芯片",
+    "训推一体机": "算力",
+    "辅助生殖": "医药",
+    "酿酒": "食品饮料",
+    "金属锰": "有色金属",
+    "靶材": "芯片",
+    "首发经济": "新消费",
+    "AI办公": "AI应用",
+    "NFT概念": "数字经济",
+    "动物疫苗": "医药",
+    "大基金二期": "芯片",
+    "安防": "数字经济",
+    "工业机器人": "机器人",
+    "幽门螺杆菌": "医药",
+    "户外运动": "服装家纺",
+    "扁线": "汽车零部件",
+    "民营医院": "医药",
+    "海工装备": "军工",
+    "海缆": "通信",
+    "激光": "新型工业化",
+    "烧碱": "化工",
+    "电解槽": "氢能源",
+    "葡萄酒": "食品饮料",
+    "金属钴": "有色金属",
+    "金属锑": "有色金属",
+    "钍基熔盐": "核电",
+    "高镍三元": "锂电池",
+    "黄酒": "食品饮料",
+    "AI手机": "消费电子",
+    "AI玩具": "端侧AI",
+    "EDR": "汽车零部件",
+    "GPT4": "人工智能",
+    "卡牌概念": "新消费",
+    "底盘": "汽车零部件",
+    "快递": "物流",
+    "无线耳机": "消费电子",
+    "智慧矿山": "新型工业化",
+    "智能交通": "智能驾驶",
+    "猴痘概念": "医药",
+    "电子证照": "数字经济",
+    "盘古大模型": "人工智能",
+    "砷化镓": "芯片",
+    "硅片": "芯片",
+    "碳酸锂": "锂电池",
+    "纯碱": "化工",
+    "肝炎概念": "医药",
+    "金属锡": "有色金属",
+    "铝箔": "有色金属",
+    "阶跃星辰": "人工智能",
+    "阻燃剂": "化工",
+    "降压药": "医药",
+    "麦角硫因": "医药",
+    "AEBS": "智能驾驶",
+    "ISP": "消费电子",
+    "TMA": "化工",
+    "web3.0": "数字经济",
+    "中船系": "军工",
+    "制氢": "氢能源",
+    "北交动物疫苗": "医药",
+    "北交合成生物": "医药",
+    "北交麦角硫因": "医药",
+    "园林": "建筑地产",
+    "多模态概念": "AI应用",
+    "小米机器人": "机器人",
+    "小鹏机器人": "机器人",
+    "就业概念": "教育",
+    "尿素": "化工",
+    "干细胞": "医药",
+    "抗病毒面料": "医药",
+    "换电站": "汽车充电",
+    "数字政务": "数字经济",
+    "智慧停车": "数字经济",
+    "棉花": "农业",
+    "氢气储运": "氢能源",
+    "滚珠丝杠": "机器人",
+    "激光雷达": "智能驾驶",
+    "电石": "化工",
+    "白糖": "农业",
+    "石墨负极": "锂电池",
+    "石英坩埚": "光伏",
+    "硫酸": "化工",
+    "碳陶刹车": "汽车零部件",
+    "线控底盘": "智能驾驶",
+    "聚氨酯": "化工",
+    "肝素": "医药",
+    "装配式建筑": "建筑地产",
+    "车身及附件": "汽车零部件",
+    "金属铟": "有色金属",
+    "金属镁": "有色金属",
+    "液冷": "算力",
+    "存储": "芯片",
+    "半导体设备": "芯片",
+    "模拟芯片": "芯片",
+    "数字芯片": "芯片",
+    "光芯片": "芯片",
+    "端侧芯片": "芯片",
+    "芯片封测": "芯片",
+    "芯片前端制造": "芯片",
+    "第三代半导体": "芯片",
+    "PCB设备": "通信",
+    "PCB铜箔": "通信",
+    "覆铜板": "通信",
+    "电阻电容": "电子元件",
+    "电子布": "电子元件",
+    "电磁屏蔽": "电子元件",
+    "晶体振荡器": "电子元件",
+    "钽电容": "电子元件",
+    "铜电镀": "电子元件",
+    "抛光液": "芯片",
+    "印制电路板": "通信",
+    "玻璃基板": "电子元件",
+    "LED": "电子元件",
+    "DeepSeek": "人工智能",
+    "算力租赁": "算力",
+    "算力调度": "算力",
+    "服务器": "算力",
+    "高速连接": "通信",
+    "6G": "通信",
+    "东数西算": "算力",
+    "OpenClaw": "人工智能",
+    "MCP": "人工智能",
+    "神经网络": "AI应用",
+    "军工AI": "军工",
+    "时空大数据": "数字经济",
+    "ERP": "数字经济",
+    "智能物流": "物流",
+    "无人物流": "物流",
+    "职业教育": "教育",
+    "CRO": "医药",
+    "医药零售": "医药",
+    "仿制药": "医药",
+    "NMN": "医药",
+    "阿尔茨海默": "医药",
+    "钙钛矿电池": "光伏",
+    "太空光伏": "商业航天",
+    "异质结电池": "光伏",
+    "BC电池": "光伏",
+    "光伏玻璃": "光伏",
+    "光伏组件": "光伏",
+    "光伏支架": "光伏",
+    "分布式光伏": "光伏",
+    "光伏EPC": "光伏",
+    "光伏胶膜": "光伏",
+    "光伏银浆": "光伏",
+    "钒电池": "储能",
+    "动力电池": "锂电池",
+    "氢燃料电池": "氢能源",
+    "SOFC电池": "氢能源",
+    "便携式储能": "储能",
+    "工商业储能": "储能",
+    "储能热管理": "储能",
+    "空气储能": "储能",
+    "柔性直流": "智能电网",
+    "火电": "电力",
+    "风电零部件": "风电",
+    "风电整机厂商": "风电",
+    "风电材料": "风电",
+    "有机硅": "化工",
+    "氟化工": "氟化工",
+    "钛白粉": "化工",
+    "PVDF": "氟化工",
+    "制冷剂": "化工",
+    "煤化工": "煤化工",
+    "分散染料": "化工",
+    "橡胶": "化工",
+    "化纤": "化工",
+    "涤纶": "化工",
+    "互联网金融": "金融科技",
+    "数字货币": "金融科技",
+    "金融科技": "金融科技",
+    "稳定币": "金融科技",
+    "跨境支付": "金融科技",
+    "移动支付": "金融科技",
+    "RWA": "金融科技",
+    "参股券商": "金融科技",
+    "REITs": "金融科技",
+    "两轮车": "汽车零部件",
+    "重卡": "汽车整车",
+    "酒店": "旅游酒店",
+    "黄金零售": "商贸零售",
+    "军工材料": "军工",
+    "固废处理": "环保",
+    "污水处理": "环保",
+    "核污染概念": "环保",
+    "冶金煤": "煤炭",
+    "水泥": "建筑地产",
+    "公路运营": "轨道交通",
+    "量子科技": "量子科技",
+    "种植业": "农业",
+    "北交医疗器械": "医药",
+    "北交医药": "医药",
+    "C2M": "电商平台经济",
+    "NAS": "数字经济",
+    "数据链": "军工",
+    "客运": "轨道交通",
+    "冷链物流": "物流",
+    "中欧概念": "一带一路",
+    "东盟自贸区": "一带一路",
+    "中日韩贸易": "一带一路",
+    "乌克兰概念": "一带一路",
+    "转口贸易": "一带一路",
+    "保税区": "一带一路",
+    "互联网营销": "电商平台经济",
+    "自行车": "汽车零部件",
+    "柴油发电机": "发电机"
+  },
+  "stats": {
+    "total_original": 679,
+    "total_clean": 380,
+    "total_deleted": 252,
+    "total_unmapped": 5,
+    "themes_count": 77,
+    "themes_used": 67,
+    "total_themes": 77,
+    "unmapped": 0,
+    "last_updated": "2026-05-09",
+    "total_plates": 427,
+    "mapped_plates": 381
+  },
+  "unmapped_plates": [],
+  "deleted_plates": [
+    "AMD概念",
+    "C2M",
+    "ETC",
+    "O2O概念",
+    "PPP概念",
+    "RCS",
+    "SOFC电池",
+    "ST摘帽",
+    "ST板块",
+    "VPN",
+    "eSIM",
+    "web3.0",
+    "一季报增长",
+    "三季报增长",
+    "上海市",
+    "专精特新",
+    "世界杯概念",
+    "业绩增长",
+    "两桶油改革",
+    "两轮车",
+    "中报增长",
+    "中欧概念",
+    "中特估",
+    "中电科重组",
+    "中科系",
+    "中船系",
+    "中韩自贸区",
+    "云南省",
+    "互联网医疗",
+    "低价股",
+    "保健品",
+    "健康中国",
+    "公交",
+    "其他社会服务",
+    "养老概念",
+    "内蒙古自治区",
+    "分拆上市预期",
+    "动物疫苗",
+    "北交所",
+    "北京市",
+    "医药电商",
+    "卫生护理",
+    "参股新三板",
+    "口罩",
+    "可转债",
+    "吉林省",
+    "啤酒概念",
+    "四川省",
+    "国有企业",
+    "土地流转",
+    "在线办公",
+    "壳资源",
+    "外卖概念",
+    "外贸",
+    "外资券商影子股",
+    "大麻",
+    "天津市",
+    "天津自贸区",
+    "字节概念",
+    "宁夏回族自治区",
+    "安徽省",
+    "宠物经济",
+    "室外经济",
+    "就业概念",
+    "山东省",
+    "山西省",
+    "工业大麻",
+    "平台经济",
+    "年报增长",
+    "年报预增",
+    "并购重组",
+    "幽门螺杆菌",
+    "广东省",
+    "广电网",
+    "广西壮族自治区",
+    "彩票概念",
+    "影石概念",
+    "成人用品",
+    "成渝经济圈",
+    "托育服务",
+    "振兴东北",
+    "摩尔线程概念",
+    "数字藏品",
+    "文交所",
+    "新疆维吾尔自治区",
+    "智慧停车",
+    "智慧矿山",
+    "标普道琼斯A股",
+    "武汉",
+    "毛发医疗",
+    "民营医院",
+    "江苏省",
+    "江西省",
+    "汽车服务及其他",
+    "汽车类",
+    "河北省",
+    "河南省",
+    "油品升级",
+    "油品改革",
+    "浙江",
+    "浙江省",
+    "海南",
+    "海南省",
+    "海南自贸区",
+    "海峡两岸",
+    "消防",
+    "深圳",
+    "湖北省",
+    "湖南省",
+    "澳交所概念",
+    "烟花爆竹",
+    "烟草",
+    "猴痘概念",
+    "环球影城",
+    "甘肃省",
+    "生鲜电商",
+    "电子发票",
+    "病毒防治",
+    "百度概念",
+    "眼科医疗",
+    "破净股概念",
+    "社保卡",
+    "社区团购",
+    "福建省",
+    "科创板",
+    "租售同权",
+    "肝炎概念",
+    "股权转让",
+    "腾讯概念",
+    "自行车",
+    "芬太尼替代",
+    "西藏自治区",
+    "西部大开发",
+    "财税数字化",
+    "贵州省",
+    "贸易",
+    "超级电容",
+    "超跌",
+    "足球概念",
+    "辽宁省",
+    "远东开发",
+    "送转填权",
+    "送转预期",
+    "酿酒",
+    "重庆市",
+    "金改",
+    "铅酸电池",
+    "防脱发",
+    "阿里巴巴概念",
+    "陕西省",
+    "霍乱概念",
+    "青海省",
+    "首发经济",
+    "高校",
+    "高股息精选",
+    "黑龙江省",
+    "黑龙江自贸区",
+    "乡村振兴",
+    "农业服务",
+    "农村电商",
+    "生态农业",
+    "玉米",
+    "大豆",
+    "农业种植",
+    "农化制品",
+    "安防",
+    "电子纸",
+    "电子烟",
+    "公路铁路运输",
+    "压缩机",
+    "非汽车交运",
+    "电源",
+    "钽电容",
+    "传感器",
+    "激光",
+    "MIM",
+    "2024年报预增",
+    "2025一季报预增",
+    "2025三季报预增",
+    "2025中报预增",
+    "2025年报预增",
+    "2026一季报预增",
+    "同花顺中特估100",
+    "同花顺出海50",
+    "同花顺新质50",
+    "同花顺果指数",
+    "同花顺漂亮100",
+    "沪股通",
+    "深股通",
+    "沪伦通概念",
+    "新股与次新股",
+    "注册制次新股",
+    "科创板IPO",
+    "科创板公司",
+    "科创板预期",
+    "科创次新股",
+    "举牌",
+    "再融资",
+    "融资融券",
+    "证金持股",
+    "摘帽",
+    "回购增持再贷款概念",
+    "实控人变更",
+    "股权转让(并购重组)",
+    "MSCI概念",
+    "富时罗素概念股",
+    "空铁WIFI",
+    "宽带中国",
+    "创业板重组松绑",
+    "美丽中国",
+    "无人零售",
+    "互联网彩票",
+    "微信小程序",
+    "知识产权",
+    "二维码识别",
+    "综合",
+    "周期",
+    "统一大市场",
+    "自由贸易港",
+    "长三角一体化",
+    "新三板精选层概念",
+    "供销社",
+    "共享单车",
+    "参股360",
+    "参股万达商业",
+    "参股保险",
+    "恒大概念",
+    "王者荣耀",
+    "赛马概念",
+    "超级品牌",
+    "透明工厂",
+    "马云概念",
+    "黑洞概念",
+    "福建自贸区",
+    "广东自贸区",
+    "上海自贸区",
+    "东盟自贸区",
+    "横琴新区",
+    "粤港澳大湾区",
+    "人民币贬值受益",
+    "国家大基金持股",
+    "网络切片",
+    "新能源",
+    "其他电源设备",
+    "高端装备",
+    "钒电池",
+    "数字中国",
+    "数字乡村",
+    "新型烟草(电子烟)",
+    "独角兽概念",
+    "民爆概念",
+    "雅下水电概念"
+  ],
+  "theme_to_plates": {
+    "算力": [
+      "东数西算",
+      "东数西算(算力)",
+      "云计算",
+      "华为昇腾",
+      "数据中心",
+      "服务器",
+      "液冷",
+      "液冷服务器",
+      "算力",
+      "算力租赁",
+      "算力调度",
+      "英伟达概念",
+      "训推一体机",
+      "边缘计算"
+    ],
+    "芯片": [
+      "CPU",
+      "EDA",
+      "GPU",
+      "HBM",
+      "IGBT",
+      "RISC-V",
+      "中芯国际概念",
+      "先进封装",
+      "光刻机",
+      "光刻胶",
+      "光芯片",
+      "半导体",
+      "半导体设备",
+      "大基金二期",
+      "存储",
+      "存储芯片",
+      "抛光液",
+      "数字芯片",
+      "模拟芯片",
+      "氮化镓",
+      "汽车芯片",
+      "洁净室",
+      "滤波器",
+      "电子化学品",
+      "电子气体",
+      "砷化镓",
+      "硅片",
+      "碳化硅",
+      "磷化铟",
+      "端侧芯片",
+      "第三代半导体",
+      "芯片",
+      "芯片前端制造",
+      "芯片封测",
+      "芯片概念",
+      "集成电路概念",
+      "靶材"
+    ],
+    "通信": [
+      "5G",
+      "6G",
+      "6G概念",
+      "CPO/MPO",
+      "F5G概念",
+      "OCS交换机",
+      "PCB",
+      "PCB设备",
+      "PCB铜箔",
+      "WiFi6",
+      "wifi6/7",
+      "交换机",
+      "光模块",
+      "光纤概念",
+      "共封装光学(CPO)",
+      "印制电路板",
+      "海缆",
+      "覆铜板",
+      "通信",
+      "通信服务",
+      "通信设备",
+      "铜缆高速连接",
+      "高速连接"
+    ],
+    "锂电池": [
+      "动力电池",
+      "动力电池回收",
+      "固态电池",
+      "复合集流体",
+      "电池",
+      "盐湖提锂",
+      "石墨负极",
+      "碳酸锂",
+      "磷酸铁锂",
+      "负极",
+      "钠离子电池",
+      "锂电池",
+      "锂电池概念",
+      "锂电设备",
+      "锂电铜箔",
+      "锂矿",
+      "隔膜",
+      "高镍三元"
+    ],
+    "AI应用": [
+      "AIGC",
+      "AI办公",
+      "AI医疗",
+      "AI审核",
+      "AI应用",
+      "AI政务",
+      "AI智能体",
+      "AI营销",
+      "AI视频",
+      "Sora概念(文生视频)",
+      "多模态概念",
+      "神经网络"
+    ],
+    "电力": [
+      "水电",
+      "火电",
+      "热力",
+      "热泵",
+      "燃气轮机",
+      "生物质能",
+      "电力",
+      "绿色电力"
+    ],
+    "商业航天": [
+      "商业航天",
+      "太空互联网",
+      "太空光伏"
+    ],
+    "机器人": [
+      "人形机器人",
+      "减速器",
+      "外骨骼机器人",
+      "宇树机器人",
+      "小米机器人",
+      "小鹏机器人",
+      "工业机器人",
+      "智元机器人",
+      "机器人概念",
+      "机器视觉",
+      "滚珠丝杠",
+      "灵巧手",
+      "电机"
+    ],
+    "证券": [
+      "证券"
+    ],
+    "发电机": [
+      "发电机",
+      "柴油发电机"
+    ],
+    "有色金属": [
+      "小金属概念",
+      "工业金属",
+      "有色金属",
+      "白银",
+      "稀土永磁",
+      "能源金属",
+      "金属钨",
+      "金属钴",
+      "金属铜",
+      "金属铝",
+      "金属铟",
+      "金属锌",
+      "金属锑",
+      "金属锗",
+      "金属锡",
+      "金属锰",
+      "金属镁",
+      "铝箔",
+      "黄金"
+    ],
+    "储能": [
+      "PCS设备",
+      "便携式储能",
+      "储能",
+      "储能热管理",
+      "工商业储能",
+      "抽水蓄能",
+      "空气储能",
+      "钒电池"
+    ],
+    "数字经济": [
+      "ERP",
+      "NAS",
+      "NFT概念",
+      "web3.0",
+      "云办公",
+      "信创",
+      "区块链",
+      "国产软件",
+      "国资云",
+      "大数据",
+      "安防",
+      "广电网",
+      "数字政务",
+      "数字经济",
+      "数据确权",
+      "数据要素",
+      "时空大数据",
+      "智慧停车",
+      "智慧城市",
+      "智慧政务",
+      "物联网",
+      "电子证照",
+      "电子身份证",
+      "自主可控"
+    ],
+    "多元金融": [
+      "供应链金融",
+      "信托概念",
+      "创投",
+      "多元金融",
+      "期货概念",
+      "消费金融",
+      "金融概念"
+    ],
+    "智能电网": [
+      "变压器",
+      "固态变压器",
+      "智能电网",
+      "柔性直流",
+      "特高压",
+      "电力设备",
+      "电气设备",
+      "电网设备",
+      "虚拟电厂",
+      "超导",
+      "逆变器"
+    ],
+    "核电": [
+      "可控核聚变",
+      "核污染防治",
+      "核电",
+      "钍基熔盐",
+      "铀矿"
+    ],
+    "风电": [
+      "风电",
+      "风电整机厂商",
+      "风电材料",
+      "风电设备",
+      "风电零部件"
+    ],
+    "消费电子": [
+      "AI手机",
+      "AI眼镜",
+      "ISP",
+      "Mini/Micro",
+      "OLED",
+      "VR/AR/MR",
+      "元件",
+      "光学光电子",
+      "光学镜头",
+      "无线充电",
+      "无线耳机",
+      "智能音箱",
+      "柔性屏",
+      "柔性屏(折叠屏)",
+      "消费电子",
+      "消费电子概念",
+      "空间计算",
+      "面板"
+    ],
+    "船舶航运": [
+      "港口",
+      "港口航运",
+      "航运",
+      "造船",
+      "集装箱"
+    ],
+    "体育产业": [
+      "体育产业",
+      "足球概念"
+    ],
+    "旅游酒店": [
+      "旅游",
+      "旅游及酒店",
+      "酒店",
+      "酒店及餐饮",
+      "露营经济"
+    ],
+    "物流": [
+      "冷链物流",
+      "快递",
+      "无人物流",
+      "智能物流",
+      "物流"
+    ],
+    "化工": [
+      "TMA",
+      "丙烯酸",
+      "分散染料",
+      "制冷剂",
+      "化学制品",
+      "化学原料",
+      "化学纤维",
+      "化工",
+      "化工合成材料",
+      "化纤",
+      "可降解塑料",
+      "可降解概念",
+      "塑料制品",
+      "尿素",
+      "工业气体",
+      "有机硅",
+      "有机硅概念",
+      "染料",
+      "橡胶",
+      "橡胶制品",
+      "氯化亚砜",
+      "涤纶",
+      "烧碱",
+      "燃料乙醇",
+      "环氧丙烷",
+      "玻纤",
+      "甲醇",
+      "电石",
+      "硫酸",
+      "纯碱",
+      "聚氨酯",
+      "醋酸",
+      "钛白粉",
+      "钛白粉概念",
+      "阻燃剂",
+      "非金属材料"
+    ],
+    "新材料": [
+      "PVDF概念",
+      "化工新材料",
+      "培育钻石",
+      "新材料概念",
+      "石墨烯",
+      "石墨电极",
+      "石英材料",
+      "碳纤维",
+      "蓝宝石",
+      "金刚石概念",
+      "金属新材料"
+    ],
+    "医药": [
+      "CRO",
+      "CRO概念",
+      "DRG/DIP",
+      "NMN",
+      "NMN概念",
+      "中药",
+      "仿制药",
+      "仿制药一致性评价",
+      "保健品",
+      "兽药",
+      "再生医学",
+      "减肥药",
+      "创新药",
+      "动物疫苗",
+      "化学制药",
+      "北交动物疫苗",
+      "北交医疗器械",
+      "北交医药",
+      "北交合成生物",
+      "北交麦角硫因",
+      "医疗器械",
+      "医疗改革",
+      "医疗服务",
+      "医药",
+      "医药商业",
+      "医药零售",
+      "原料药",
+      "合成生物",
+      "基因测序",
+      "基因疗法",
+      "家庭医生",
+      "干细胞",
+      "幽门螺杆菌",
+      "抗原检测",
+      "抗病毒面料",
+      "新冠检测",
+      "新冠药概念",
+      "止咳药",
+      "民营医院",
+      "流感",
+      "消毒剂",
+      "猴痘概念",
+      "生物制品",
+      "生物医药",
+      "生物疫苗",
+      "疫苗概念",
+      "病毒防治",
+      "眼科医疗",
+      "禽流感",
+      "维生素",
+      "肝炎概念",
+      "肝素",
+      "芬太尼",
+      "超级真菌",
+      "辅助生殖",
+      "重组蛋白",
+      "阿尔茨海默",
+      "阿尔茨海默概念",
+      "降压药",
+      "青蒿素",
+      "高压氧舱",
+      "麦角硫因"
+    ],
+    "人工智能": [
+      "ChatGPT",
+      "DeepSeek",
+      "DeepSeek概念",
+      "GPT4",
+      "MCP",
+      "OpenClaw",
+      "中国AI 50",
+      "人工智能",
+      "智谱AI",
+      "盘古大模型",
+      "阶跃星辰"
+    ],
+    "环保": [
+      "固废处理",
+      "土壤修复",
+      "垃圾分类",
+      "垃圾发电",
+      "核污染概念",
+      "水务",
+      "污水处理",
+      "汽车拆解概念",
+      "环保",
+      "环保设备",
+      "碳交易"
+    ],
+    "食品饮料": [
+      "乳业",
+      "人造肉",
+      "代糖概念",
+      "啤酒",
+      "水产品",
+      "葡萄酒",
+      "酿酒",
+      "预制菜",
+      "食品加工制造",
+      "食品饮料",
+      "饮料制造",
+      "黄酒"
+    ],
+    "生育概念": [
+      "生育概念"
+    ],
+    "汽车零部件": [
+      "EDR",
+      "一体化压铸",
+      "两轮车",
+      "内外饰",
+      "底盘",
+      "扁线",
+      "汽车热管理",
+      "汽车电子",
+      "汽车零部件",
+      "碳陶刹车",
+      "自行车",
+      "车身及附件",
+      "轮胎"
+    ],
+    "教育": [
+      "就业概念",
+      "教育",
+      "职业教育"
+    ],
+    "军工": [
+      "中船系",
+      "兵装重组概念",
+      "军工",
+      "军工AI",
+      "军工信息化",
+      "军工材料",
+      "军工电子",
+      "军工装备",
+      "军民融合",
+      "军用雷达",
+      "军贸",
+      "国产航母",
+      "成飞概念",
+      "数据链",
+      "海工装备",
+      "航空发动机"
+    ],
+    "农业": [
+      "养殖业",
+      "养鸡",
+      "农业",
+      "农产品加工",
+      "农机",
+      "农药",
+      "化肥",
+      "棉花",
+      "猪肉",
+      "白糖",
+      "种植业",
+      "粮食概念",
+      "草甘膦",
+      "转基因",
+      "饲料"
+    ],
+    "天然气": [
+      "可燃冰",
+      "天然气",
+      "油气开采及服务",
+      "燃气",
+      "页岩气"
+    ],
+    "基础建设": [
+      "基础建设",
+      "水利"
+    ],
+    "服装家纺": [
+      "宠物经济",
+      "户外运动",
+      "服装家纺",
+      "纺织制造"
+    ],
+    "新型工业化": [
+      "3D打印",
+      "专用设备",
+      "仪器仪表",
+      "传感器",
+      "工业4.0",
+      "工业互联网",
+      "工业母机",
+      "新型工业化",
+      "智慧矿山",
+      "激光",
+      "自动化设备",
+      "通用设备"
+    ],
+    "一带一路": [
+      "一带一路",
+      "东盟自贸区",
+      "中日韩贸易",
+      "中欧概念",
+      "乌克兰概念",
+      "保税区",
+      "转口贸易"
+    ],
+    "低空经济": [
+      "低空经济",
+      "通用航空",
+      "飞行汽车"
+    ],
+    "智能驾驶": [
+      "AEBS",
+      "智能交通",
+      "智能座舱",
+      "智能驾驶",
+      "毫米波雷达",
+      "激光雷达",
+      "线控底盘",
+      "胎压监测",
+      "车路云"
+    ],
+    "煤炭": [
+      "冶金煤",
+      "动力煤",
+      "焦炭",
+      "煤炭",
+      "煤炭开采加工",
+      "煤炭概念"
+    ],
+    "家电": [
+      "厨卫电器",
+      "家电",
+      "小家电",
+      "智能家居",
+      "白色家电",
+      "黑色家电"
+    ],
+    "端侧AI": [
+      "AI PC",
+      "AI玩具",
+      "端侧AI"
+    ],
+    "造纸包装": [
+      "包装印刷",
+      "造纸"
+    ],
+    "光伏": [
+      "BC电池",
+      "POE胶膜",
+      "TOPCON电池",
+      "光伏",
+      "光伏EPC",
+      "光伏支架",
+      "光伏概念",
+      "光伏玻璃",
+      "光伏组件",
+      "光伏胶膜",
+      "光伏设备",
+      "光伏银浆",
+      "分布式光伏",
+      "异质结电池",
+      "石英坩埚",
+      "硅料",
+      "钙钛矿电池"
+    ],
+    "银行保险": [
+      "保险",
+      "银行"
+    ],
+    "汽车充电": [
+      "充电桩",
+      "换电站",
+      "汽车充电",
+      "高压快充"
+    ],
+    "免税": [
+      "免税",
+      "免税店"
+    ],
+    "商贸零售": [
+      "新零售",
+      "零售",
+      "黄金零售"
+    ],
+    "游戏": [
+      "云游戏",
+      "游戏",
+      "虚拟现实"
+    ],
+    "卫星导航": [
+      "卫星导航"
+    ],
+    "石油": [
+      "石油加工贸易",
+      "石油石化",
+      "石油矿业开采"
+    ],
+    "航空运输": [
+      "机场航空",
+      "机场航运"
+    ],
+    "医美": [
+      "医美",
+      "医美概念",
+      "美容护理"
+    ],
+    "建筑地产": [
+      "园区开发",
+      "园林",
+      "地产链",
+      "建材",
+      "建筑装饰",
+      "房地产",
+      "房地产服务",
+      "房屋检测",
+      "水泥",
+      "玻璃",
+      "电梯概念",
+      "装修家具",
+      "装配式建筑"
+    ],
+    "传媒": [
+      "影视院线",
+      "文化传媒",
+      "版权",
+      "短剧",
+      "融媒体",
+      "超高清视频"
+    ],
+    "氢能源": [
+      "SOFC电池",
+      "制氢",
+      "氢气储运",
+      "氢燃料电池",
+      "氢能源",
+      "燃料电池",
+      "电解槽"
+    ],
+    "元宇宙": [
+      "元宇宙"
+    ],
+    "无人机": [
+      "无人机"
+    ],
+    "钢铁": [
+      "特钢概念",
+      "钢铁",
+      "铁矿石"
+    ],
+    "新消费": [
+      "卡牌概念",
+      "文创产品",
+      "网红经济",
+      "谷子经济",
+      "首发经济"
+    ],
+    "大飞机": [
+      "大飞机"
+    ],
+    "海洋经济": [
+      "海洋经济"
+    ],
+    "轨道交通": [
+      "公路运营",
+      "客运",
+      "轨交设备",
+      "轨道交通",
+      "高铁"
+    ],
+    "白酒": [
+      "白酒",
+      "白酒概念"
+    ],
+    "汽车整车": [
+      "北汽新能源",
+      "新能源汽车",
+      "比亚迪概念",
+      "汽车整车",
+      "特斯拉概念",
+      "电机电控",
+      "重卡"
+    ],
+    "家居用品": [
+      "家居用品"
+    ],
+    "工程机械": [
+      "工程机械"
+    ],
+    "次新股": [
+      "核准制次新股",
+      "次新股"
+    ],
+    "华为概念": [
+      "华为手机",
+      "华为概念",
+      "华为欧拉",
+      "华为汽车",
+      "华为海思",
+      "华为盘古",
+      "华为鲲鹏",
+      "星闪概念",
+      "鸿蒙概念"
+    ],
+    "央企国企改革": [
+      "中字头",
+      "中字头股票",
+      "国企改革",
+      "央企国企改革",
+      "深圳国企改革"
+    ],
+    "脑机接口": [
+      "脑机接口"
+    ],
+    "电商平台经济": [
+      "AI电商",
+      "C2M",
+      "C2M概念",
+      "互联网电商",
+      "互联网营销",
+      "拼多多概念",
+      "物流电商平台",
+      "电子商务",
+      "网络直播"
+    ],
+    "氟化工": [
+      "PEEK",
+      "PVDF",
+      "氟化工",
+      "氟化工概念",
+      "氢氟酸"
+    ],
+    "磷化工": [
+      "磷化工"
+    ],
+    "煤化工": [
+      "煤化工",
+      "煤化工概念"
+    ],
+    "软件服务": [
+      "ERP概念",
+      "IT服务",
+      "国产操作系统",
+      "操作系统",
+      "计算机应用",
+      "软件开发"
+    ],
+    "网络安全": [
+      "AI安全",
+      "数据安全",
+      "网络安全"
+    ],
+    "电子元件": [
+      "LED",
+      "晶体振荡器",
+      "玻璃基板",
+      "电子布",
+      "电磁屏蔽",
+      "电阻电容",
+      "钽电容",
+      "铜电镀"
+    ],
+    "金融科技": [
+      "REITs",
+      "RWA",
+      "互联网金融",
+      "参股券商",
+      "数字货币",
+      "移动支付",
+      "稳定币",
+      "跨境支付",
+      "金融科技"
+    ],
+    "量子科技": [
+      "量子科技"
+    ]
+  }
+}

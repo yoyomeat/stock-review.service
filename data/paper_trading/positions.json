@@ -1,0 +1,30 @@
+{
+  "301246": {
+    "code": "301246",
+    "name": "宏源药业",
+    "amount": 1300,
+    "cost_price": 26.8638058,
+    "buy_date": "2026-05-05",
+    "current_price": 29.5,
+    "unrealized_pnl": 3427.052459999998,
+    "unrealized_pct": 9.813182166467271,
+    "highest_since_buy": 29.5,
+    "lowest_since_buy": 26.83,
+    "total_commission": 8.71975,
+    "total_tax": 0
+  },
+  "688449": {
+    "code": "688449",
+    "name": "联芸科技",
+    "amount": 500,
+    "cost_price": 49.912811000000005,
+    "buy_date": "2026-05-05",
+    "current_price": 49.4,
+    "unrealized_pnl": -256.40550000000314,
+    "unrealized_pct": -1.0274135832582298,
+    "highest_since_buy": 49.85,
+    "lowest_since_buy": 48.5,
+    "total_commission": 6.23125,
+    "total_tax": 0
+  }
+}

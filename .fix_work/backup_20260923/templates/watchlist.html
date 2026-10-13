@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自选股管理</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e0e0e0; min-height: 100vh; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 22px; margin-bottom: 20px; color: #fff; }
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+.tab { padding: 8px 20px; border-radius: 8px; cursor: pointer; background: #1e2130; color: #888; border: 1px solid #2a2d3e; transition: all 0.2s; font-size: 14px; }
+.tab.active { background: #3b82f6; color: #fff; border-color: #3b82f6; }
+.tab:hover:not(.active) { background: #252840; color: #ccc; }
+.section { display: none; }
+.section.active { display: block; }
+.card { background: #1a1d2e; border: 1px solid #2a2d3e; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.card-title { font-size: 15px; font-weight: 600; color: #fff; }
+.badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; }
+.badge-holding { background: #10b981; color: #fff; }
+.badge-candidate { background: #f59e0b; color: #000; }
+.badge-leader { background: #ef4444; color: #fff; }
+.btn { padding: 6px 14px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; transition: all 0.15s; }
+.btn-danger { background: #ef4444; color: #fff; }
+.btn-danger:hover { background: #dc2626; }
+.btn-primary { background: #3b82f6; color: #fff; }
+.btn-primary:hover { background: #2563eb; }
+.btn-sm { padding: 4px 10px; font-size: 12px; }
+.form-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 4px; }
+.form-group label { font-size: 12px; color: #888; }
+.form-group input, .form-group select { background: #252840; border: 1px solid #3a3d50; border-radius: 6px; padding: 8px 10px; color: #e0e0e0; font-size: 14px; outline: none; }
+.form-group input:focus, .form-group select:focus { border-color: #3b82f6; }
+.form-group input::placeholder { color: #555; }
+.empty { text-align: center; color: #555; padding: 40px; font-size: 14px; }
+.stock-info { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #aaa; }
+.stock-info span { background: #252840; padding: 3px 8px; border-radius: 4px; }
+.tag { display: inline-block; padding: 2px 8px; margin: 2px; border-radius: 4px; font-size: 12px; background: #252840; color: #aaa; }
+.tag-remove { cursor: pointer; color: #ef4444; margin-left: 4px; }
+.toast { position: fixed; top: 20px; right: 20px; padding: 12px 20px; border-radius: 8px; font-size: 14px; z-index: 1000; animation: fadeIn 0.3s; }
+.toast-ok { background: #10b981; color: #fff; }
+.toast-err { background: #ef4444; color: #fff; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+.add-card { background: #1a1d2e; border: 2px dashed #2a2d3e; border-radius: 12px; padding: 16px; }
+.add-card:hover { border-color: #3b82f6; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📋 自选股管理</h1>
+  <div class="nav" style="display:flex;gap:12px;margin-bottom:16px">
+    <a href="/watchlist" style="color:#3b82f6;text-decoration:none;font-size:13px;padding:4px 10px;border-radius:6px;background:#252840">📋 自选股</a>
+    <a href="/intraday" style="color:#888;text-decoration:none;font-size:13px;padding:4px 10px;border-radius:6px">📡 盘中监测</a>
+  </div>
+  <div class="tabs">
+    <div class="tab active" data-tab="holding">🏦 持仓</div>
+    <div class="tab" data-tab="candidate">🎯 候选</div>
+    <div class="tab" data-tab="leader">👑 龙头</div>
+  </div>
+
+  <!-- 持仓 -->
+  <div class="section active" id="sec-holding">
+    <div id="holding-list"></div>
+    <div class="add-card">
+      <div style="font-size:14px;color:#888;margin-bottom:12px">+ 添加持仓</div>
+      <div class="form-row">
+        <div class="form-group"><label>代码</label><input id="h-code" placeholder="000001" style="width:100px"></div>
+        <div class="form-group"><label>名称</label><input id="h-name" placeholder="平安银行" style="width:120px"></div>
+        <div class="form-group"><label>成本</label><input id="h-cost" type="number" step="0.01" placeholder="12.50" style="width:100px"></div>
+        <div class="form-group"><label>数量</label><input id="h-qty" type="number" placeholder="1000" style="width:100px"></div>
+        <div class="form-group"><label>止损%</label><input id="h-stop" type="number" value="-7" style="width:80px"></div>
+        <div class="form-group"><label>止盈回撤%</label><input id="h-trail" type="number" value="5" style="width:80px"></div>
+        <button class="btn btn-primary" onclick="addHolding()">添加</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 候选 -->
+  <div class="section" id="sec-candidate">
+    <div id="candidate-list"></div>
+    <div class="add-card">
+      <div style="font-size:14px;color:#888;margin-bottom:12px">+ 添加候选</div>
+      <div class="form-row">
+        <div class="form-group"><label>代码</label><input id="c-code" placeholder="000002" style="width:100px"></div>
+        <div class="form-group"><label>名称</label><input id="c-name" placeholder="万科A" style="width:120px"></div>
+        <div class="form-group"><label>触发条件</label><input id="c-trigger" placeholder="vol_ratio>2 and pct>3" style="width:240px"></div>
+        <button class="btn btn-primary" onclick="addCandidate()">添加</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 龙头 -->
+  <div class="section" id="sec-leader">
+    <div id="leader-list"></div>
+    <div class="add-card">
+      <div style="font-size:14px;color:#888;margin-bottom:12px">+ 添加龙头</div>
+      <div class="form-row">
+        <div class="form-group"><label>代码</label><input id="l-code" placeholder="000006" style="width:100px"></div>
+        <div class="form-group"><label>名称</label><input id="l-name" placeholder="深振业A" style="width:120px"></div>
+        <div class="form-group"><label>监控项</label>
+          <select id="l-watch" multiple style="width:200px;height:60px">
+            <option value="炸板">炸板</option>
+            <option value="放量滞涨">放量滞涨</option>
+            <option value="大幅波动">大幅波动</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="addLeader()">添加</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '/api/watchlist';
+let DATA = { holding: [], candidate: [], leader: [] };
+
+function toast(msg, ok=true) {
+  const d = document.createElement('div');
+  d.className = 'toast ' + (ok ? 'toast-ok' : 'toast-err');
+  d.textContent = msg;
+  document.body.appendChild(d);
+  setTimeout(() => d.remove(), 2500);
+}
+
+async function fetchWL() {
+  try {
+    const r = await fetch(API);
+    DATA = await r.json();
+    render();
+  } catch(e) { toast('加载失败: ' + e, false); }
+}
+
+async function apiCall(method, path, body) {
+  const opts = { method, headers: {'Content-Type': 'application/json'} };
+  if (body) opts.body = JSON.stringify(body);
+  const r = await fetch(API + path, opts);
+  const j = await r.json();
+  if (r.ok) { toast(j.message || '操作成功'); DATA = j.data; render(); }
+  else toast(j.error || '操作失败', false);
+}
+
+function render() {
+  renderHolding();
+  renderCandidate();
+  renderLeader();
+}
+
+function renderHolding() {
+  const el = document.getElementById('holding-list');
+  if (!DATA.holding.length) { el.innerHTML = '<div class="empty">暂无持仓，点击下方添加</div>'; return; }
+  el.innerHTML = DATA.holding.map((h, i) => `
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">${h.name} <span style="color:#888;font-size:13px">${h.code}</span></span>
+        <button class="btn btn-danger btn-sm" onclick="apiCall('DELETE','/holding/${h.code}')">删除</button>
+      </div>
+      <div class="stock-info">
+        <span>成本: ${h.cost}</span>
+        <span>数量: ${h.qty}</span>
+        <span>止损: ${h.stop_loss}%</span>
+        <span>止盈回撤: ${h.trail_stop}%</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderCandidate() {
+  const el = document.getElementById('candidate-list');
+  if (!DATA.candidate.length) { el.innerHTML = '<div class="empty">暂无候选，点击下方添加</div>'; return; }
+  el.innerHTML = DATA.candidate.map(c => `
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">${c.name} <span style="color:#888;font-size:13px">${c.code}</span></span>
+        <button class="btn btn-danger btn-sm" onclick="apiCall('DELETE','/candidate/${c.code}')">删除</button>
+      </div>
+      <div class="stock-info">
+        <span>触发: ${c.trigger || '无'}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderLeader() {
+  const el = document.getElementById('leader-list');
+  if (!DATA.leader.length) { el.innerHTML = '<div class="empty">暂无龙头，点击下方添加</div>'; return; }
+  el.innerHTML = DATA.leader.map(l => `
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">${l.name} <span style="color:#888;font-size:13px">${l.code}</span></span>
+        <button class="btn btn-danger btn-sm" onclick="apiCall('DELETE','/leader/${l.code}')">删除</button>
+      </div>
+      <div class="stock-info">
+        <span>监控: ${(l.watch||[]).map(w => `<span class="tag">${w}</span>`).join('') || '无'}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function addHolding() {
+  const code = document.getElementById('h-code').value.trim();
+  const name = document.getElementById('h-name').value.trim();
+  const cost = parseFloat(document.getElementById('h-cost').value);
+  const qty = parseInt(document.getElementById('h-qty').value);
+  const stop_loss = parseFloat(document.getElementById('h-stop').value);
+  const trail_stop = parseFloat(document.getElementById('h-trail').value);
+  if (!code || !name) { toast('请填写代码和名称', false); return; }
+  if (!cost || !qty) { toast('请填写成本和数量', false); return; }
+  apiCall('POST', '/holding', { code, name, cost, qty, stop_loss, trail_stop });
+  ['h-code','h-name','h-cost','h-qty'].forEach(id => document.getElementById(id).value = '');
+}
+
+function addCandidate() {
+  const code = document.getElementById('c-code').value.trim();
+  const name = document.getElementById('c-name').value.trim();
+  const trigger = document.getElementById('c-trigger').value.trim();
+  if (!code || !name) { toast('请填写代码和名称', false); return; }
+  apiCall('POST', '/candidate', { code, name, trigger });
+  ['c-code','c-name','c-trigger'].forEach(id => document.getElementById(id).value = '');
+}
+
+function addLeader() {
+  const code = document.getElementById('l-code').value.trim();
+  const name = document.getElementById('l-name').value.trim();
+  const sel = document.getElementById('l-watch');
+  const watch = Array.from(sel.selectedOptions).map(o => o.value);
+  if (!code || !name) { toast('请填写代码和名称', false); return; }
+  apiCall('POST', '/leader', { code, name, watch });
+  ['l-code','l-name'].forEach(id => document.getElementById(id).value = '');
+}
+
+// Tab switching
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('sec-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+fetchWL();
+</script>
+</body>
+</html>

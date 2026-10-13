@@ -1,0 +1,26 @@
+[Unit]
+Description=Stock Review Web App (uvicorn)
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/stock-review
+ExecStartPre=/bin/bash -c 'fuser -k 8501/tcp 2>/dev/null || true; sleep 1'
+ExecStart=/usr/bin/python3.11 -m uvicorn app:app --host 127.0.0.1 --port 8501 --workers 2 --timeout-keep-alive 120  --no-access-log --log-level warning
+Restart=always
+RestartSec=3
+StartLimitIntervalSec=60
+StartLimitBurst=5
+KillMode=mixed
+TimeoutStopSec=10
+MemoryMax=2G
+MemoryHigh=1500M
+EnvironmentFile=/opt/stock-review/.env
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=stock-review
+
+[Install]
+WantedBy=multi-user.target

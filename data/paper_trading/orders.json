@@ -1,0 +1,42 @@
+[
+  {
+    "order_id": "P000001",
+    "code": "301246",
+    "name": "宏源药业",
+    "side": "buy",
+    "order_type": "market",
+    "price": 26.8,
+    "amount": 1300,
+    "filled_amount": 1300,
+    "avg_fill_price": 26.83,
+    "status": "filled",
+    "reason": "限价触发 首选",
+    "created_at": "2026-05-05 16:57:45",
+    "filled_at": "2026-05-05 16:57:45",
+    "commission": 8.71975,
+    "stamp_tax": 0,
+    "transfer_fee": 0.34879000000000004,
+    "slippage_cost": 34.879,
+    "notes": ""
+  },
+  {
+    "order_id": "P000002",
+    "code": "688449",
+    "name": "联芸科技",
+    "side": "buy",
+    "order_type": "market",
+    "price": 49.8,
+    "amount": 500,
+    "filled_amount": 500,
+    "avg_fill_price": 49.85,
+    "status": "filled",
+    "reason": "限价触发 备选1",
+    "created_at": "2026-05-05 16:57:45",
+    "filled_at": "2026-05-05 16:57:45",
+    "commission": 6.23125,
+    "stamp_tax": 0,
+    "transfer_fee": 0.24925000000000003,
+    "slippage_cost": 24.925,
+    "notes": ""
+  }
+]

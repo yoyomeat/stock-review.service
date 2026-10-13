@@ -1,0 +1,34 @@
+[
+  {
+    "trade_id": "T000001",
+    "order_id": "P000001",
+    "code": "301246",
+    "name": "宏源药业",
+    "side": "buy",
+    "price": 26.83,
+    "amount": 1300,
+    "commission": 8.71975,
+    "stamp_tax": 0,
+    "transfer_fee": 0.34879000000000004,
+    "slippage_cost": 34.879,
+    "net_amount": 34922.94754,
+    "reason": "限价触发 首选",
+    "timestamp": "2026-05-05 16:57:45"
+  },
+  {
+    "trade_id": "T000002",
+    "order_id": "P000002",
+    "code": "688449",
+    "name": "联芸科技",
+    "side": "buy",
+    "price": 49.85,
+    "amount": 500,
+    "commission": 6.23125,
+    "stamp_tax": 0,
+    "transfer_fee": 0.24925000000000003,
+    "slippage_cost": 24.925,
+    "net_amount": 24956.4055,
+    "reason": "限价触发 备选1",
+    "timestamp": "2026-05-05 16:57:45"
+  }
+]

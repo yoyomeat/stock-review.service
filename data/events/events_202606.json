@@ -1,0 +1,127 @@
+{
+  "year": 2026,
+  "month": 6,
+  "period": "2026年06月",
+  "total": 6,
+  "by_date": {
+    "20260603": [
+      {
+        "date": "20260603",
+        "time": "",
+        "event": "苹果WWDC全球开发者大会",
+        "sector": "消费电子/AI",
+        "importance": 4,
+        "source": "日历"
+      }
+    ],
+    "20260610": [
+      {
+        "date": "20260610",
+        "time": "",
+        "event": "COMPUTEX台北国际电脑展",
+        "sector": "半导体/AI",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "20260615": [
+      {
+        "date": "20260615",
+        "time": "",
+        "event": "SEMICON China半导体展",
+        "sector": "半导体",
+        "importance": 4,
+        "source": "日历"
+      },
+      {
+        "date": "20260615",
+        "time": "",
+        "event": "巴黎航展",
+        "sector": "军工/航天",
+        "importance": 4,
+        "source": "日历"
+      },
+      {
+        "date": "20260615",
+        "time": "",
+        "event": "陆家嘴论坛",
+        "sector": "金融",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "20260618": [
+      {
+        "date": "20260618",
+        "time": "",
+        "event": "618大促正式期",
+        "sector": "电商/消费",
+        "importance": 3,
+        "source": "日历"
+      }
+    ]
+  },
+  "by_sector": {
+    "消费电子/AI": [
+      {
+        "date": "20260603",
+        "time": "",
+        "event": "苹果WWDC全球开发者大会",
+        "sector": "消费电子/AI",
+        "importance": 4,
+        "source": "日历"
+      }
+    ],
+    "半导体/AI": [
+      {
+        "date": "20260610",
+        "time": "",
+        "event": "COMPUTEX台北国际电脑展",
+        "sector": "半导体/AI",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "半导体": [
+      {
+        "date": "20260615",
+        "time": "",
+        "event": "SEMICON China半导体展",
+        "sector": "半导体",
+        "importance": 4,
+        "source": "日历"
+      }
+    ],
+    "军工/航天": [
+      {
+        "date": "20260615",
+        "time": "",
+        "event": "巴黎航展",
+        "sector": "军工/航天",
+        "importance": 4,
+        "source": "日历"
+      }
+    ],
+    "金融": [
+      {
+        "date": "20260615",
+        "time": "",
+        "event": "陆家嘴论坛",
+        "sector": "金融",
+        "importance": 3,
+        "source": "日历"
+      }
+    ],
+    "电商/消费": [
+      {
+        "date": "20260618",
+        "time": "",
+        "event": "618大促正式期",
+        "sector": "电商/消费",
+        "importance": 3,
+        "source": "日历"
+      }
+    ]
+  },
+  "generated_at": "2026-05-25 20:00:11"
+}
