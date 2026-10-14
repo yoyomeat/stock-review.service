@@ -1,512 +1,226 @@
-# 情绪流量化系统 — 架构文档
+# 情绪流量化系统 — 核心架构文档
 
-版本: v3.0
-最后更新: 2026-09-16
-代码规模: ~51,000 行 Python（quant/ 31,420 行 + routes/ 4,443 行 + 其他 15,000 行）
+版本: v4.0｜最后核对: 2026-10-14｜对应 git tag: baseline-20261014
+本文档是项目的**唯一权威总览**：数据资产、功能模块、每日工作流、外部依赖与事故教训以本文为准；模块内部阈值/公式以代码和 `docs/` 冻结稿为准（文中引用）。
+
+> **维护契约（必守）**
+> 1. 凡改动 cron 调度、systemd 服务、数据库/文件路径、外部数据源、QQ 通道，**同一 commit 必须同步更新本文档对应章节并推进"最后核对"日期**。
+> 2. 易变运行事实（服务死活、数据水位、cron 实际内容）**不在此手抄**，以 `bash scripts/project_doctor.sh` 实时输出为准。
+> 3. 每次事故修复后，在第八章追加一条事故档案。
+> 4. 本文档与代码冲突时，先信代码、立即修文档，并在 commit message 写明 `docs:`。
 
 ---
 
 ## 一、系统全景
 
+系统是一套**单机个人量化研究平台**：每个交易日自动采集全市场行情 → 复盘打分 → 生成次日预测/交易计划 → Web 查看 + QQ 推送；盘中由常驻服务轮询实时行情并推送锚定股异动。
+
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        用户层                                    │
-│  浏览器 (yoyomeat.cn)  ←→  Nginx (SSL/443)  ←→  Uvicorn (:8501)│
-└────────────────────────────────┬────────────────────────────────┘
-                                 │
-┌────────────────────────────────▼────────────────────────────────┐
-│                     FastAPI 应用层 (app.py)                      │
-│  ┌─────────────────────────────────────────────────────────┐    │
-│  │  Routes (22个路由模块, 4,443行)                          │    │
-│  │  web / api / quant / summary / backtest / news /        │    │
-│  │  events / alert / compare / watchlist / intraday /      │    │
-│  │  realtime / kline / wave_db / ipo_research / ...        │    │
-│  └─────────────────────────────────────────────────────────┘    │
-│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────┐   │
-│  │  cache.py        │  │  data.py         │  │  auth.py     │   │
-│  │  (线程安全缓存)   │  │  (复盘数据加载)   │  │  (API鉴权)   │   │
-│  └──────────────────┘  └──────────────────┘  └──────────────┘   │
-└────────────────────────────────┬────────────────────────────────┘
-                                 │
-┌────────────────────────────────▼────────────────────────────────┐
-│                   量化引擎层 (quant/, 31,420行)                  │
-│                                                                  │
-│  ┌──────────────────────────────────────────────────────────┐   │
-│  │  Pipeline 决策管道 (pipeline.py)                          │   │
-│  │  route → filter → entry → exit → alloc                   │   │
-│  └──────────────────────────────────────────────────────────┘   │
-│                                                                  │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌───────────┐ │
-│  │ 情绪计算    │ │ 板块分析    │ │ 龙头识别    │ │ 仓位管理  │ │
-│  │ sentiment   │ │ sector      │ │ leaders     │ │ position  │ │
-│  │ (932行)     │ │ (1,022行)   │ │ (432行)     │ │ (372行)   │ │
-│  └─────────────┘ └─────────────┘ └─────────────┘ └───────────┘ │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌───────────┐ │
-│  │ 主线追踪    │ │ 选股策略    │ │ 买点策略    │ │ 止盈止损  │ │
-│  │ mainline    │ │ strategies  │ │ buy_strategy│ │ exit_eng  │ │
-│  │ tracker     │ │ (2个策略)   │ │ (923行)     │ │ (404行)   │ │
-│  │ (453行)     │ │             │ │             │ │           │ │
-│  └─────────────┘ └─────────────┘ └─────────────┘ └───────────┘ │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌───────────┐ │
-│  │ 锚定信号    │ │ 行情风格    │ │ 连板集群    │ │ 波浪引擎  │ │
-│  │ anchor_mon  │ │ cluster     │ │ chain_clust │ │ wave_eng  │ │
-│  │ (1,723行)   │ │ (683行)     │ │             │ │ (698行)   │ │
-│  └─────────────┘ └─────────────┘ └─────────────┘ └───────────┘ │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌───────────┐ │
-│  │ 交易计划    │ │ 报告模板    │ │ Meta构建    │ │ 预测引擎  │ │
-│  │ trade_plan  │ │ report_tmpl │ │ meta_builder│ │ prediction│ │
-│  │ (1,386行)   │ │ (1,849行)   │ │ (1,155行)   │ │ (842行)   │ │
-│  └─────────────┘ └─────────────┘ └─────────────┘ └───────────┘ │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌───────────┐ │
-│  │ IPO模块     │ │ 回测引擎    │ │ 量化画像    │ │ 因子实验  │ │
-│  │ ipo_*       │ │ bt_*        │ │ quant_pro   │ │ factor_lab│ │
-│  │ (5,171行)   │ │ (1,055行)   │ │ (800行)     │ │ (448行)   │ │
-│  └─────────────┘ └─────────────┘ └─────────────┘ └───────────┘ │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────────────────────┐│
-│  │ 实时行情    │ │ 盘中情绪    │ │ 舆情/事件爬虫              ││
-│  │ realtime_svc│ │ intra_sent  │ │ news_crawler / events_crawl ││
-│  │ (1,253行)   │ │             │ │ (462行)                     ││
-│  └─────────────┘ └─────────────┘ └─────────────────────────────┘│
-└─────────────────────────────────────────────────────────────────┘
-                                 │
-┌────────────────────────────────▼────────────────────────────────┐
-│                       数据层                                     │
-│  ┌──────────────┐ ┌──────────────┐ ┌──────────────────────────┐ │
-│  │ CSV日线      │ │ JSON缓存     │ │ SQLite DB                │ │
-│  │ data/csv/    │ │ data/*.json  │ │ prediction.db (预测)     │ │
-│  │ 416个文件    │ │ ~30个文件    │ │ ipo_score.db (IPO评分)   │ │
-│  │ 335MB        │ │              │ │ wave_analysis.db (波浪)  │ │
-│  │              │ │              │ │ quant_profile.db (画像)  │ │
-│  │              │ │              │ │ ipo_research.db (IPO研)  │ │
-│  └──────────────┘ └──────────────┘ └──────────────────────────┘ │
-│  ┌──────────────┐ ┌──────────────┐ ┌──────────────────────────┐ │
-│  │ 板块K线      │ │ 概念K线      │ │ 主题K线                  │ │
-│  │ sector_kline │ │ concept_kl   │ │ theme_kline              │ │
-│  │ 2.5MB        │ │ 50MB         │ │ 3.6MB                    │ │
-│  └──────────────┘ └──────────────┘ └──────────────────────────┘ │
-│  ┌──────────────┐ ┌──────────────┐ ┌──────────────────────────┐ │
-│  │ 开盘啦数据   │ │ 连板历史     │ │ 金股基线                 │ │
-│  │ kph_sectors  │ │ chain_hist   │ │ golden_baseline          │ │
-│  │ 1.1GB        │ │ 1.6MB        │ │ 44MB                     │ │
-│  └──────────────┘ └──────────────┘ └──────────────────────────┘ │
-│  ┌──────────────┐ ┌──────────────────────────────────────────┐ │
-│  │ 复盘报告     │ │ 映射文件                                 │ │
-│  │ reports/     │ │ stock_concept_map (5528只→板块)          │ │
-│  │ 1,178个文件  │ │ concept_match (452概念→行业)            │ │
-│  │              │ │ industry_skel (496三级行业骨架)          │ │
-│  │              │ │ theme_mapping_v2 (777条板块→主题)       │ │
-│  └──────────────┘ └──────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────┘
+外部数据源                采集层(cron, 16:00-17:05)         存储/计算层                      服务/消费层
+─────────────         ────────────────────────       ──────────────────────        ──────────────────
+开盘啦 16:00    ┐
+tdxrs 16:10     ├→ 采集脚本 scripts/fetch_*  ─→ CSV/JSON 文件 ─┬→ 复盘引擎 run_review ─→ reports/review_*.json
+levistock 兜底  ┘   (tdxrs-venv python)         data/csv 430+   │   quant/review_new.py     + .meta.json + HTML
+                                                     ↑          │   (情绪/板块/主线/仓位/计划)
+东财 16:20/17:00 ─→ update_concepts / ths_boards ─→ 板块画像 DB ┤
+新浪/腾讯 指数   ─→ update_indices_* ────────────→ index_kline ─┤
+M1 浪型标注(人工) ─→ m1_snapshot 16:34 ─→ wave_analysis.db ────┤
+量化五步 16:20  ─→ daily_quant_update ─→ stock_daily.db/m2m3 ──┤
+levistock 涨停池 ─→ update_chain_data 16:35 ─→ chain_data.json ┘
+                                                                 ├→ 预测 prediction_engine → prediction.db
+                                                                 ├→ 画像 quant_profile → quant_profile.db
+                                                                 ├→ T1 盘面 snapshot_sentiment 17:05
+                                                                 │                              ↓
+                                                                 │                     sentiment_review.db
+                                                                 └→ 17:30 send_share → notifier → QQ
+
+常驻进程: stock-review.service (uvicorn:8501) ─ 启动 realtime_service(tdxrs轮询) + carrier_alert(锚定股异动→QQ)
+          ipo-monitor.service ─ IPO 分钟级监控 → ipo_score.db
+          astroapp.service (星盘, :8503) ─ 外部项目，向本系统 AI 复盘提供 GLM 接口
+浏览器: Nginx 443 (yoyomeat.cn) → 127.0.0.1:8501（24 个路由模块）
 ```
 
 ---
 
-## 二、核心模块详解
+## 二、每日工作流（系统心跳）
 
-### 2.1 量化引擎入口
+> cron 实际内容与完成水位以 `project_doctor.sh` 输出为准；本表冻结**设计时序**（2026-10-14 核对）。所有任务均带节假日守卫（`quant/holidays.json`，覆盖至 2027-10-07）。
 
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/review_new.py` | 1,607 | **主入口**：数据加载 → 预处理 → 编排各模块 → 生成报告 |
-| `quant/pipeline.py` | ~200 | **决策管道**：route → filter → entry → exit → alloc |
-| `quant/context.py` (→config/context.py) | 109 | **MarketContext**：一次构建，全程传递的只读数据容器 |
-| `quant/action_router.py` | ~100 | **策略路由**：Style → Action → Screener → Entry |
-| `engine_adapter.py` | 102 | **适配层**：延迟加载 review_new，供 Web/API 调用 |
+| 时间 | 入口 | 动作 | 关键产物 / 下游 |
+|---|---|---|---|
+| 07:30 | `scripts/ipo_predict.sh` | `quant/ipo_predict.py --days 10` 新股预测 | ipo_research.db |
+| 08:00 | `scripts/morning_news.sh` | 盘前舆情补全（**舆情已下线，run_news.py 不存在，仅守卫跳过**） | — |
+| 09:03 | `scripts/build_float_shares.py` | tdxrs 刷新流通股本（tdxrs-venv） | 流通股本缓存 |
+| 09:25–15:00 | stock-review.service 内线程 | realtime_service 全市场实时轮询 + carrier_alert 锚定股异动 QQ | logs/intraday_*.jsonl |
+| 15:30 | `quant/ipo_tracker.py --all` | 新股盘中追踪 | ipo_score.db |
+| 16:00 | `scripts/daily_kph_sectors.sh` | `fetch_kph_sectors.py` 开盘啦板块成分 | data/kph_sectors/YYYYMMDD.json |
+| 16:10 | `scripts/daily_csv_fetch.sh` | 全市场日线 CSV：**tdxrs 首选 → levistock 兜底**（<100KB 判失败）；随后预热回测缓存并重启 8501 | data/csv/stock_daily_YYYYMMDD.csv |
+| 16:20 | `scripts/daily_quant_update.sh` | 量化五步：①update_concepts ②sync_concept_db ③update_indices_sina ④sync_stock_db(CSV→stock_daily.db) ⑤update_m2m3_daily | stock_daily.db、m2m3_signals/summary.json |
+| 16:34 | `scripts/m1_snapshot.py` | M1 大盘闸门四指数快照（原 16:25，10-14 后移避开五步竞态） | wave_analysis.db.env_snapshot |
+| 16:35 | `scripts/daily_cron.sh` | **主复盘批处理**，步骤见下 | reports/、prediction.db、quant_profile.db |
+| 17:00 | `scripts/daily_ths_boards.sh` | 东财行业+概念板块增量（update_ths_boards.py） | east_plate_daily（板块画像） |
+| 17:05 | `quant/snapshot_sentiment.py` | T1 客观盘面聚合（情绪分/涨停/炸板/最高板） | sentiment_review.db.market_snapshot |
+| 17:30 | `scripts/send_share.sh` | 复盘 QQ 推送（数据速览；AI 总结链路重构中，见 §7.5） | QQ 消息 |
+| 09:05 | `scripts/project_doctor.sh --notify` | 自检：cron 基线/服务/水位，异常推 QQ | — |
 
-**调用链路：**
-```
-CLI: run_review.py → review_new.run_single()
-Web: routes/quant.py → engine_adapter.run_review() → review_new.run_single()
-```
-
-### 2.2 情绪与赚钱效应
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/sentiment.py` | 932 | preprocess / calc_sentiment / calc_profit / calc_emotion_vars |
-
-**计算维度：**
-- 情绪分 (0-100)：涨停数、涨跌比、封板率、连板高度、涨跌幅分布
-- 赚钱效应 (0-100)：首板溢价、连板溢价、冲高回落、炸板率、昨日涨停表现
-- 情绪变量：加速度、流向、动量、首板因子、高低位温差、日内承接力
-
-### 2.3 板块分析
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/sector.py` | 1,022 | calc_sector_enhanced + 聚合/去重/评分 |
-| `quant/sector_score.py` | 1,059 | 双轨板块评分（行业+概念共振）+ 主题映射(30主题) |
-| `quant/theme_ranker.py` | 357 | 主题排名计算 |
-| `quant/data_loader.py` | 85 | 共享数据加载：板块层级 + 概念映射 |
-
-**评分体系：**
-- 行业板块 = 涨幅(40) + 上涨占比(30) + 成交额规模(15) + 趋势延续(15) → ×0.6
-- 概念板块 = 涨幅(35) + 涨停力度(40) + 炸板扣分 + 联动(25) → ×0.4
-- 综合共振分 = 行业×0.6 + 概念×0.4
-
-### 2.4 龙头与领导力
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/leaders.py` | 432 | calc_leaders / find_sector_leaders / calc_subsector_breakdown |
-
-### 2.5 主线追踪
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/mainline_tracker.py` | 453 | MainlineTracker 生命周期管理 |
-| `quant/anchor_monitor.py` | 1,723 | 锚定信号体系：concentration / pool_state / composition / style |
-
-**状态机：** CANDIDATE → CONFIRMED → DEGRADED → ARCHIVED
-
-### 2.6 仓位与风格
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/position.py` | 372 | calc_op：量能定级 + 修正因子 + 周期系数 |
-| `quant/position_v2.py` | 326 | V2仓位模型 |
-| `quant/cluster.py` | 683 | calc_big_volume_cluster / calc_chain_cluster |
-
-### 2.7 选股与买点
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/strategies/` | ~200 | 策略注册表：mainline_confirmed / mainline_candidate |
-| `quant/filters.py` | 140 | 前置过滤引擎 |
-| `quant/buy_strategy.py` | 923 | 22种场景买点策略 |
-
-### 2.8 止盈止损与退出
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/exit_engine.py` | 404 | 三阶段：compute → adjust → recompute |
-| `quant/alloc_engine.py` | ~80 | 仓位分配（普通/身位分流） |
-
-### 2.9 交易计划与报告
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/trade_plan.py` | 1,386 | generate_trade_plan / format_trade_plan_text |
-| `quant/plan.py` | ~1,000 | build_report / build_meta / save_report |
-| `quant/meta_builder.py` | 1,155 | Meta JSON 构建 |
-| `quant/report_templates.py` | 1,849 | HTML报告模板 |
-| `quant/expectation.py` | 435 | 次日预期文本生成 |
-
-### 2.10 回测引擎
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `backtest_engine.py` | 535 | 主引擎：D日信号→D+1执行，净值曲线 |
-| `quant/bt_position_manager.py` | 513 | 持仓管理 |
-| `quant/bt_order_executor.py` | 312 | 订单执行（T+1保护） |
-| `quant/bt_price_service.py` | 165 | 价格服务 |
-| `quant/bt_fee.py` | 65 | 手续费计算 |
-
-### 2.11 实时行情
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/realtime_service.py` | 1,253 | TDXRS协议实时行情，全市场轮询 |
-| `quant/realtime_signals.py` | 1,040 | 盘中信号检测 |
-| `quant/intraday_sentiment.py` | ~300 | 盘中情绪分（复用日级别公式） |
-| `intraday_monitor.py` | ~400 | 盘中监控主进程 |
-
-**数据源：** TDXRS 协议直连通达信服务器（4个备选节点）
-
-### 2.12 预测与画像
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/prediction_engine.py` | 842 | 中小周期预测：5因子 + 规则树 |
-| `quant/quant_profile.py` | 800 | 量化画像生成 |
-| `quant/factor_lab.py` | 448 | 因子实验 |
-| `quant/wave_engine.py` | 698 | 波浪分析引擎 |
-
-### 2.13 IPO 模块
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/ipo_monitor.py` | 721 | IPO监控 |
-| `quant/ipo_predict.py` | 1,169 | IPO预测 |
-| `quant/ipo_score.py` | 1,239 | IPO评分 |
-| `quant/ipo_score_v2.py` | 967 | IPO评分V2 |
-| `quant/ipo_tracker.py` | 600 | IPO追踪 |
-| `quant/ipo_sentiment.py` | 232 | IPO情绪 |
-| `quant/ipo_research_db.py` | 243 | IPO研报DB |
-
-### 2.14 舆情与事件
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/news_crawler.py` | ~400 | 舆情爬虫：财联社(levistock) + 东财(akshare) + 财新 |
-| `quant/news_summarizer.py` | ~200 | 舆情摘要 |
-| `quant/events_crawler.py` | 462 | 事件爬虫：财报排期 + IPO + 展会/政策 |
-
-### 2.15 波浪与技术分析
-
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `quant/wave_engine.py` | 698 | 波浪分析 |
-| `quant/plotly_charts.py` | 768 | Plotly图表生成 |
-| `quant/llm_comp_pe.py` | 145 | LLM可比PE估值 |
+**daily_cron.sh 16:35 内部顺序**（flock 串行；日志 /var/log/stock-review.log，5000 行轮转）：
+1. pytest smoke（仅警告不中断）→ 节假日守卫
+2. `update_chain_data.py`：levistock 涨停池（含连板天数）→ data/chain_data.json（失败回退旧逻辑）
+3. `run_review.py --html`：主复盘；**失败 5 分钟后重试 1 次**
+4. 复盘成功才跑 `prediction_engine.generate_prediction()`（当日+前一日 review）
+5. 量化画像 `quant_profile.generate_daily_profile()`：**3 次重试 ×30s**（东财断连返回 None 按失败计，10-14 加固）
+6. 回测缓存预热 `gen_bt_cache.py`；前瞻封存 `forward_record.py`（Q4 规则冻结实验，2027-01 拆封，见 docs/FREEZE_20261006.md）
+7. 清理：intraday 日志保留 30 天、news 保留 10 天
+8. 若干已删脚本有 `[ -f ]` 守卫静默跳过（清单见 §9）
 
 ---
 
-## 三、Web 路由层 (routes/)
+## 三、数据层（资产清单）
 
-### 3.1 页面路由
+> 数据库与 reports/ 均不进 git（见 WORKFLOW.md §2-3）；位置均在 `/opt/stock-review/data/`。水位以 doctor 输出为准。
 
-| 文件 | 行数 | 路由 | 功能 |
-|------|------|------|------|
-| `web.py` | ~100 | `/`, `/dashboard`, `/review/{date}`, `/compare` | 核心页面 |
-| `backtest_page.py` | 642 | `/backtest` | 回测页面 |
-| `summary.py` | 745 | `/summary` | 汇总页面 |
+### 3.1 SQLite 数据库（7 个）
 
-### 3.2 数据 API
+| DB | 规模 | 核心表 | 生产者（时间） | 消费者 |
+|---|---|---|---|---|
+| stock_daily.db | 1.1G | stock_daily | sync_stock_db（16:20，CSV 增量入库） | 回测/选股/波浪 |
+| wave_analysis.db | 723M | wave_labels（人工锁定浪型）、env_snapshot | 人工标注 + m1_snapshot（16:34） | M1 闸门、波浪页 |
+| ipo_score.db | 134M | IPO 分钟评分表 | ipo-monitor.service（盘中） | IPO 研究/API |
+| quant_profile.db | 6M | daily_profile、daily_snapshot、minute_raw、feedback | 16:35 量化画像 | APP 接口/画像页 |
+| ipo_research.db | 252K | IPO 研报/预测 | 07:30 ipo_predict | IPO 页 |
+| sentiment_review.db | 308K | market_snapshot、daily_review、emotion_carrier、plan、verification、rule_library、metric_dict、consistency_log | snapshot_sentiment 17:05（T1 客观层）+ Web 端 T2~T5 人工层 | 情绪复盘页/AI 复盘 |
+| prediction.db | 72K | predictions、rule_stats | 16:35 prediction_engine | 复盘验证/APP |
 
-| 文件 | 行数 | 路由 | 功能 |
-|------|------|------|------|
-| `api.py` | ~100 | `/api/dates`, `/api/review/{date}`, `/api/trend` | 只读数据 |
-| `compare.py` | 57 | `/api/inflection` | 情绪对比+拐点检测 |
-| `backtest.py` | 64 | `/api/backtest` | 回测数据 |
-| `news.py` | 57 | `/api/news/{date}` | 舆情数据 |
-| `events.py` | 39 | `/api/events/{YYYYMM}` | 事件数据 |
-| `kline.py` | 207 | `/api/kline/*` | K线数据 |
-| `wave_db.py` | 219 | `/api/wave/*` | 波浪分析数据 |
+### 3.2 文件型数据
 
-### 3.3 功能 API
-
-| 文件 | 行数 | 路由 | 功能 |
-|------|------|------|------|
-| `quant.py` | 132 | `/api/quant/run/*` | 触发复盘（需鉴权） |
-| `realtime.py` | 142 | `/api/realtime/*` | 实时行情 |
-| `intraday.py` | 477 | `/api/intraday/*` | 盘中监控 |
-| `alert.py` | 313 | `/api/alert/*` | 告警管理 |
-| `watchlist.py` | 204 | `/api/watchlist/*` | 自选股 |
-| `sentiment_live.py` | 127 | `/api/sentiment/live` | 实时情绪 |
-| `position_risk.py` | 303 | `/api/position/*` | 仓位风险 |
-| `app_api.py` | 341 | `/api/app/*` | APP接口(画像/预测/IPO) |
-| `ipo_research.py` | 187 | `/api/ipo/*` | IPO研究 |
+| 资产 | 内容 | 生产者 |
+|---|---|---|
+| data/csv/（430+ 个） | 全市场日线快照 stock_daily_YYYYMMDD.csv（复盘引擎**直接读 CSV**） | 16:10 采集链 |
+| data/kph_sectors/ | 开盘啦每日板块成分（主线判定数据源） | 16:00 fetch_kph_sectors |
+| data/chain_data.json、data/chain_history/ | 当日涨停池/连板天数 + 历史 | 16:35 update_chain_data |
+| sector_kline/ concept_kline_ths/ theme_kline/ index_kline/ | 行业/概念/主题/指数 K 线 | 16:20、17:00 各链路 |
+| data/ 映射文件 | stock_concept_map（个股→板块）、concept_match（概念→行业）、industry_skel（三级行业骨架）、theme_mapping_v2（板块→30 主题，config/） | update_concepts 等 |
+| data/m2m3_signals.json / m2m3_summary.json | M2 标记 + M3 执行状态（规则产物）/ 人话结论（仅展示） | 16:20 update_m2m3_daily |
+| reports/review_YYYYMMDD.json(+.meta.json)、stock_daily_YYYYMMDD.html | 每日复盘结构化报告与图表页 | 16:35 run_review |
+| data/golden_baseline/、paper_trading/、cards/、events/ | 金股基线、模拟盘、情绪卡片、事件库 | 各功能模块 |
+| data/ai_summaries/YYYYMMDD.json | AI 复盘产物（date/generated_at/content/model/usage） | AI 链路（重构中，§7.5） |
 
 ---
 
-## 四、配置层 (config/)
+## 四、功能层（核心思路与目的）
 
-| 文件 | 行数 | 职责 |
-|------|------|------|
-| `config/strategy_rules.py` | 620 | **所有策略阈值、权重、过滤规则、止盈止损规则表** |
-| `config/context.py` | 109 | MarketContext 数据容器定义 |
-| `config/prediction_rules.py` | 36 | 预测引擎规则 |
-| `config/quant_profile_rules.py` | 66 | 量化画像规则 |
-| `config/ipo_score_rules.py` | 112 | IPO评分规则 |
-| `config/ipo_predict_rules.py` | 197 | IPO预测规则 |
-| `config.py` (根目录) | 75 | 全局配置：路径、缓存TTL、监控阈值 |
+每个模块按"**为什么存在 → 输入 → 产出 → 挂了影响谁**"描述；函数级细节看代码。
 
-**核心原则：** 策略函数只做计算，所有判断条件和数值阈值都在配置文件里。
+### 4.1 每日复盘引擎（系统主轴）
+- **目的**：把一天的全市场数据压缩成一份可比较的情绪/周期/主线/计划报告。
+- 链路：`run_review.py` → `quant/review_new.py::run_single()`（Web 端经 `engine_adapter.py` 延迟加载同一入口）。
+- 编排顺序：CSV/映射加载 → sentiment 预处理（涨跌停/行业分类/连板）→ 情绪与赚钱效应 → 板块双轨评分 → 龙头 → 锚定信号 → 主线状态机 → 周期与仓位 → pipeline 决策（route→filter→entry→exit→alloc）→ 交易计划 → 报告三件套。
+- **失败影响**：reports 缺当日 JSON → 预测不生成、17:30 推送自动跳过、Web 当日页空白；cron 有一次重试。
 
----
+### 4.2 情绪与赚钱效应（两套体系，勿混淆）
+- **复盘内算分** `quant/sentiment.py`：情绪分（涨停/涨跌比/封板率/连板高度/涨跌幅分布）、赚钱效应（首板溢价、连板溢价、冲高回落、炸板率）、情绪变量（加速度/流向/高低温差等），结果进 review JSON。
+- **情绪复盘库** `routes/sentiment_review.py` + sentiment_review.db：T1 客观盘面由 17:05 快照自动采集；T2~T5（复盘判断、计划、验证、规则沉淀）走 Web 人工 CRUD；另有相似日检索与一致性日志。目的是**让主观复盘可积累、可回验**。
+- 板块评分：`sector.py`+`sector_score.py` 行业×0.6 与概念×0.4 双轨共振，主题聚合成 30 主题（theme_ranker）。
 
-## 五、数据源
+### 4.3 周期、仓位与风格
+- `quant/position.py`：量能定级（very_low→overheated）→ 基础仓位曲线 → 板块/主线/炸板/跌停/龙头修正因子；系统仓位与风格文本写入 review。
+- `quant/cluster.py`：大成交量集群与连板集群；`lianban.py`（根目录）从 CSV 计算连板梯队。
 
-### 5.1 行情数据
+### 4.4 主线追踪与锚定信号
+- `quant/mainline_tracker.py`：主线生命周期 CANDIDATE→CONFIRMED→DEGRADED→ARCHIVED + 健康度；板块成分以开盘啦 KPH 为唯一源。
+- `quant/anchor_monitor.py`：集中度/强势池状态/资金结构（游资·机构·共振）/风格判定；`quant/carrier_alert.py` 盘中监控情绪锚定股异动并 QQ 推送（由 8501 进程启动，见 §6）。
 
-| 数据源 | 用途 | 获取方式 | 频率 |
-|--------|------|----------|------|
-| **levistock** | A股日线CSV | `fetch_levistock_csv.py` | 每日16:30 |
-| **东财API** | 日线CSV(回退) | `fetch_east_3days.py` | 每日16:30 |
-| **TDXRS** | 实时行情 | `realtime_service.py` | 盘中5-60秒 |
-| **开盘啦** | 板块成分股 | `fetch_kaipanhong_v3.py` | 每日16:00 |
-| **腾讯/新浪** | 补充数据 | `fetch_tencent_csv.py` | 按需 |
+### 4.5 M1/M2/M3 趋势动量体系（规则冻结，专题文档为准）
+- **M1 大盘环境闸门**：`quant/env_gate.py`（tier 优先/常规/禁止）+ weekly_gate + daily_gate；`scripts/m1_snapshot.py` 每日落 env_snapshot，algo_version=m1_v5_20261011。规则演进见 docs/M1大盘环境闸门_定稿方案_v3、M1_v5_修订说明。
+- **M2 入场标记 / M3 出场仓位**：`quant/m2m3_engine.py` 为唯一入口（A 地量反转底 / B 放量长下影 V 反；chandelier 2.5ATR、阶梯加仓、硬止损 -8%、风险预算 3%）。冻结规格：docs/趋势动量_模块二入场规格_v1.3、模块三出场仓位规格_v1.0。
+- 每日 16:20 `update_m2m3_daily.py` 重算 m2m3_signals.json；routes/m2m3.py 只读展示。**M3 确认层是观察哨，不驱动交易**。
 
-### 5.2 板块与概念
+### 4.6 预测 / 量化画像 / 波浪
+- `quant/prediction_engine.py`：中小周期方向预测（上行/下行/震荡 + 置信度 + 风格延续/切换），规则在 config/prediction_rules.py，结果与规则命中统计入 prediction.db。
+- `quant/quant_profile.py`：东财数据生成个股量化画像（依赖外部接口，需容错）。
+- `quant/wave_engine.py` + wave_analysis.db：波浪分析；周线浪型由**人工锁定**后 M1 自动推导 bull/bear regime。
 
-| 数据文件 | 条数 | 来源 | 用途 |
-|----------|------|------|------|
-| `stock_concept_map.json` | 5,528只股票 | 东财 | 个股→板块映射 |
-| `concept_match.csv` | 452个概念 | 手工+自动 | 概念→三级行业映射 |
-| `industry_skel.csv` | 496个三级行业 | 申万 | 行业骨架 |
-| `theme_mapping_v2.json` | 777条 | 手工维护 | 板块→主题映射 |
-| `kaipanhong260508.json` | 679个板块 | 开盘啦 | 板块成分股 |
-| `sub_plate_stocks.json` | 653个次级板块 | 聚合 | 次级板块标签 |
+### 4.7 IPO 与事件
+- ipo_predict（07:30 未来 10 日）、ipo-monitor.service（盘中分钟评分）、ipo_tracker（15:30）、ipo_research.db；规则在 config/ipo_*_rules.py。
+- 事件：scripts/run_events.py（财报/展会/政策静态库）；**news_crawler 舆情链路已整体下线**（数据目录保留、不调度）。
 
-### 5.3 舆情与事件
+### 4.8 盘中实时
+- `quant/realtime_service.py`（tdxrs 协议全市场轮询，**已替代根目录 intraday_monitor.py 独立进程模式**，无 screen）；`quant/realtime_signals.py` 为纯逻辑信号；`quant/intraday_sentiment.py` 复用日级公式算盘中情绪。由 8501 启动时 `start_polling()` 拉起。
 
-| 数据源 | 用途 | 获取方式 |
-|--------|------|----------|
-| **财联社电报** | 实时快讯 | levistock `news_telegraph_cls()` |
-| **东方财富快讯** | 快讯 | akshare `stock_news_em("快讯")` |
-| **东方财富新闻** | 新闻 | akshare `stock_news_em("新闻")` |
-| **财新网** | 深度新闻 | akshare `stock_news_main_cx()` |
-| **静态事件库** | 展会/发布会/政策 | 硬编码 ~50条 |
+### 4.9 回测与前瞻实验
+- `backtest_engine.py` + quant/bt_*（持仓/订单 T+1/价格/费率）：D 日信号 D+1 执行；每日两次预热缓存（16:10、16:35）。
+- `scripts/forward_record.py`：规则冻结下的逐日前瞻记录，2027-01 拆封验证（防过拟合的样本外实验，勿删）。
 
-### 5.4 数据库存储
-
-| 数据库 | 大小 | 用途 |
-|--------|------|------|
-| `ipo_score.db` | 483MB | IPO评分历史 |
-| `wave_analysis.db` | 75MB | 波浪分析结果 |
-| `quant_profile.db` | 5.5MB | 量化画像 |
-| `prediction.db` | 74KB | 预测结果 |
-| `ipo_research.db` | 184KB | IPO研报 |
+### 4.10 Web 层
+- app.py 注册 24 个路由模块（routes/__init__.py）：页面（web/backtest_page/summary）、复盘数据（api/summary/compare/kline/wave_db）、功能（quant 触发鉴权、realtime/intraday、alert、watchlist、sentiment_live、position_risk、m2m3、sentiment_review、dashboard_summary、app_api 画像/预测/IPO、ipo_research、backtest）。
+- 写操作需 x-api-key；cache.py 线程安全缓存；data.py 负责报告加载。
 
 ---
 
-## 六、定时任务
+## 五、外部数据源可靠性分级（踩坑后定档）
 
-| 时间 | 任务 | 脚本 |
-|------|------|------|
-| 07:30 周一至周五 | IPO预测 | `ipo_predict.sh` |
-| 08:00 周一至周五 | 盘前舆情补全 | `morning_news.sh` |
-| 09:25 周一至周五 | IPO监控 | `ipo_monitor.sh` |
-| 09:25 周一至周五 | 盘中监控启动 | `intraday_monitor.py` (screen) |
-| 10:00 每日 | QQ提醒 | `qq_reminder.sh` |
-| 15:00 每日 | QQ提醒 | `qq_reminder.sh` |
-| 15:00 周一至周五 | IPO追踪 | `ipo_tracker.py` |
-| 15:30 周一至周五 | IPO追踪 | `ipo_tracker.py` |
-| 16:00 周一至周五 | 开盘啦板块数据 | `daily_kph_sectors.sh` |
-| 16:30 周一至周五 | 每日复盘+舆情+画像+板块K线 | `daily_cron.sh` |
-| 16:30 周一至周五 | CSV日线数据 | `daily_csv_fetch.sh` |
-| 17:30 周一至周五 | 分享推送 | `send_share.sh` |
-| 20:00 每月25日 | 投资事件 | `run_events.py` |
+| 级别 | 源 | 用途 | 已知坑与纪律 |
+|---|---|---|---|
+| A 主用 | **tdxrs**（/opt/tdxrs-venv，直连通达信节点） | 盘中实时、日线 CSV 首选、流通股本 | **盘前/盘中会吐出日期超前的"幻影"当日 K 线**——日线只信 16:10 后产物；历史回填不可用它 |
+| A 主用 | **levistock**（/opt/levistock SDK，tdxrs-venv 调用） | 涨停池/连板（chain_data）、CSV 兜底 | 接口偶发超时；失败要让上游知道（禁假成功） |
+| B 可靠 | **baostock** | 历史 CSV 回填 | 稳定但只适合盘后历史，不供实时 |
+| B 辅助 | 新浪（指数）、腾讯（指数/补充） | index_kline、sync_indices | 腾讯有限流，按需调用 |
+| B 板块 | **东财**（akshare/update_ths_boards、概念成员） | 板块画像 17:00、概念映射、量化画像 | **偶发断连返回 None，必须按失败重试**（16:35 画像 3 次重试） |
+| B 板块 | **开盘啦** fetch_kph_sectors 16:00 | 主线板块成分唯一源 | 当日目录缺 JSON 时主线判定无米下炊 |
+| C 外部 | **智谱 GLM**（经 astroapp 项目 .env，OpenAI 兼容 /chat/completions，glm-4-flash） | AI 复盘总结 | key 只在 /opt/astroapp/.env，本仓库脚本运行时读取、禁止入库/入日志 |
+| C 外部 | **openclaw**（pnpm 全局命令） | QQ 消息发送 | `--dry-run` 不真实送达；cron 裸 PATH 需能找到（见 §6 坑注） |
+| C 外部 | 同花顺 ths_api（.env THS_API_KEY） | 概念 K 线等 | key 不入库 |
 
 ---
 
-## 七、部署架构
+## 六、部署与进程
 
-```
-┌─────────────────────────────────────────────┐
-│  Ubuntu 24.04 x86_64 (VM-0-7-ubuntu)        │
-│  2核 / ?GB RAM                               │
-│                                              │
-│  ┌──────────────┐  ┌──────────────────────┐  │
-│  │ Nginx        │  │ stock-review.service │  │
-│  │ :443 (SSL)   │──│ uvicorn :8501        │  │
-│  │ yoyomeat.cn  │  │ 2 workers            │  │
-│  │              │  │ MemoryMax=2G         │  │
-│  │              │  │ CPUQuota=150%        │  │
-│  └──────────────┘  └──────────────────────┘  │
-│                                              │
-│  ┌──────────────┐  ┌──────────────────────┐  │
-│  │ todo-app     │  │ intraday_monitor     │  │
-│  │ :8502        │  │ (screen session)     │  │
-│  └──────────────┘  └──────────────────────┘  │
-│                                              │
-│  ┌──────────────────────────────────────┐    │
-│  │ /opt/levistock/ (SDK)                │    │
-│  │ /opt/tdxrs-venv/ (TDXRS协议库)       │    │
-│  └──────────────────────────────────────┘    │
-└─────────────────────────────────────────────┘
-```
-
-**关键配置：**
-- Python 3.11 (系统自带)
-- systemd 管理，自动重启
-- Nginx 反向代理 + SSL (Let's Encrypt)
-- 环境变量通过 `.env` 文件注入
-- API Key 鉴权（写操作需要 `x-api-key`）
+- 主机 Ubuntu 24.04，根目录 /opt/stock-review；Python 主解释器 **/usr/bin/python3.11**；采集用 **/opt/tdxrs-venv/bin/python**；astroapp 用自带 venv（3.12）。
+- **stock-review.service**：`uvicorn app:app 127.0.0.1:8501 --workers 1`，Restart=always，MemoryMax=2G，EnvironmentFile=.env，启动前 fuser 清 8501；启动时并行拉起 realtime_service 轮询与 carrier_alert（启动失败只告警不退出）。
+- **ipo-monitor.service**：`python3 -u quant/ipo_monitor.py`，日志 logs/ipo_monitor.log。
+- **astroapp.service**：星盘（独立项目 /opt/astroapp），Nginx 83 → 127.0.0.1:8503；本系统仅以 HTTP 客户端身份用其 GLM 配置。
+- Nginx：443 SSL yoyomeat.cn → 8501；83 → 星盘。
+- 日志：/var/log/stock-review*.log（主链路各独立文件）、logs/（模块日志）；journalctl -u stock-review。
+- **openclaw / cron PATH（10-14 实证修复）**：openclaw 在 /root/.local/share/pnpm，/usr/local/bin/openclaw 是其 shim wrapper，运行需要 node（/usr/local/bin/node → nvm v22.22.1）。cron 默认 PATH=/usr/bin:/bin 既找不到 openclaw 也找不到 node，QQ 必发失败。已双重修复：①crontab 顶部统一定义 `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`（与 systemd 默认 PATH 对齐，同时保障 17:30 send_share）；②project_doctor.sh 内 export 同 PATH 兜底。改动 QQ 链路后用 `env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin` 验证。
 
 ---
 
-## 八、策略决策流程
+## 七、QQ 推送通道
 
-```
-1. 数据加载 (review_new)
-   ├─ CSV日线数据 (前20个交易日)
-   ├─ 板块层级 (concept_match + industry_skel)
-   ├─ 概念映射 (stock_concept_map)
-   └─ 开盘啦数据 (kph_sectors)
-
-2. 预处理 (sentiment.preprocess)
-   └─ 涨跌停判定、行业分类、连板计算
-
-3. 情绪计算 (sentiment)
-   ├─ calc_sentiment → 情绪分 (0-100)
-   ├─ calc_profit → 赚钱效应 (0-100)
-   └─ calc_emotion_vars → 先行信号
-
-4. 板块分析 (sector + sector_score)
-   ├─ calc_sector_enhanced → 板块评分
-   ├─ 双轨共振分 (行业×0.6 + 概念×0.4)
-   └─ 主题聚合 (30主题)
-
-5. 龙头识别 (leaders)
-   └─ calc_leaders → 龙头梯队
-
-6. 锚定信号 (anchor_monitor)
-   ├─ concentration_signal → 集中度信号
-   ├─ pool_state → 强势池状态
-   ├─ composition → 资金结构 (游资/机构/共振)
-   └─ resolve_style → 行情风格
-
-7. 主线追踪 (mainline_tracker)
-   ├─ 状态机: CANDIDATE → CONFIRMED → DEGRADED
-   ├─ 健康度评分 (0-100)
-   └─ 候选观察池
-
-8. 仓位计算 (position)
-   ├─ 量能定级 (very_low → overheated)
-   ├─ 基础仓位曲线 (4段)
-   └─ 修正因子 (板块/主线/炸板/跌停/龙头)
-
-9. Pipeline 决策 (pipeline)
-   ├─ route: Style → Action → Screener
-   ├─ filter: 前置过滤
-   ├─ entry: 选股策略
-   ├─ exit: 止盈止损
-   └─ alloc: 仓位分配
-
-10. 交易计划 (trade_plan)
-    ├─ 买点价位 + 止盈止损
-    ├─ 持仓周期
-    └─ 预期文本
-
-11. 报告生成 (plan + meta_builder + report_templates)
-    ├─ review_{date}.json (结构化数据)
-    ├─ review_{date}.meta.json (精简元数据)
-    └─ stock_daily_{date}.html (图表报告)
-```
+- 唯一封装：`notifier.push(title, body, level, image_path) → bool`，内部调 `openclaw message send --channel qqbot --target qqbot:c2c:fc845549ab913cafdb8cc7f273d5db04`。
+- 现有消费方：carrier_alert（锚定股异动）、17:30 send_share（复盘）、scripts/daily_health_report.py。
+- 纪律：**只有 push() 返回 True 才算发出**；dry-run 与 CLI 退出码都不能当送达证据；长文本按 ≤1500 字/段落边界分段，段间 sleep 防风控。
+- **7.5 AI 复盘状态（2026-10-14）**：AI 链路（ai_daily_summary.py + send_share_daily.py，GLM-4-Flash 四段式：盘面概览/情绪与周期/板块与连板/明日预判+免责声明）经端到端实测后**暂缓、待按本文档规范重新落地登记**；当前 send_share.sh 仍指向该编排脚本，重做时必须同步更新本节与 §2。
 
 ---
 
-## 九、模块依赖关系
+## 八、事故档案（Postmortem，只增不改写）
 
-```
-review_new.py
-  ├── sentiment.py          (情绪/赚钱效应)
-  ├── sector.py             (板块分析)
-  ├── sector_score.py       (双轨评分)
-  ├── leaders.py            (龙头识别)
-  ├── anchor_monitor.py     (锚定信号)
-  ├── mainline_tracker.py   (主线追踪)
-  ├── position.py           (仓位计算)
-  ├── cluster.py            (连板/权重集群)
-  ├── pipeline.py           (决策管道)
-  │     ├── strategies/     (选股策略)
-  │     ├── filters.py      (过滤器)
-  │     ├── buy_strategy.py (买点)
-  │     ├── exit_engine.py  (止盈止损)
-  │     └── alloc_engine.py (仓位分配)
-  ├── trade_plan.py         (交易计划)
-  ├── plan.py               (报告生成)
-  ├── meta_builder.py       (Meta构建)
-  ├── expectation.py        (预期文本)
-  ├── prediction_engine.py  (预测引擎)
-  ├── data_loader.py        (共享数据加载)
-  └── data_validator.py     (数据质量校验)
-```
+1. **2026-10-11｜crontab 被重写丢失两条调度（M1 快照 16:25、量化五步 16:20）**：两天后人工才发现，期间 env_snapshot 与板块/股票库断档。根因：调度只存在于 crontab 无基线、无存活校验。对策：cron 基线纳入 project_doctor.sh，09:05 自检缺项即 QQ 告警（10-14 立）。
+2. **2026-09～10｜tdxrs 幻影 CSV**：盘前/盘中采集到日期超前的当日 K 线污染复盘。对策：日线采集固定 16:10 后、文件 <100KB 判无效、tdxrs→levistock 降级链（见 §5）。
+3. **2026-09-22～10-12｜量化画像静默失败 3 周（10 个交易日）**：东财断连返回 None，脚本未按失败处理，日志照打"成功"。对策：返回值判定 + 3 次重试 ×30s + doctor 水位检查（10-14 立）；断档因接口限制无法回填。
+4. **2026-10-09/13｜send_share.sh 引号损坏 + set -e 静默退出**：cron 触发但 share.log 零写入。对策：shell 改动后 `bash -n`，主路径必须有日志落点；10-14 重建。
 
 ---
 
-## 十、文件统计
+## 九、遗产与僵尸清单（删除模块的残留，改动时勿再接线）
 
-| 目录 | 文件数 | 总行数 | 说明 |
-|------|--------|--------|------|
-| `quant/` | ~50 | 31,420 | 量化引擎核心 |
-| `routes/` | 22 | 4,443 | Web路由 |
-| `config/` | 7 | 1,163 | 配置规则 |
-| `templates/` | 1 | 246 | HTML模板(仅watchlist) |
-| `static/` | 3 | 629 | CSS样式 |
-| `scripts/` | ~30 | ~3,000 | 数据获取+定时任务 |
-| `tests/` | ~15 | ~2,000 | 测试 |
-| 根目录 `.py` | ~20 | ~5,000 | 入口+工具 |
-| **合计** | ~160 | **~51,000** | |
+- `decision_engine.py` 不存在：daily_cron 尾部 pending 段靠 `2>/dev/null || echo 0` 兜底（无害）。
+- `sync_picks_to_watchlist.py`、`run_news.py`、`build_sector_kline.py`、`build_concept_kline.py` 不存在：daily_cron/morning_news 均有 `[ -f ]` 守卫。
+- 舆情整体下线：news_crawler/news_summarizer 代码仍在但无调度，data/news 为空目录。
+- 根目录 `intraday_monitor.py`：已被 realtime_service 替代，不再有 screen/cron。
+- 旧 AI 复盘：scripts/ai_summary_cron.sh（无 cron）、旧生成器在 ~/.openclaw/skills 下；routes/summary.py 的 /api/ai_summary 接口保留，仍读 data/ai_summaries。
+- 旧 qq_reminder.sh、月度 run_events.py 调度已不在 crontab（脚本文件仍留存）。
+- 各类 .bak / *_backup / .fix_work / backups/ 为历史快照，不参与运行；确认无用后按 WORKFLOW 规程清理，不随手删。
+
+---
+
+## 十、变更契约与自检
+
+- 改动流程与提交/推送规程见 [WORKFLOW.md](WORKFLOW.md)；本文档的同步义务是其推送自检清单项之一。
+- 体检命令（只读，可随时跑）：`bash /opt/stock-review/scripts/project_doctor.sh`
+  - 检查：3 个服务、8501/8503 健康、cron 基线 13 条、最近交易日的 CSV/KPH/report/market_snapshot/prediction/profile/env_snapshot 水位、磁盘占用。
+  - `--notify`：存在 ❌ 项时经 notifier.push 发 QQ（cron 09:05 工作日使用）。
+- 给 AI 协作者的运行约定见 [AGENTS.md](AGENTS.md)；策略阈值唯一出处是 config/（策略函数只做计算）。
+
+*（v3.0 2026-09-16 → v4.0 2026-10-14：依据 10 月运行现状全面重核，新增工作流时序、数据资产实证、数据源分级、事故档案、遗产清单与体检契约。）*

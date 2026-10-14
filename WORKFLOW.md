@@ -137,6 +137,11 @@ git config --global --get-regexp '^url\.'
 
 # ⑥ 同步
 git fetch origin && git status
+
+# ⑦ 架构文档同步（改动 cron/服务/数据源/DB 或文件路径/QQ 通道时必查）
+git diff --cached --name-only | grep -qE 'ARCHITECTURE.md' || \
+  echo "!! 本次提交未包含 ARCHITECTURE.md；若涉及调度/服务/数据层/通道变更则违反 §9"
+bash scripts/project_doctor.sh   # 体检应 ❌ 0（自检 cron 自身缺失除外）
 ```
 
 推送：
@@ -186,3 +191,21 @@ git filter-repo --path <文件> --invert-paths   # 需安装 git-filter-repo，�
 - 2026-10-13：按"以服务器当前版本为准"重建历史，旧的分叉历史（本地 45 / 远程 39 提交）保留在本地存档分支 `archive/*`，不再推送。
 - 7 个数据库（1.9 GB）与历史遗留的 587 MB blob 一并移出版本库。
 - 从旧远程抢救回 10 篇 `docs/progress/PROGRESS_*.md` 与 `tests/test_quant_profile.py`。
+- 2026-10-14：ARCHITECTURE.md v4.0 重核为唯一权威总览；新增 `scripts/project_doctor.sh` 只读体检与 09:05 自检 cron；git tag `baseline-20261014`。
+
+---
+
+## 9. 架构文档同步契约（2026-10-14 立）
+
+目的：让 [ARCHITECTURE.md](ARCHITECTURE.md) 始终等于项目真实结构，避免再次发生"调度丢失两天无人知"类事故。
+
+1. **同一 commit 义务**：改动下列任一项时，commit 必须同时包含 ARCHITECTURE.md 对应章节更新（并推进文首"最后核对"日期）：
+   - crontab 调度（增/删/改时间或入口脚本）、crontab 级环境变量（如 PATH）
+   - systemd unit（stock-review / ipo-monitor / astroapp）
+   - 数据库：新增/删除库、表位置迁移、生产者或调度时间变更
+   - 外部数据源的接入/停用/降级关系
+   - QQ/通知通道（notifier、openclaw、推送目标）
+2. **易变事实不手抄**：服务死活、数据水位、cron 实际条目以 `bash scripts/project_doctor.sh` 输出为唯一口径；文档只冻结设计时序与依赖关系。新增/删除 cron 时，同步修改 doctor 脚本的 cron 基线签名，并用 doctor 自证。
+3. **事故必归档**：修复任何导致数据断档/误推送/静默失败的事故后，在 ARCHITECTURE.md 第八章追加 postmortem（时间、现象、根因、对策），只增不改写。
+4. **AI 协作者同样受约束**：agent 完成上述改动时须主动更新文档并在交付说明里指出；记忆（memory）记决策上下文，项目文档记事实，二者不互替。
+5. 文档与代码冲突时先信代码、立即修文档；故意不更新文档的改动不予合并/推送。
